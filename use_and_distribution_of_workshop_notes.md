@@ -1,0 +1,3 @@
+# Use and Distribution of Workshop Notes {#use-and-distribution-of-workshop-notes}
+
+These notes may be used and distributed by workshop attendees to their co-workers and associates, provided they remain intact and are not altered in any way. Only the workshop notes may be used and distributed in this way. Demonstration images CANNOT be distributed to others with the notes. Distribution and use of demonstration images is not permitted under any circumstances, but the notes can be easily applied to your own images.

@@ -1,0 +1,54 @@
+# PART 4: IMAGE CORRECTION {#part-2-image-correction}
+
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws.
+
+## Flatten {#flatten}
+
+Sometimes, your image might have an uneven background that hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that. Open the image _**Dapi – uneven.tif**_, duplicate it and apply a large Gaussian blurring \(e.g. radius 20\) to the duplicated image. Then use the image calculator \(Process&gt;Image Calculator…\) to subtract the blurred image from the original image. This results a flattened image.
+
+_**Note**_** **that there is also a background subtraction in Fiji \(Process&gt;Subtract Background…\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
+
+![](/assets/part2/flatten_BEFORE.jpg)![](/assets/part2/flatten_AFTER.jpg)
+
+## Bleach Correction {#bleach-correction}
+
+Open _**Dapi – time.tif**_** **and go to Image&gt;Adjust&gt;Bleach Correction. Choose Histogram Matching in the new pop-up window and press ok. There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
+
+![](/assets/part2/bleach_correction.jpg)
+
+## Image Registration / Drift Correction {#image-registration-drift-correction}
+
+Open _**Spheroid – shift.tif**_** **and scroll through time. You will see that the image shifts at timepoint 51. Someone bumped the microscope while you were recording the data! Annoying!
+
+Correction of this movement requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg Fiji’ and ‘TurboReg Fiji’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file into the plugins folder of your Fiji software and restart Fiji. To make the correction, re-open _**Spheroid – shift.tif**_** **and go to Plugins&gt;StackReg. Select RigidBody in the pop-up window and press ok.
+
+![](/assets/part2/drift_correction.jpg)
+
+**NOTE:** There are four selections for the type of transformation.
+
+**Translation:** Will move planes in X and Y
+
+**Rigid Body:** Will move planes in X and Y as well as rotate
+
+**Scaled Rotation:** Same as rigid body but will scale/zoom planes as well
+
+**Affine:** Same as scaled rotation but can also deform images into trapezoid shapes
+
+**NOTE:** This plugin can also be used for drift correction.
+
+## Image Deconvolution {#image-deconvolution}
+
+Deconvolution is a mathematical process that takes into account the shape of the laser focus \(point spread function or PSF\) and uses that to remove out-of-focus light from the image thus improving resolution and signal-to-noise ratio.
+
+The PSF can easily be recorded on a microscope by imaging 100nm fluorescent beads and used for the deconvolution in FIJI.
+
+Open _**Malaria.tif**_** **and _**PSF.tif**_. Scroll through the PSF file to see what it looks like. It’s a z-stack of a fluorescent bead.
+
+Download Iterative\_Deconvolve\_3D.class from [http://imagej.net/Iterative\_Deconvolve\_3D](http://imagej.net/Iterative_Deconvolve_3D) if you have not already done so.
+
+Copy Iterative\_Deconvolve\_3D.class into your Fiji Plugins folder, go to Plugins &gt; Iterative Deconvolve 3D. Select Malaria.tif under Image and PSF.tif under Point Spread Function, then select number of iterations \(try 10 and 100 and compare the resulting images\), press ok, wait and save image when deconvolution is finished.
+
+![](/assets/part2/deconvolution_options.jpg)
+
+![](/assets/part2/deconvolution.jpg)
+
