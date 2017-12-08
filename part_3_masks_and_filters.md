@@ -18,13 +18,13 @@ A red mask will be placed on the parts of the image that are selected by the thr
 
 The drop down box on the left \(the one that says default in the image above\) has 16 different auto threshold algorithms to choose from. You can adjust the threshold by moving the sliders. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. Select the threshold that best suits your data and adjust as needed.
 
-              ![](/assets/part 3/Threshold 3.JPG)          ![](/assets/part 3/Threshold 4.JPG)
+```
+          ![](/assets/part 3/Threshold 3.JPG)          ![](/assets/part 3/Threshold 4.JPG)
+```
 
 When you are happy with the selection \(ie: the red covers the parts of the image you want selected\), close the threshold box to keep is as a threshold only \(A in hte image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(Note: there will be more details on masks and binaries in the next sub-section\).
 
 ![](/assets/part 3/Threshold 5.jpg)
-
-
 
 You can also automatically test the range of threshold algorithms on your image without scrollin through the dropdown list one at a time.
 
@@ -42,21 +42,33 @@ A montage will be generated showing what each auto threshold algorithm would pro
 
 ## Creating a Mask {#creating-a-mask}
 
-If you need to convert your threshold to a mask, or binary, there are several options you can use. If you select **Apply** in the threshold window it will convert the threshold to a mask.
+If you need to convert your threshold to a mask, or binary, there are several options you can use. As shown above, if you select **Apply** in the threshold window it will convert the threshold to a mask.
 
 You can also go to **Process -&gt; Binary -&gt; Convert to Mask**.
 
-![](/assets/part8/binary_mask_menu.jpg)
+![](/assets/part 3/Convert to mask.jpg)
 
 To generate a binary go to **Process -&gt; Binary -&gt; Make Binary**.
 
-![](/assets/part8/binary_make_binary_menu.jpg)
+![](/assets/part 3/Make binary.jpg)
 
-A window will open with binary options, select your options and click **OK** to generate the binary image.
+For this option, a window will open with binary options, select your options and click **OK** to generate the binary image.
 
-![](/assets/part8/binary_options.jpg)
+![](/assets/part 3/Make Binary Options.JPG)
 
-![](/assets/part8/binary_mask_threshold_results.jpg)
+Generally masks and binaries will appear as shown in the images below. However, depending on your settings \(both the general settings in FIJI, and those selected from the binary options above\), the background and foreground colours can somtimes be reversed in the mask and binary. Macs will often produce reversed background and foreground colours also.
+
+#### Original Image:
+
+![](/assets/part 3/Original image.JPG)
+
+#### Mask:
+
+![](/assets/part 3/Binary.JPG)
+
+#### Binary:
+
+![](/assets/part 3/Mask.JPG)
 
 ## Making Adjustments to Masks and Binaries {#making-adjustments-to-masks-and-binaries}
 
