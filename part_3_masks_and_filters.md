@@ -10,29 +10,35 @@ For a number of basic measurements an image first needs to have a threshold appl
 
 To apply a threshold, select your image and go to **Image -&gt; Adjust -&gt; Threshold** \(or shortcut Ctrl+Shift+T\).
 
-![](/assets/Part 3/threshold_menu.jpg)
+![](/assets/part 3/Threshold 1.JPG)
 
-A red mask will be placed on the parts of the image that are selected by the threshold and a window will open where you can adjust the threshold on the image.
+A red mask will be placed on the parts of the image that are selected by the threshold and a window will open where you can adjust the threshold on the image. In the window that opens, ensure the box beside **Dark background** is checked.
 
-In the window that opens, ensure the box beside **Dark background** is checked. The drop down box on the left \(the one that says default\) has 16 different auto threshold algorithms to choose from. You can adjust the threshold by moving the sliders. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded.
+![](/assets/part 3/Threshold 2.JPG)
 
-![](/assets/Part 3/threshold_options.jpg)
+The drop down box on the left \(the one that says default in the image above\) has 16 different auto threshold algorithms to choose from. You can adjust the threshold by moving the sliders. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. Select the threshold that best suits your data and adjust as needed.
 
-Select the threshold that best suits your data and adjust as needed.
+              ![](/assets/part 3/Threshold 3.JPG)          ![](/assets/part 3/Threshold 4.JPG)
 
-![](/assets/Part 3/threshold_options_automatic_methods.jpg)
+When you are happy with the selection \(ie: the red covers the parts of the image you want selected\), close the threshold box to keep is as a threshold only \(A in hte image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(Note: there will be more details on masks and binaries in the next sub-section\).
+
+![](/assets/part 3/Threshold 5.jpg)
+
+
 
 You can also automatically test the range of threshold algorithms on your image without scrollin through the dropdown list one at a time.
 
 To use the auto-test for thresholds, go to **Image -&gt; Adjust -&gt; Auto Threshold**.
 
-![](/assets/Part 3/auto_threshold_menu.jpg)
+![](/assets/part 3/Auto Threshold 1.jpg)
 
 In the dialog box that opens up set the **Method** to **Try All**, make sure the **White objects on black background** and **Show threshold values in log window** boxes are ticked. Press **OK**.
 
-![](/assets/Part 3/auto_threshold_options.jpg)
+![](/assets/part 3/Auto Threshold 2.jpg)
 
 A montage will be generated showing what each auto threshold algorithm would produce on the image. The list in the log that was created will show the order of the algorithms used in the montage.
+
+![](/assets/part 3/Auto Threshold 3.jpg)
 
 ## Creating a Mask {#creating-a-mask}
 
