@@ -74,11 +74,11 @@ Generally masks and binaries will appear as shown in the images below. However, 
 
 Sometimes adjustments need to be made to binaries/masks before analysis to ensure it is accurately representing the data. There are a number of tools available to help you get the best fit to your data. All of these tools can be found under **Process -&gt; Binary**.
 
-![](/assets/part8/process_binary_menu.jpg)
+![](/assets/part 3/Binary Menu.jpg)
 
 Small gaps left in the mask after thresholding can easily be corrected for by using the **Close** tool.
 
-![](/assets/part8/process_binary_close_operation.jpg)
+####                                 
 
 Similar to this is **Fill Holes**.
 
