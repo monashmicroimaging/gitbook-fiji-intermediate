@@ -102,13 +102,21 @@ Note: We strongly advise against removing objects from images before analysis an
 
 To use the clear functions you first need to draw an ROI around the area you wish to clear, or keep.
 
+![](/assets/Image with ROI.JPG)
+
 In this example we are using cells for emphasis, but clear functions are usually applied to binaries/masks to remove blemishes or mistakes prior to analysis and we do not recommend removing cells from images in this manner.
 
 Once you have your ROI, go to **Edit -&gt; Clear** to clear the inside of the ROI.
 
+![](/assets/part 3/Clear inside menu.jpg)
+
+![](/assets/ImageClear Inside.JPG)
+
 Or use **Edit -&gt; Clear Outside**, to clear the rest of the image outside the ROI.
 
-![](/assets/part8/clear_outside_menu.jpg) ![](/assets/part8/clear_outside_result.jpg)
+![](/assets/part 3/Clear outside menu.jpg)
+
+![](/assets/ImageClear Outside.JPG)
 
 ## Image Calculator {#image-calculator}
 
