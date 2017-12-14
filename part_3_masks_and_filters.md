@@ -124,15 +124,15 @@ Image calculator is another way to select for specific areas where you want to a
 
 The **Image Calculator** can be found under **Process -&gt; Image Calculator**.
 
-![](/assets/part8/image_calculator_menu.jpg)
+![](/assets/part 3/Image Calculator menu.jpg)
 
 In the resulting window you can select image 1 and image 2 from the drop down menus and choose your operation from the list in the middle. Check the box next to **Create new window** to generate the calculation as a new image, otherwise it will override image 1.
 
-![](/assets/part8/image_calculator_options.jpg)
+![](/assets/part 3/Image Calculator options.jpg)
 
 In the image calculator **Add** creates a new image with the pixels from image 1 added to the pixels from image 2. This is demonstrated below, combining two images into a single image for measurements.
 
-![](/assets/part8/image_calculator_addition_example1.jpg)
+
 
 **Subtract** will remove the pixels in image 2 from image 1. This is demonstrated below with two masks of the same image. The mask in image 2 has been eroded and will be subtracted from the original to leave only the edge of the nuclei for analysis.
 
