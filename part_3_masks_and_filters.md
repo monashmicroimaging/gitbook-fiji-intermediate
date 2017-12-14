@@ -132,7 +132,7 @@ In the resulting window you can select image 1 and image 2 from the drop down me
 
 In the image calculator **Add** creates a new image with the pixels from image 1 added to the pixels from image 2. This is demonstrated below, combining two images into a single image for measurements.
 
-
+![](/assets/Add.jpg)
 
 **Subtract** will remove the pixels in image 2 from image 1. This is demonstrated below with two masks of the same image. The mask in image 2 has been eroded and will be subtracted from the original to leave only the edge of the nuclei for analysis.
 
