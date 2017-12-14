@@ -102,7 +102,7 @@ Note: We strongly advise against removing objects from images before analysis an
 
 To use the clear functions you first need to draw an ROI around the area you wish to clear, or keep.
 
-![](/assets/Image with ROI.JPG)
+![](/assets/part 3/Image with ROI.JPG)
 
 In this example we are using cells for emphasis, but clear functions are usually applied to binaries/masks to remove blemishes or mistakes prior to analysis and we do not recommend removing cells from images in this manner.
 
@@ -110,13 +110,13 @@ Once you have your ROI, go to **Edit -&gt; Clear** to clear the inside of the RO
 
 ![](/assets/part 3/Clear inside menu.jpg)
 
-![](/assets/ImageClear Inside.JPG)
+![](/assets/part 3/ImageClear Inside.JPG)
 
 Or use **Edit -&gt; Clear Outside**, to clear the rest of the image outside the ROI.
 
 ![](/assets/part 3/Clear outside menu.jpg)
 
-![](/assets/ImageClear Outside.JPG)
+![](/assets/part 3/ImageClear Outside.JPG)
 
 ## Image Calculator {#image-calculator}
 
@@ -132,7 +132,7 @@ In the resulting window you can select image 1 and image 2 from the drop down me
 
 In the image calculator **Add** creates a new image with the pixels from image 1 added to the pixels from image 2. This is demonstrated below, combining two images into a single image for measurements.
 
-![](/assets/Add.jpg)
+![](/assets/part 3/Add.jpg)
 
 **Subtract** will remove the pixels in image 2 from image 1. This is demonstrated below with two masks of the same image. The mask in image 2 has been eroded and will be subtracted from the original to leave only the edge of the nuclei for analysis.
 
