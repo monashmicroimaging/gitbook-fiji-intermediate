@@ -22,7 +22,7 @@ The drop down box on the left \(the one that says default in the image above\) h
           ![](/assets/part 3/Threshold 3.JPG)          ![](/assets/part 3/Threshold 4.JPG)
 ```
 
-When you are happy with the selection \(ie: the red covers the parts of the image you want selected\), close the threshold box to keep is as a threshold only \(A in hte image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(Note: there will be more details on masks and binaries in the next sub-section\).
+When you are happy with the selection \(ie: the red covers the parts of the image you want selected\), close the threshold box to keep is as a threshold only \(A in the image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(Note: there will be more details on masks and binaries in the next sub-section\).
 
 ![](/assets/part 3/Threshold 5.jpg)
 
@@ -76,23 +76,23 @@ Sometimes adjustments need to be made to binaries/masks before analysis to ensur
 
 ![](/assets/part 3/Binary Menu.jpg)
 
-Small gaps left in the mask after thresholding can easily be corrected for by using the **Close** tool.
+Small gaps left in the mask or binary after thresholding can easily be corrected for by using the **Close** tool.
 
-####                                 
+#### ![](/assets/part 3/closed binary.jpg)
 
 Similar to this is **Fill Holes**.
 
-![](/assets/part8/process_binary_fill_holes.jpg)
+![](/assets/part 3/filled binary.jpg)
 
 Sometimes you will need to add or remove a small layer from the edges of the mask. This could be useful for things like membrane measurements or morphology analysis.
 
 To add or remove from the edges of a mask or binary you can use the **Dilate** or **Erode** tools. **Dilate** will add a thin layer around the edge of the existing mask. **Erode** will remove a thin layer from around the edge of the mask.
 
-![](/assets/part8/process_binary_dilate_erode.jpg)
+![](/assets/part 3/erode and dilate comparisson.jpg)
 
 Sometimes separate objects in your image will be touching. When you create a mask of these they will appear as a single object. This can be a problem for some types of analysis, such as counting. But you can use the **Watershed** tool to detect and separate these objects within the mask so they can be counted as individual objects again.
 
-![](/assets/part8/process_binary_watershed.jpg)
+![](/assets/part 3/Watershed comparisson.jpg)
 
 ## Clear Inside/Outside {#clear-inside-outside}
 
@@ -104,11 +104,7 @@ To use the clear functions you first need to draw an ROI around the area you wis
 
 In this example we are using cells for emphasis, but clear functions are usually applied to binaries/masks to remove blemishes or mistakes prior to analysis and we do not recommend removing cells from images in this manner.
 
-![](/assets/part8/clear_image_BEFORE.jpg)
-
 Once you have your ROI, go to **Edit -&gt; Clear** to clear the inside of the ROI.
-
-![](/assets/part8/clear_menu.jpg) ![](/assets/part8/clear_image_after.jpg)
 
 Or use **Edit -&gt; Clear Outside**, to clear the rest of the image outside the ROI.
 
