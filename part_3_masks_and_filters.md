@@ -94,6 +94,8 @@ Sometimes separate objects in your image will be touching. When you create a mas
 
 ![](/assets/part 3/Watershed comparisson.jpg)
 
+It is important to note that all of these adjustments will always work on hte "black" park of the image so keep this in mind if your colours are reversed.
+
 ## Clear Inside/Outside {#clear-inside-outside}
 
 Clear inside and outside can also be useful for adjusting your binaries before making measurements. Sometimes there can be small blemishes in your image that effect your measurements. Or you may want to focus your measurement on a single area of the image. You can crop the image to remove items before analysis, or you can use the clear functions.
@@ -132,17 +134,15 @@ In the resulting window you can select image 1 and image 2 from the drop down me
 
 In the image calculator **Add** creates a new image with the pixels from image 1 added to the pixels from image 2. This is demonstrated below, combining two images into a single image for measurements.
 
-![](/assets/part 3/Add.jpg)
+![](/assets/part 3/Image Calculator - add.jpg)
 
 **Subtract** will remove the pixels in image 2 from image 1. This is demonstrated below with two masks of the same image. The mask in image 2 has been eroded and will be subtracted from the original to leave only the edge of the nuclei for analysis.
 
-![](/assets/part8/image_calculator_subtraction_example1.jpg)
+![](/assets/part 3/Image Calculator - Subtract.jpg)
 
 You can also use a mask to subtract an area of an image prior to analysis. For example we use the mask of the nucleus here to subtract pixels from the green channel so only cytoplasmic signal remains for analysis.
 
-![](/assets/part8/image_calculator_subtraction_example2_input_images.jpg)
-
-![](/assets/part8/image_calculator_subtraction_example2_result.jpg)
+![](/assets/part 3/Image Calculator - Subtract2.jpg)
 
 Image calculators can be useful in a number of different analysis techniques. Although not all examples can be shown here, they are worth taking some time to explore as a part of your image analysis.
 
@@ -150,19 +150,19 @@ Image calculators can be useful in a number of different analysis techniques. Al
 
 The **Find Edges** and **Find Maxima** tools can help you segment your images. Both of these tools can be found under the **Process** menu.
 
-![](/assets/part8/find_edges_find_maxima_menu.jpg)
+![](/assets/part 3/Menu.jpg)
 
 To segment the edges of your image, select the image and then select **Find Edges**. FIJI will ‘outline’ the edges of the signal in your image.
 
-![](/assets/part8/find_edges_result.jpg)
+![](/assets/part 3/Edges Mask.JPG)
 
 You can then threshold this image to select edges of the signal only.
 
-![](/assets/part8/find_edges_threshold_result.jpg)
+![](/assets/part 3/Edges Threshold.JPG)
 
 Once you are happy with the threshold, click **Apply** or create a mask or binary as previously shown.
 
-![](/assets/part8/find_edges_threshold_mask.jpg)
+![](/assets/part 3/Find Edges Result.JPG)
 
 **Find Maxima** is particularly helpful for segmenting images of dense cell populations or objects.
 
