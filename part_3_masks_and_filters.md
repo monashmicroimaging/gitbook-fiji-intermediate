@@ -16,11 +16,11 @@ A red mask will be placed on the parts of the image that are selected by the thr
 
 ![](/assets/part 3/Threshold 2.JPG)
 
-The drop down box on the left \(the one that says default in the image above\) has 16 different auto threshold algorithms to choose from. You can adjust the threshold by moving the sliders. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. Select the threshold that best suits your data and adjust as needed.
+The drop down box on the left \(the one that says default in the image above\) has 16 different auto threshold algorithms to choose from. You can adjust the threshold by moving the sliders. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. Select the threshold that best suits your data and adjust as needed.         
 
-```
-          ![](/assets/part 3/Threshold 3.JPG)          ![](/assets/part 3/Threshold 4.JPG)
-```
+![](/assets/part 3/Threshold 3.JPG)
+
+![](/assets/part 3/Threshold 4.JPG)
 
 When you are happy with the selection \(ie: the red covers the parts of the image you want selected\), close the threshold box to keep is as a threshold only \(A in the image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(Note: there will be more details on masks and binaries in the next sub-section\).
 
