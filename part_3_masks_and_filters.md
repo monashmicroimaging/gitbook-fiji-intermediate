@@ -170,15 +170,15 @@ Select your image and the go to **Find Maxima**. A window will open with options
 
 Select the box next to **Preview point selection** to see the default settings. These default settings will create a dense selection. Ensure **Exclude edge maxima** is selected.
 
-![](/assets/part8/find_maxima_options_1.jpg)
+![](/assets/part 3/Mind Maxima Options.JPG)
 
-Increase the **Noise tolerance** to show reduce the point selection range on the image. For segmentation, 1 point per cell is ideal. In this example, a noise tolerance of 1200 is needed to best select the data. For segmentation, select **Segmented Particles** from the drop down list under **Output type**.
+Increase the **Noise tolerance** to show reduce the point selection range on the image. For segmentation, 1 point per cell is ideal. Ensure that **Preview point selection** is ticked on, then adjust the Noise tolerance to best fit your data. For segmentation, select **Segmented Particles** from the drop down list under **Output type**.
 
-![](/assets/part8/find_maxima_options_2.jpg)
+![](/assets/part 3/find Maxima on Nuclei 1.JPG)
 
 When you are happy with your selection click **OK** to generate a segmented image mask.
 
-![](/assets/part8/find_maxima_segmentation_result.jpg)
+![](/assets/part 3/Find Maxima - segemented image.JPG)
 
 This mask can be used in combination with cell stains to segment and measure individual cells.
 
@@ -186,45 +186,51 @@ This mask can be used in combination with cell stains to segment and measure ind
 
 Filters can be used to “smooth” your images before analysis. These are another helpful tool for removing blemishes or ensuring that your mask fits the data well before analysis.
 
+As with a lot of functions used to aid analysis, filters should be used with care and caution so as to not manipulate the outcome of the data. Filters should only be applied to allow the best fit to the image and not to force the image to fit a preconceived idea. Filters should never be used to alter or enhance images for publication purposes and should be applied prior to analysis ONLY to ensure accurate selection of data and NEVER to remove or enhance any feature that will alter the analysis result.
+
 You can find some filters directly under the **Process** menu. Others are found under **Process -&gt; Filters** or **Process -&gt; Noise**.
 
-![](/assets/part8/filters_menu.jpg)
+![](/assets/part 3/Filters menu.jpg)
 
 The different filters are demonstrated below with before and after images
 
 ### Smooth:
 
-![](/assets/part8/filter_smooth_result.jpg)
+![](/assets/part 3/smooth comparisson image.jpg)
 
 ### Sharpen:
 
-![](/assets/part8/filter_sharpen_result.jpg)
+![](/assets/part 3/sharpen comparisson image.jpg)
 
 ### Despeckle:
 
-![](/assets/part8/filter_despeckle_result.jpg)
+![](/assets/part 3/despeckle comparisson image.jpg)
 
 ### Despeckle \(mask\):
 
-![](/assets/part8/filter_despeckle_mask_result.jpg)
+![](/assets/part 3/despeckle mask comparisson image.jpg)
 
 ### Remove Outliers:
 
 In this filter, you need to specify the outlier radius in pixels, and threshold. Select the checkbox next to **Preview** to see the changes before you apply them to the image. Click **OK** when you are happy with your changes.
 
-![](/assets/part8/filter_remove_outliers.jpg)
+![](/assets/part 3/remove outliers options.JPG)
+
+![](/assets/part 3/remove outliers mask comparisson image.jpg)
 
 ### Median:
 
 Again, in this filter, you need to specify the radius in pixels. Select the checkbox next to **Preview** to see the changes before you apply them to the image. Click **OK** when you are happy with your changes.
 
-![](/assets/part8/filter_median_result.jpg)
+![](/assets/part 3/median options.JPG)
+
+![](/assets/part 3/median comparisson image.jpg)
 
 ### Gaussian Blur:
 
 This filter uses convolution to produce a smoothing effect. Here you again, need to specify the radius. Select the checkbox next to **Preview** to see the changes before you apply them and click **OK** when you want to apply changes to the image.
 
-![](/assets/part8/filter_gaussian_blur_result.jpg)
+![](/assets/part 3/gausian blur options.JPG)
 
-Note: As with a lot of functions used to aid analysis, filters should be used with care and caution so as to not manipulate the outcome of the data. Filters should only be applied to allow the best fit to the image and not to force the image to fit a preconceived idea.
+![](/assets/part 3/gausian comparisson image.jpg)
 
