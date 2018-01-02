@@ -6,25 +6,27 @@ There are a number of tools in FIJI that can be useful for advanced correction o
 
 Sometimes, your image might have an uneven background that hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that.
 
-Open the image \_**Dapi – uneven.tif. **\_As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 20\) to the duplicated image.
+Open the image \_**Dapi – uneven.tif. **As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 20\) to the duplicated image.
 
 ![](/assets/part 4/Flatten 1 - blur duplicate b.JPG)
 
-Using the image calculator described in Part 3 of this manual \(Process&gt;Image Calculator…\), subtract the blurred image from the original image.
+Using the image calculator described in Part 3 of this manual \(**Process -&gt; Image Calculator**\) and subtract the blurred image 9image 2\) from the original image \(image 1\).
 
 ![](/assets/part 4/Flatten 2 - image calculator b.jpg)
 
-This results a flattened image, that will now be easier to threshold accurately.
+This results in a flattened image which will now be easier to threshold accurately.
 
 ![](/assets/part 4/Flatten 3 - result.JPG)
 
 ![](/assets/part 4/Flatten 4 - threshold comparisons b.JPG)
 
-Note:** **there is also a background subtraction in Fiji \(Process&gt;Subtract Background…\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
+Note:** **there is also a background subtraction in \(**Process -&gt; Subtract Background**\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
 
 ## Bleach Correction {#bleach-correction}
 
-Open _**Dapi – time.tif**_** **and go to Image&gt;Adjust&gt;Bleach Correction. Choose Histogram Matching in the new pop-up window and press ok. There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
+Open the demonstration image _**Dapi – time.tif**_** **and go to **Image -&gt; Adjust -&gt; Bleach Correction**. 
+
+Choose Histogram Matching in the new pop-up window and press ok. There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
 
 ## Image Registration / Drift Correction {#image-registration-drift-correction}
 
