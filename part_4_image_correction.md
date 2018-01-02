@@ -20,7 +20,7 @@ This results a flattened image, that will now be easier to threshold accurately.
 
 ![](/assets/part 4/Flatten 4 - threshold comparisons b.JPG)
 
-_**Note**_** **that there is also a background subtraction in Fiji \(Process&gt;Subtract Background…\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
+Note:** **there is also a background subtraction in Fiji \(Process&gt;Subtract Background…\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
 
 ## Bleach Correction {#bleach-correction}
 
