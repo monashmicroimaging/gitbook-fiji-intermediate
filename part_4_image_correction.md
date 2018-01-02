@@ -1,20 +1,34 @@
 # PART 4: IMAGE CORRECTION {#part-2-image-correction}
 
-There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws.
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The images used for demonstration purposes are given in each sub-section.
 
 ## Flatten {#flatten}
 
-Sometimes, your image might have an uneven background that hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that. Open the image _**Dapi – uneven.tif**_, duplicate it and apply a large Gaussian blurring \(e.g. radius 20\) to the duplicated image. Then use the image calculator \(Process&gt;Image Calculator…\) to subtract the blurred image from the original image. This results a flattened image.
+Sometimes, your image might have an uneven background that hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that. 
+
+Open the image _**Dapi – uneven.tif. **_As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 20\) to the duplicated image. 
+
+![](/assets/part 4/Flatten 1 - blur duplicate b.JPG)
+
+Using the image calculator described in Part 3 of this manual \(Process&gt;Image Calculator…\), subtract the blurred image from the original image. 
+
+![](/assets/part 4/Flatten 2 - image calculator b.jpg)
+
+This results a flattened image, that will now be easier to threshold accurately.
+
+![](/assets/part 4/Flatten 3 - result b.JPG)
+
+![](/assets/part 4/Flatten 4 - threshold comparisons b.JPG)
 
 _**Note**_** **that there is also a background subtraction in Fiji \(Process&gt;Subtract Background…\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
 
-![](/assets/part2/flatten_BEFORE.jpg)![](/assets/part2/flatten_AFTER.jpg)
+
 
 ## Bleach Correction {#bleach-correction}
 
 Open _**Dapi – time.tif**_** **and go to Image&gt;Adjust&gt;Bleach Correction. Choose Histogram Matching in the new pop-up window and press ok. There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
 
-![](/assets/part2/bleach_correction.jpg)
+
 
 ## Image Registration / Drift Correction {#image-registration-drift-correction}
 
