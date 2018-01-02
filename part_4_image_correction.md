@@ -28,7 +28,7 @@ Open the demonstration image _**Dapi – time.tif**_** **and go to **Image -&gt;
 
 ![](/assets/part 4/Bleach Correction 1 - menu.jpg)
 
-Choose **Histogram Matching** from the drop down menu in the pop-up window and then click **OK**. 
+Choose **Histogram Matching** from the drop down menu in the pop-up window and then click **OK**.
 
 ![](/assets/part 4/Bleach Correction 2 - options.jpg)
 
@@ -44,23 +44,35 @@ A new window will open with your result when the correction is completed. \(Here
 
 ## Image Registration / Drift Correction {#image-registration-drift-correction}
 
-Open _**Spheroid – shift.tif**_** **and scroll through time. You will see that the image shifts at timepoint 51. Someone bumped the microscope while you were recording the data! Annoying!
+Correction of image shifts or drift during imaging requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file into the plugins folder of your FIJI software and restart FIJI. 
 
-Correction of this movement requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg Fiji’ and ‘TurboReg Fiji’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file into the plugins folder of your Fiji software and restart Fiji. To make the correction, re-open _**Spheroid – shift.tif**_** **and go to Plugins&gt;StackReg. Select RigidBody in the pop-up window and press ok.
+Once you have the plugins installed, open _**Spheroid – shift.tif**_** **and scroll through the stack. You will see that the image shifts \(the spheriod makes a sudden jump to the left\) at frame 51. 
 
-![](/assets/part2/drift_correction.jpg)
+![](/assets/part 4/Registration 1 - frame shift.JPG)
+
+Go to **Plugins -&gt; StackReg**. 
+
+![](/assets/part 4/Registration 2 - menu.JPG)
+
+Select **RigidBody** from the drop down menu next to **Transformation** in the pop up boxin the pop-up window, then click **OK**. 
+
+![](/assets/part 4/Registration 3 - options.JPG)
 
 **NOTE:** There are four selections for the type of transformation.
 
 **Translation:** Will move planes in X and Y
 
-**Rigid Body:** Will move planes in X and Y as well as rotate
+**Rigid Body:** Will move planes in X and Y as well as rotate \(most often provides the best correction without image distortion\)
 
 **Scaled Rotation:** Same as rigid body but will scale/zoom planes as well
 
 **Affine:** Same as scaled rotation but can also deform images into trapezoid shapes
 
-**NOTE:** This plugin can also be used for drift correction.
+
+
+FIJI will move through the stack as it corrects for the unwanted movements. Results will display in the original image window. For this reason it can be useful to work with a duplicate in case the first correction is not acceptable.
+
+This plugin can be used in the same way for drift correction over time.
 
 ## Image Deconvolution {#image-deconvolution}
 
