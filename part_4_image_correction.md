@@ -24,9 +24,23 @@ Note:** **there is also a background subtraction in \(**Process -&gt; Subtract B
 
 ## Bleach Correction {#bleach-correction}
 
-Open the demonstration image _**Dapi – time.tif**_** **and go to **Image -&gt; Adjust -&gt; Bleach Correction**. 
+Open the demonstration image _**Dapi – time.tif**_** **and go to **Image -&gt; Adjust -&gt; Bleach Correction**.
 
-Choose Histogram Matching in the new pop-up window and press ok. There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
+![](/assets/part 4/Bleach Correction 1 - menu.jpg)
+
+Choose **Histogram Matching** from the drop down menu in the pop-up window and then click **OK**. 
+
+![](/assets/part 4/Bleach Correction 2 - options.jpg)
+
+There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
+
+FIJI will display a log displaying the progress as each frame is corrected.
+
+![](/assets/part 4/Bleach Correction 3 - Log.JPG)
+
+A new window will open with your result when the correction is completed. \(Here I have duplicated the final frame to demonstrate he difference between the original and corrected image\)
+
+![](/assets/part 4/Bleach Correction 4 - comparison.JPG)
 
 ## Image Registration / Drift Correction {#image-registration-drift-correction}
 
