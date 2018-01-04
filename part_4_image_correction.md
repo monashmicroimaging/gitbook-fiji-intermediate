@@ -76,7 +76,7 @@ This plugin can be used in the same way for drift correction over time.
 
 Deconvolution is a mathematical process that takes into account the shape of the laser focus \(called point spread function or PSF\) and uses that to remove out-of-focus light from the image thus improving resolution and signal-to-noise ratio.
 
-To deconvolve an image you will need the plugin _"Iterative Deconvolve 3D" _and a PSF image from the microscope you captured your images on. 
+To deconvolve an image you will need the plugin \_"Iterative Deconvolve 3D" \_and a PSF image from the microscope you captured your images on.
 
 If you have not already done so, download Iterative\_Deconvolve\_3D.class from [http://imagej.net/Iterative\_Deconvolve\_3D](http://imagej.net/Iterative_Deconvolve_3D). Copy Iterative\_Deconvolve\_3D.class into your Fiji Plugins folder, then re-start FIJI if it was already open.
 
@@ -84,13 +84,13 @@ The PSF can easily be recorded on a microscope by imaging 100nm fluorescent bead
 
 Open _**Malaria.tif**_** **and _**PSF.tif**_. Scroll through the PSF file to see what it looks like. It’s a z-stack of a fluorescent bead.
 
-Go to **Plugins -&gt; Iterative Deconvolve 3D**. 
+Go to **Plugins -&gt; Iterative Deconvolve 3D**.
+
+![](/assets/part 4/Deconvolve 1 - menu.jpg)
+
+Select Malaria.tif under Image and PSF.tif under Point Spread Function, then select number of iterations \(try 10 and 100 and compare the resulting images\). 
 
 
 
-Select Malaria.tif under Image and PSF.tif under Point Spread Function, then select number of iterations \(try 10 and 100 and compare the resulting images\), press ok, wait and save image when deconvolution is finished.
-
-![](/assets/part2/deconvolution_options.jpg)
-
-![](/assets/part2/deconvolution.jpg)
+Click **OK**, wait for the deconvolution process to run then save image when finished.
 
