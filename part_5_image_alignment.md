@@ -1,14 +1,26 @@
 # PART 5: IMAGE ALIGNMENT {#part-3-image-alignment}
 
+Sometimes we have multiple images that belong together. we can use tolls in FIJI to combine or align these images into a seemless single image.  The images used for demonstration purposes are given in each sub-section.
+
 ## Stitching {#stitching}
 
-Open images _**Heart I.tif**_** **and _**Heart II.tif**_. Go to Plugins&gt;Stitching&gt;Pairwise Stitching. Select Heart I as and heart II as your images, the order doesn’t matter, then press ok. You will get a stitched image as result that you can then use to add other panels if you have more than two.
+Stictching combines multiple tiled image into a single large format image. To do this in FIJI we use the stitching plugin, found underthe  **Plugins **menu. this option allows you to combine images 2 at a time and is useful for small numbers of images, where there is no specific order.
 
-![](/assets/part3/stitching_images.jpg)
+Open the two demonstration images _**Heart I.tif**_** **and _**Heart II.tif**_. Select P_airwise Stiching _from the menu by going to **Plugins -&gt; Stichting -&gt; Pairwise Stitching.**
 
-There also is a grid stitching option that you can use if you recorded several images with a motorized stage in a defined pattern.
 
-![](/assets/part3/stitching_options.jpg)
+
+Select Heart I as and Heart II as your images, the order doesn’t matter, then click **OK**. 
+
+
+
+Your stiched image will open in a new window. You can then use to add other panels if you have more than two.
+
+
+
+There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern.
+
+
 
 ## TrakEM2 Advanced Image Alignment {#trackem2-advanced-image-alignment}
 
