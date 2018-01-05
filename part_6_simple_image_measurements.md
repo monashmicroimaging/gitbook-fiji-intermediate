@@ -1,24 +1,24 @@
 # PART 6: SIMPLE IMAGE MEASUREMENTS {#part-9-simple-image-measurements}
 
-Now that we have learnt about the different tools available, we need to put them into practice for some simple analysis. Here we will go through several examples of common measurements using the different tools outlined above.
+Many of the simple FIJI functions that you have previously learnt about can be combined with other tools for more complex processes to analyse and measure your data. Here, our instructions become more speicified as wel go through several examples of common measurements using the different tools in FIJI.
 
 In this section we use the images **RGB-blue, RGB-green, Nuclei-1** and **MovieStack** for demonstration.
 
 ## Area Measurements {#area-measurements}
 
-To make a simple measure of the stained area, we first want to threshold the image. Without a threshold, the program would give an area measurement for the entire image, rather than just the stain.
+To make a simple measure of the stained area, we first want to threshold the image. Without a threshold, the program would give an area measurement for the entire image, rather than just the stained area. We will use a threshold here, but you can also select a specific area to measure by using an ROI.
 
 Open the image, and go to **Image -&gt; Adjust -&gt; Threshold**.
 
-![](/assets/part9/adjust_threshold_menu.jpg)
+
 
 Fit your threshold to the data as best as possible.
 
-![](/assets/part9/adjust_threshold_options.jpg)
+
 
 Click **Apply**, or generate mask as previously described.
 
-![](/assets/part9/adjust_threshold_result.jpg)
+
 
 We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see below we have some areas detected outside the nuclei, as well as some spots within the nuclei that are not masked.
 
