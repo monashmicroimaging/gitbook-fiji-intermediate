@@ -6,19 +6,25 @@ Sometimes we have multiple images that belong together. we can use tolls in FIJI
 
 Stictching combines multiple tiled image into a single large format image. To do this in FIJI we use the stitching plugin, found underthe  **Plugins **menu. this option allows you to combine images 2 at a time and is useful for small numbers of images, where there is no specific order.
 
-Open the two demonstration images _**Heart I.tif**_** **and _**Heart II.tif**_. Select P_airwise Stiching _from the menu by going to **Plugins -&gt; Stichting -&gt; Pairwise Stitching.**
+Open the two demonstration images _**Heart I.tif**_** **and _**Heart II.tif**_. Select P\_airwise Stiching \_from the menu by going to **Plugins -&gt; Stichting -&gt; Pairwise Stitching.**
 
+![](/assets/part 5/Stitching 1 menu.jpg)
 
+Select Heart I as and Heart II as your images, the order doesn’t matter, then click **OK**. In the second options window, you can give your final image a new name, but no other settings should need adjusting.
 
-Select Heart I as and Heart II as your images, the order doesn’t matter, then click **OK**. 
+![](/assets/part 5/Stitching 2 options.jpg)
 
+![](/assets/part 5/Stitching 3 options 2.jpg)
 
+A log window will show progress and your stiched image will open in a new window upon completion. 
 
-Your stiched image will open in a new window. You can then use to add other panels if you have more than two.
+![](/assets/part 5/Stitching 4 Log.jpg)
 
+![](/assets/part 5/Stitching 5 original vs stitched .jpg)
 
+You can then use to add other panels if you have more than two, by opening the next image and using that plus your newly stitched image as your 2 images to combine.
 
-There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern.
+There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern. This is also found under **Plugins -&gt; Plugins -&gt; Stichting -&gt; Grid/Collection Stitching.**
 
 
 
