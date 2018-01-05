@@ -8,17 +8,11 @@ In this section we use the images **RGB-blue, RGB-green, Nuclei-1** and **MovieS
 
 To make a simple measure of the stained area, we first want to threshold the image. Without a threshold, the program would give an area measurement for the entire image, rather than just the stained area. We will use a threshold here, but you can also select a specific area to measure by using an ROI.
 
-Open the image, and go to **Image -&gt; Adjust -&gt; Threshold**.
-
-
+Open the image **Nuclei-1**, and go to **Image -&gt; Adjust -&gt; Threshold**.
 
 Fit your threshold to the data as best as possible.
 
-
-
 Click **Apply**, or generate mask as previously described.
-
-
 
 We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see below we have some areas detected outside the nuclei, as well as some spots within the nuclei that are not masked.
 
