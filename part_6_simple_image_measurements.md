@@ -8,15 +8,27 @@ In this section we use the images **RGB-blue, RGB-green, Nuclei-1** and **MovieS
 
 To make a simple measure of the stained area, we first want to threshold the image. Without a threshold, the program would give an area measurement for the entire image, rather than just the stained area. We will use a threshold here, but you can also select a specific area to measure by using an ROI.
 
-Open the image **Nuclei-1**, and go to **Image -&gt; Adjust -&gt; Threshold**.
+Open the image **Nuclei-1. **I like to apply a grey LUT here to allow better contrast between the stain and background during threshold. You may also like to **Duplicate** the original image and work on a copy. Apply the grey LUT as previously shown in FIJI Basics, duplicate the image if you would like, then go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
 
-Fit your threshold to the data as best as possible.
+![](/assets/part 6/Area 1 - grey LUT.jpg)
+
+![](/assets/part 6/Area 2 - Duplicate.jpg)
+
+![](/assets/part 6/Area 3 - Threshold Menu.jpg)
+
+Fit your threshold to the data as best as possible. Here I have used the _Default_ algorithm set at 385 and 65535.Find a threshold that works for you.
+
+![](/assets/part 6/Area 4 - Threshold Options.JPG)
 
 Click **Apply**, or generate mask as previously described.
 
-We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see below we have some areas detected outside the nuclei, as well as some spots within the nuclei that are not masked.
+![](/assets/part 6/Area 5 - Mask.JPG)
+
+We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see below we have some areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
 
 To fix this we are first going to **Fill Holes** in the mask using the binary tool. Go to **Process -&gt; Binary -&gt; Fill Holes**.
+
+
 
 Then we will remove the small spots detected outside the nucleus using the **Remove Outliers** filter. Go to **Process -&gt; Noise -&gt; Remove Outliers**. Turn on the preview and set a pixel radius that captures all spots outside the nuclei and the click **OK** to apply the filter.
 
