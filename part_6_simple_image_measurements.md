@@ -8,43 +8,47 @@ In this section we use the images **RGB-blue, RGB-green, Nuclei-1** and **MovieS
 
 To make a simple measure of the stained area, we first want to threshold the image. Without a threshold, the program would give an area measurement for the entire image, rather than just the stained area. We will use a threshold here, but you can also select a specific area to measure by using an ROI.
 
-Open the image **Nuclei-1. **I like to apply a grey LUT here to allow better contrast between the stain and background during threshold. You may also like to **Duplicate** the original image and work on a copy. Apply the grey LUT as previously shown in FIJI Basics, duplicate the image if you would like, then go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
+Open the image **RGB-blue. **For colour images I like to apply a grey LUT to allow better contrast between the stain and background during thresholding.** **You may also like to **Duplicate** the original image and work on a copy. This image is already grey, but apply a grey LUT if you are working with a colour image, then duplicate the image if you would like, and go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
 
-![](/assets/part 6/Area 1 - grey LUT.jpg)
+![](/assets/part 6/Area 1 - Threshold Menu.jpg)
 
-![](/assets/part 6/Area 2 - Duplicate.jpg)
+Fit your threshold to the data as best as possible. Here I have used the _Default_ algorithm set at 65 and 255.Find a threshold that works for you.
 
-![](/assets/part 6/Area 3 - Threshold Menu.jpg)
-
-Fit your threshold to the data as best as possible. Here I have used the _Default_ algorithm set at 385 and 65535.Find a threshold that works for you.
-
-![](/assets/part 6/Area 4 - Threshold Options.JPG)
+![](/assets/part 6/Area 2 - Threshold Options.JPG)
 
 Click **Apply**, or generate mask as previously described.
 
-![](/assets/part 6/Area 5 - Mask.JPG)
+![](/assets/part 6/Area 3 - Mask.JPG)
 
-We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see below we have some areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
+We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see above that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
 
-To fix this we are first going to **Fill Holes** in the mask using the binary tool. Go to **Process -&gt; Binary -&gt; Fill Holes**.
+To take care of these 'gaps' in the nuclei mask we are going to use the **Fill Holes** option found under **Process -&gt; Binary -&gt; Fill Holes**.
 
+![](/assets/part 6/Area 4 - Fill Holes Menu.jpg)
 
+This will complete the mask over areas that contained gaps previously.
 
-Then we will remove the small spots detected outside the nucleus using the **Remove Outliers** filter. Go to **Process -&gt; Noise -&gt; Remove Outliers**. Turn on the preview and set a pixel radius that captures all spots outside the nuclei and the click **OK** to apply the filter.
+![](/assets/part 6/Area 5 - Filled Mask.JPG)
 
-![](/assets/part9/remove_outliers_options.jpg)
+Next we will remove the small spots detected outside the nucleus using the **Remove Outliers** filter. Go to **Process -&gt; Noise -&gt; Remove Outliers**. 
+
+![](/assets/part 6/Area 6 - Remove Outliers Menu.jpg)
+
+Turn on the preview, ensure it is set to act on the Bright or Dark part of the mask underthe  _Which outliers_ drp down menu \(this will be dependant on your mask colours - for me it needs to be set to Dark\). Set a pixel radius that captures all spots outside the nuclei, in my example the default setting of 2 works nicely. Find an option that works for your image. Click **OK** to apply the filter.
+
+![](/assets/part 6/Area 7 - Remove Outliers Options.JPG)
 
 You should now have a mask that nicely represents the nuclei in the original image.
 
-![](/assets/part9/result_filtered_binary_image.jpg)
+![](/assets/part 6/Area 8 - Final Mask.JPG)
 
 To measure the area you first need to set your output parameters. Go to **Analyse -&gt; Set Measurements**.
 
-![](/assets/part9/set_measurements_menu.jpg)
+
 
 In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters.
 
-![](/assets/part9/set_measurements_options.jpg)
+
 
 Here we will turn on **Area** only.
 
