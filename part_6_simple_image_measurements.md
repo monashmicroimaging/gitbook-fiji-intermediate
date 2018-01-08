@@ -6,9 +6,13 @@ In this section we use the images **RGB-blue, RGB-green, Nuclei-1** and **MovieS
 
 ## Area Measurements {#area-measurements}
 
-To make a simple measure of the stained area, we first want to threshold the image. Without a threshold, the program would give an area measurement for the entire image, rather than just the stained area. We will use a threshold here, but you can also select a specific area to measure by using an ROI.
+To perform any measurements on our image we must ensure the scale is calibrated. Checking and setting the scale calibration was covered in FIJI Basics.
 
-Open the image **RGB-blue. **For colour images I like to apply a grey LUT to allow better contrast between the stain and background during thresholding.** **You may also like to **Duplicate** the original image and work on a copy. This image is already grey, but apply a grey LUT if you are working with a colour image, then duplicate the image if you would like, and go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
+We also need to select an area within the image that we want to measure. Without a selection, the program would give an area measurement for the entire image, rather than just the area of interest. In this example we will use a threshold, but you can also select a specific area to measure by using an ROI.
+
+Open the image **RGB-blue. **Check that the scale is calibrated before carrying out any further steps.
+
+For colour images I like to apply a grey LUT to allow better contrast between the stain and background during thresholding.** **You may also like to **Duplicate** the original image and work on a copy. This image is already grey, but apply a grey LUT if you are working with a colour image, then duplicate the image if you would like, and go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
 
 ![](/assets/part 6/Area 1 - Threshold Menu.jpg)
 
@@ -16,11 +20,13 @@ Fit your threshold to the data as best as possible. Here I have used the _Defaul
 
 ![](/assets/part 6/Area 2 - Threshold Options.JPG)
 
-Click **Apply**, or generate mask as previously described.
+Close the options box to keep the selection as a threshold, or click **Apply** to generate mask as previously described.
+
+If you choose to work with the threshold you can skip straight to measurements from here.
+
+If you are working with a mask you can perfect your selection using filters. You can see in this image mask but there are a few blemishes that may affect the measurement. You can see below that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
 
 ![](/assets/part 6/Area 3 - Mask.JPG)
-
-We now have a mask for the nuclei in this image but there are a few blemishes that may affect the measurement. You can see above that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
 
 To take care of these 'gaps' in the nuclei mask we are going to use the **Fill Holes** option found under **Process -&gt; Binary -&gt; Fill Holes**.
 
@@ -30,7 +36,7 @@ This will complete the mask over areas that contained gaps previously.
 
 ![](/assets/part 6/Area 5 - Filled Mask.JPG)
 
-Next we will remove the small spots detected outside the nucleus using the **Remove Outliers** filter. Go to **Process -&gt; Noise -&gt; Remove Outliers**. 
+Next we will remove the small spots detected outside the nucleus using the **Remove Outliers** filter. Go to **Process -&gt; Noise -&gt; Remove Outliers**.
 
 ![](/assets/part 6/Area 6 - Remove Outliers Menu.jpg)
 
@@ -42,29 +48,39 @@ You should now have a mask that nicely represents the nuclei in the original ima
 
 ![](/assets/part 6/Area 8 - Final Mask.JPG)
 
-To measure the area you first need to set your output parameters. Go to **Analyse -&gt; Set Measurements**.
+To measure the area in either your thresholded image or your mask, you first need to set your output parameters. Go to **Analyse -&gt; Set Measurements**.
 
+![](/assets/part 6/Area 9 - Set Measurements Menu.jpg)
 
+In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters. Here we will turn on **Area** only. Ensure you also have **Limit to threshold **selected in the options so that FIJI does not measure the entire image. Click **OK** to save the output parameters.
 
-In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters.
+![](/assets/part 6/Area 10 - Set Measurements Options.JPG)
 
+Now that the parameters are set, to measure the area of the nuclei using the parameters you have just set go to **Analyze -&gt; Measure** \(or shortcut Ctrl+M\).
 
+![](/assets/part 6/Area 11 - Measure Menu.jpg)
 
-Here we will turn on **Area** only.
+This will give you a results table with the area of the nuclei. You will notice there is only one measurement. This is because this method measures the mask or threshold as a single entity.
 
-Ensure you have **Limit to threshold** selected, or the program will measure the entire image, not just the masked areas.
+![](/assets/part 6/Area 12 - Measurement Result Mask.JPG)
 
-Select **OK** to save the output parameters.
+If you have used a mask for your measurement, you may notice a rather large number. Compare here the measruements from a Mask and a threshold on the same image.
 
-To measure the area of the nuclei using the parameters you have just set go to **Analyze -&gt; Measure** \(or shortcut Ctrl+M\).
+![](/assets/part 6/Area 13 - Measurement Mask vs Threshold.JPG)
 
-![](/assets/part9/measure_menu.jpg)
+Sometimes FIJI will measure a mask as expected perfectly fine. But often It will still easure the entire image, disregarding the selected/masked area. You can fix this with a simple additional step.
 
-This will give you a results table with the area of the nuclei.
+Go to **Edit -&gt; Selection -&gt; Create selection**. \(Masked area must be black on a white background here\)
 
-![](/assets/part9/measure_results_table.jpg)
+![](/assets/part 6/Area 14 - Create Selection.jpg)
 
-You will notice there is only one measurement. This is because this method measures the mask as a whole.
+ROIs will apprear around all of the masked nuclei. 
+
+![](/assets/part 6/Area 15 - Selected Mask.JPG)
+
+Repeat the measurement \(**Analyze -&gt; Measure**\). You should have the correct value now. Compare this result to the previous 2 values.
+
+![](/assets/part 6/Area 16 - Selected Mask Result.JPG)
 
 ## Mean Intensity Measurements {#mean-intensity-measurements}
 
