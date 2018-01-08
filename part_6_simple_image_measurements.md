@@ -22,7 +22,7 @@ Fit your threshold to the data as best as possible. Here I have used the _Defaul
 
 Close the options box to keep the selection as a threshold, or click **Apply** to generate mask as previously described.
 
-If you choose to work with the threshold you can skip straight to measurements from here.
+If you choose to work with the threshold you can skip straight to measurements from here, however the threshold is not always a perfect selection of the data. Which is why we often create the mask.
 
 If you are working with a mask you can perfect your selection using filters. You can see in this image mask but there are a few blemishes that may affect the measurement. You can see below that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
 
@@ -74,7 +74,7 @@ Go to **Edit -&gt; Selection -&gt; Create selection**. \(Masked area must be bla
 
 ![](/assets/part 6/Area 14 - Create Selection.jpg)
 
-ROIs will apprear around all of the masked nuclei. 
+ROIs will apprear around all of the masked nuclei.
 
 ![](/assets/part 6/Area 15 - Selected Mask.JPG)
 
