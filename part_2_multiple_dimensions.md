@@ -2,9 +2,7 @@
 
 Our images often contain more than just a single flat picture. We can have multiple colour channels, introduction of the z-plane \(3D\), time series, 4D \(time and z-plane\), or all of the above. In all of these case your data may be displayed in an image stack. In FIJI Basics we went through how to navigate an image stack. We also learnt how to work with multiple channels. But when we add in the z plane and/or time we need expand on our toolset to allow us to present the data in in the most accurate way possible. Here we will show you more tools for working with you multi-dimensional \(3D, time series, 4D\) image stacks.
 
-
-
-## 3D Projections {#3d-projections}
+## 3D Projections - Method 1 {#3d-projections}
 
 When working with z-stacks, you can create a 3D projection of the stack by going to **Image -&gt; Stacks -&gt; 3D Project**.
 
@@ -23,6 +21,10 @@ Select **OK** to create the projection.
 The resulting projection will have a slider at the bottom \(similar to a stack\) which you can use to rotate the 3D image.
 
 ![](/assets/part7/3d_project_result.jpg)
+
+## 3D Projections - Method 2 {#3d-projections}
+
+
 
 ## Orthogonal Views {#orthogonal-views}
 
