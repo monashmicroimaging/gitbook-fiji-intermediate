@@ -70,7 +70,7 @@ If you have used a mask for your measurement, you may notice a rather large numb
 
 Sometimes FIJI will measure a mask as expected perfectly fine. But often It will still easure the entire image, disregarding the selected/masked area. You can fix this with a simple additional step.
 
-Go to **Edit -&gt; Selection -&gt; Create selection**. \(Masked area must be black on a white background here\)
+Go to **Edit -&gt; Selection -&gt; Create selection**. \(Masked area must be black on a white background here and the ROI selection will be for the black component of the image\)
 
 ![](/assets/part 6/Area 14 - Create Selection.jpg)
 
