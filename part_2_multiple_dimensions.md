@@ -92,11 +92,11 @@ The movie will not open and play automatically after saving. You can open and pl
 
 Before saving your movie you can embed a time stamp, whihc helps the view understand the time interval and total time of the movie. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
 
-
+![](/assets/part 2/Time Stamp 1 - menu.jpg)
 
 In the **Time Stamper** window you will need to enter the interval between images and the format you want the time stamp to be in. You can also specify the location in pixels.
 
-
+![](/assets/part 2/Time Stamp 2 - options 1.JPG)
 
 In this example, the time interval is 5mins \(enter 5.00 for minutes or 300 for seconds\). How the interval is entered will determine the appearence of the time stamp if using the 'time format 00:00'. If entered in minutes, you will see HR:MIN time stamp. If entered in seconds, you will see MIN:SEC time stamp. If using a sufix, the interval and suffix must have matching formats \(ie: don't enter 300 and use mins or the suffix\).
 
@@ -112,7 +112,7 @@ Select **OK** to insert the time stamp into the stack. The timer will automatica
 
 You can now save your time series as a movie, using the same method as above, and the time stamp will remain embedded.
 
-To add a scale bar to your movies, follow the same method as taught in the FIJI Basics workshop for single images. Go to **Analyze -&gt; Tools -&gt; Scale Bar** and set desired parameters. For movies you must ensure you check the box next **Label all slices** before clicking **OK** to insert the scale bar. This will ensure all frames of teh movie contain the scale, not just the first frame.
+To add a scale bar to your movies, follow the same method as taught in the FIJI Basics workshop for single images. Go to **Analyze -&gt; Tools -&gt; Scale Bar** and set desired parameters. For movies you must ensure you check the box next **Label all slices** before clicking **OK** to insert the scale bar. This will ensure all frames of the movie contain the scale, not just the first frame.
 
 ![](/assets/part 2/Time - Scale Bar.JPG)
 
