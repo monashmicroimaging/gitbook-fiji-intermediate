@@ -92,17 +92,17 @@ The movie will not open and play automatically after saving. You can open and pl
 
 Before saving your movie you can embed a time stamp, whihc helps the view understand the time interval and total time of the movie. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
 
-![](/assets/part 2/Time Stamp 1 - menu.jpg)
+
 
 In the **Time Stamper** window you will need to enter the interval between images and the format you want the time stamp to be in. You can also specify the location in pixels.
 
-![](/assets/part 2/Time Stamp 2 - options 1.JPG)
+
 
 In this example, the time interval is 5mins \(enter 5.00 for minutes or 300 for seconds\). How the interval is entered will determine the appearence of the time stamp if using the 'time format 00:00'. If entered in minutes, you will see HR:MIN time stamp. If entered in seconds, you will see MIN:SEC time stamp. If using a sufix, the interval and suffix must have matching formats \(ie: don't enter 300 and use mins or the suffix\).
 
-Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the X Location and y Location boxes. Note - these will become the starting point for your time stamp. 
+Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the X Location and y Location boxes. Note - these will become the starting point for your time stamp.
 
-Choose to include a suffix \(sec, min, etc\) or use the time format ‘00:00’ by checking the box. Ensure this is a match for the interval enterd, as specified above. 
+Choose to include a suffix \(sec, min, etc\) or use the time format ‘00:00’ by checking the box. Ensure this is a match for the interval enterd, as specified above.
 
 ![](/assets/part 2/Time Stamp 3 - options 2.JPG)
 
@@ -116,11 +116,9 @@ To add a scale bar to your movies, follow the same method as taught in the FIJI 
 
 ![](/assets/part 2/Time - Scale Bar.JPG)
 
-
-
 You can also use ROIs for placement of the time stamp and scale bar in movies to ensure accurate positioning in your desired location.
 
-For time stamps, use a rectangular ROI and outline the area you want to place the time stamp in. 
+For time stamps, use a rectangular ROI and outline the area you want to place the time stamp in.
 
 ![](/assets/part 2/Time Stamp 5 - ROI for placement.JPG)
 
@@ -136,7 +134,7 @@ For scale bar placement, use the line ROI tool and draw a line in the area you w
 
 ![](/assets/part 2/Time - Scale ROI for placement.JPG)
 
-Follow the steps to insert a scale bar as normal. This time in the options, the length of the ROI will be detected and used as the scale bar length - you can change this back to your desire length. To use the ROI co-ordinates for placement, chose 'At Selection' from the drop down menu under **Location. **Again, ensure **Label all slices** is checked before clicking **OK** to insert the scale bar. 
+Follow the steps to insert a scale bar as normal. This time in the options, the length of the ROI will be detected and used as the scale bar length - you can change this back to your desire length. To use the ROI co-ordinates for placement, chose 'At Selection' from the drop down menu under **Location. **Again, ensure **Label all slices** is checked before clicking **OK** to insert the scale bar.
 
 ![](/assets/part 2/Time - Scale ROI for placement options.JPG)
 
