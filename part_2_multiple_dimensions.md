@@ -88,25 +88,61 @@ The movie will not open and play automatically after saving. You can open and pl
 
 ![](/assets/part 2/Time 6 - movie play back.JPG)
 
-## Adding A Time Stamp
+## Adding a Time Stamp and Scale Bar to Movies
 
 Before saving your movie you can embed a time stamp, whihc helps the view understand the time interval and total time of the movie. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
 
-![](/assets/part7/time_stamp_menu.jpg)
+![](/assets/part 2/Time Stamp 1 - menu.jpg)
 
 In the **Time Stamper** window you will need to enter the interval between images and the format you want the time stamp to be in. You can also specify the location in pixels.
 
-In this example, the time interval is 5mins. Time needs to be entered in seconds in the options, so you would need to put ‘300’ into the interval box. Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar.
+![](/assets/part 2/Time Stamp 2 - options 1.JPG)
 
-You can also choose to include a suffix \(sec, min, etc\) or use the time format ‘00:00’.
+In this example, the time interval is 5mins \(enter 5.00 for minutes or 300 for seconds\). How the interval is entered will determine the appearence of the time stamp if using the 'time format 00:00'. If entered in minutes, you will see HR:MIN time stamp. If entered in seconds, you will see MIN:SEC time stamp. If using a sufix, the interval and suffix must have matching formats \(ie: don't enter 300 and use mins or the suffix\).
 
-![](/assets/part7/time_stamp_options.jpg)
+Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the X Location and y Location boxes. Note - these will become the starting point for your time stamp. 
+
+Choose to include a suffix \(sec, min, etc\) or use the time format ‘00:00’ by checking the box. Ensure this is a match for the interval enterd, as specified above. 
+
+![](/assets/part 2/Time Stamp 3 - options 2.JPG)
 
 Select **OK** to insert the time stamp into the stack. The timer will automatically run as you scroll through the stack.
 
-![](/assets/part7/time_stamp_result.jpg)
+![](/assets/part 2/Time Stamp 4b - combined.JPG)
 
 You can now save your time series as a movie, using the same method as above, and the time stamp will remain embedded.
+
+To add a scale bar to your movies, follow the same method as taught in the FIJI Basics workshop for single images. Go to **Analyze -&gt; Tools -&gt; Scale Bar** and set desired parameters. For movies you must ensure you check the box next **Label all slices** before clicking **OK** to insert the scale bar. This will ensure all frames of teh movie contain the scale, not just the first frame.
+
+![](/assets/part 2/Time - Scale Bar.JPG)
+
+
+
+You can also use ROIs for placement of the time stamp and scale bar in movies to ensure accurate positioning in your desired location.
+
+For time stamps, use a rectangular ROI and outline the area you want to place the time stamp in. 
+
+![](/assets/part 2/Time Stamp 5 - ROI for placement.JPG)
+
+Follow the instructions to instert a time stamp as described above, only now the X Location and Y Location boxes will be automatically filled with co-ordinates from the ROI. Do not change these. Enter your other values as required and click **OK** to instert the time stamp.
+
+![](/assets/part 2/Time Stamp 6 - ROI for placement auto placement detection.JPG)
+
+Note that the _middle_ of the ROI box is the start of the time stamp position. Click anywhere on the image to remove the ROI. Save your movie file as normal.
+
+![](/assets/part 2/Time Stamp 7 - Placement at ROi.JPG)
+
+For scale bar placement, use the line ROI tool and draw a line in the area you want to place the scale bar.
+
+![](/assets/part 2/Time - Scale ROI for placement.JPG)
+
+Follow the steps to insert a scale bar as normal. This time in the options, the length of the ROI will be detected and used as the scale bar length - you can change this back to your desire length. To use the ROI co-ordinates for placement, chose 'At Selection' from the drop down menu under **Location. **Again, ensure **Label all slices** is checked before clicking **OK** to insert the scale bar. 
+
+![](/assets/part 2/Time - Scale ROI for placement options.JPG)
+
+Note that in this instance the start of the ROI line is also the start of the scale bar.
+
+![](/assets/part 2/Time - Scale ROI for placement final position.JPG)
 
 ## Hyperstacks {#hyperstacks}
 
