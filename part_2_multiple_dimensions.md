@@ -64,31 +64,33 @@ The program will then ‘scan’ through the image from the selected direction a
 
 Time series will also open as a stack that you can work with in a similar manner to colour or z-series stacks.
 
-![](/assets/part7/time_series.jpg)
+![](/assets/part 2/Time 1 - time stack.JPG)
 
 Here, the slider or play button move through the time points, rather than the channels or z-slices.
 
 You can save your time series as a movie using FIJI by selecting **File -&gt; Save As**, and choosing **AVI **as the file type.
 
-![](/assets/part7/save_movie_menu.jpg)
+![](/assets/part 2/Time 2 - avi save menu.JPG)
 
 A window with saving options will open, which will allow you to set specific aspects of the movie.
 
-![](/assets/part7/save_movie_options.jpg)
+![](/assets/part 2/Time 3 - avi save options 1.JPG)
 
-Where possible you should create your movie without compression. The frame rate will be dependent on your images and time interval. Sometimes a trial an error of different frame rates will be needed to generate a movie that plays at an appropriate speed. Generally, something around 8 frames per second \(fps\) is a good starting point.
+Where possible you should create your movie without compression \(chose **None** from the drop down menu under **Compression**\). The ideal frame rate will be dependent on your images and time interval \(ie: the fewer frames in the movie, the slower the frame rate should be\). Sometimes a trial an error of different frame rates will be needed to generate a movie that plays at an appropriate speed. For this example we can use a frame rate of 8 fps.
 
-![](/assets/part7/save_movie_8fps.jpg)
+![](/assets/part 2/Time 4 - avi save options 2.JPG)
 
-Click **OK** to create and save the movie.
+Click **OK** to create and save the movie. A movie file will be generated.
 
-The movie will not open and play automatically. You can open and play the movie file in programs QuickTime, Windows media Player or VCL Media Player to check the frame rate.
+![](/assets/part 2/Time 5 - avi movie file.JPG)
 
-![](/assets/part7/save_movie_file_icon.jpg)
+The movie will not open and play automatically after saving. You can open and play the movie file in programs such asQuickTime, Windows Media Player or VCL Media Player to check the frame rate. Repeat teh process if a faster or slower rate is required.
 
-![](/assets/part7/save_movie_result.jpg)
+![](/assets/part 2/Time 6 - movie play back.JPG)
 
-Before saving your movie you can also include add a time stamp using FIJI. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
+## Adding A Time Stamp
+
+Before saving your movie you can embed a time stamp, whihc helps the view understand the time interval and total time of the movie. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
 
 ![](/assets/part7/time_stamp_menu.jpg)
 
