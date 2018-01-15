@@ -198,7 +198,7 @@ Outliers are still visible in the outlines image. You can go back and alter the 
 
 ##  {#manual-tracking}
 
-## Overlay Masks {#overlay-masks}
+## Redirect Measurements {#overlay-masks}
 
 Masks generated on one image can also be used to make measurements on another image. This allows you to measure the same area in different channels or images.
 
