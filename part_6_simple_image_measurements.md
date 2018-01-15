@@ -52,7 +52,11 @@ To measure the area in either your thresholded image or your mask, you first nee
 
 ![](/assets/part 6/Area 9 - Set Measurements Menu.jpg)
 
-In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters. Here we will turn on **Area** only. Ensure you also have **Limit to threshold **selected in the options so that FIJI does not measure the entire image. Click **OK** to save the output parameters.
+In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters. Here we will turn on **Area** only. 
+
+Ensure you also have **Limit to threshold **selected in the options so that FIJI does not measure the entire image. 
+
+Click **OK** to save the output parameters.
 
 ![](/assets/part 6/Area 10 - Set Measurements Options.JPG)
 
