@@ -84,11 +84,9 @@ Repeat the measurement \(**Analyze -&gt; Measure**\). You should have the correc
 
 ## Mean Intensity Measurements {#mean-intensity-measurements}
 
-To generate a basic intensity measurement we apply a similar method as the basic area measurement. Although, even with the output parameters set to **Limit to threshold**, if we try to measure a mask we will only get intensity readings on the pixel intensity values within the mask itself, not in the image. Meaning all values will be shown as 255, the upper limit of the mask.
+To generate a basic intensity measurement we apply a similar method as the basic area measurement. However, for intesntiy measurements, even with the output parameters set to **Limit to threshold**, or using ROIs, if we try to measure a mask we will only get intensity readings on the intensity values within the mask itself \(0 and 255 as it is a black and white image\), not in the image. Therefore, when measuring intensity the threshold MUST be maintained, never converted to a mask or binary.
 
-![](/assets/part9/results_table_measurements_BEFORE.jpg)
-
-Therefore, for intensity measurements, we need to measure the image before turning it into a mask. To do this, open your image and repeat your thresholding. Go to **Image -&gt; Adjust Threshold**. Find the threshold to best fit the data. But this time DO NOT press apply!
+To do this, open the image  and repeat your thresholding. Go to **Image -&gt; Adjust Threshold**. Find the threshold to best fit the data. But DO NOT press apply!
 
 Leaving the threshold window open, without applying the mask, go to the **Analyze** window and set your measurements as before.
 
