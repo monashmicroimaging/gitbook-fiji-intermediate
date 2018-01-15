@@ -86,7 +86,7 @@ Repeat the measurement \(**Analyze -&gt; Measure**\). You should have the correc
 
 To generate a basic intensity measurement we apply a similar method as the basic area measurement. However, for intesntiy measurements, even with the output parameters set to **Limit to threshold**, or using ROIs, if we try to measure a mask we will only get intensity readings on the intensity values within the mask itself \(0 and 255 as it is a black and white image\), not in the image. Therefore, when measuring intensity the threshold MUST be maintained, never converted to a mask or binary.
 
-To do this, open the image **RGB\_Blue.tif** and repeat your thresholding. Go to **Image -&gt; Adjust Threshold**. 
+To do this, open the image **RGB\_Blue.tif** and repeat your thresholding. Go to **Image -&gt; Adjust Threshold**.
 
 ![](/assets/part 6/Intensity 1 - threshold menu.jpg)
 
@@ -104,7 +104,7 @@ So we can now go straight to setting our measurement paramenters. Again go to **
 
 ![](/assets/part 6/Area 9 - Set Measurements Menu.jpg)
 
-This time we want to set **Area, Min & max gray value, Integrated density** and **Mean gray value**.
+This time we want to set **Area, Min & max gray value** and **Mean gray value**.
 
 Again ensure the checkbox next to **Limit to threshold** is selected.
 
