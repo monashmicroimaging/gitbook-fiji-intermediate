@@ -128,23 +128,25 @@ This will give you a measurement for the intensity in the original image, limite
 
 For a visual representation of the intensity, you can map the intensities across the image very simply using a LUT.
 
-Open he image **RGB-Green.tif** and go to **Image -&gt; Look up Tables**, and select the LUT **Rainbow RGB** from the bottom of the list \(or select the Rainbow LUT form the LUT menu in the tool bar\).
+Open he image **NeuralTubeRed.tif** and go to **Image -&gt; Look up Tables**, and select the LUT **Rainbow RGB** from the bottom of the list \(or select the Rainbow LUT form the LUT menu in the tool bar\).
 
-
+![](/assets/part 6/RainbowLut 1 - menu.jpg)
 
 This will apply a multi-coloured LUT to your image, in shades of red, blue or green. The highest 33% of intensities are reds, the middle 33% are greens and the bottom 33% are blues. This gives the viewer the ability to easily see the range of intensities present in the image.
 
-![](/assets/part9/lookup_table_rainbow_menu.jpg) ![](/assets/part9/lookup_table_rainbow_result.jpg)
+![](/assets/part 6/RainbowLut 2 - LUT on.jpg)
 
 You can add a calibration bar for the intensities by going to **Analyze -&gt; Tools -&gt; Calibration Bar**.
 
-![](/assets/part9/calibration_bar_menu.jpg)  ![](/assets/part9/calibration_bar_options.jpg)
+![](/assets/part 6/RainbowLut 3 - Calibration bar Menu.jpg)
 
 In the **Calibration Bar** window you can specify the position and configuration of the calibration bar. The **Overlay** tick box allows you to create the bar as an overlay of the original image, instead of burning it into the image permanently.
 
+![](/assets/part 6/RainbowLut 4 - Calibration bar options.jpg)
+
 Click **OK** to add the calibration bar to your image.
 
-![](/assets/part9/calibration_bar_result.jpg)
+![](/assets/part 6/RainbowLut 5 - Calibration bar added.jpg)
 
 ## Simple Counting {#simple-counting}
 
