@@ -52,9 +52,9 @@ To measure the area in either your thresholded image or your mask, you first nee
 
 ![](/assets/part 6/Area 9 - Set Measurements Menu.jpg)
 
-In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters. Here we will turn on **Area** only. 
+In the **Set Measurements** window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters. Here we will turn on **Area** only.
 
-Ensure you also have **Limit to threshold **selected in the options so that FIJI does not measure the entire image. 
+Ensure you also have **Limit to threshold **selected in the options so that FIJI does not measure the entire image.
 
 Click **OK** to save the output parameters.
 
@@ -114,19 +114,23 @@ Again ensure the checkbox next to **Limit to threshold** is selected.
 
 Select **OK** to save the changes.
 
+![](/assets/part 6/Intensity 4 - set measurement options.jpg)
 
+Repeat the measurement process as before by going to to **Analyze -&gt; Measure** \(or shortcut Ctrl+M\).
 
-Repeat the measurement process as before. Go to **Analyze -&gt; Measure** \(or shortcut Ctrl+M\).
+![](/assets/part 6/Intensity 5 - measure menu.jpg)
 
 This will give you a measurement for the intensity in the original image, limited to the area under the threshold you have set.
 
-![](/assets/part9/results_table_measurements_AFTER.jpg)
+![](/assets/part 6/Intensity 6 - measurement.jpg)
 
 ## Intensity Map \(Rainbow RGB LUT\) {#intensity-map-rainbow-rgb-lut}
 
 For a visual representation of the intensity, you can map the intensities across the image very simply using a LUT.
 
-Open your image and go to **Image -&gt; Look up Tables**, and select the LUT **Rainbow RGB** from the bottom of the list \(or select the Rainbow LUT form the LUT menu in the tool bar\).
+Open he image **RGB-Green.tif** and go to **Image -&gt; Look up Tables**, and select the LUT **Rainbow RGB** from the bottom of the list \(or select the Rainbow LUT form the LUT menu in the tool bar\).
+
+
 
 This will apply a multi-coloured LUT to your image, in shades of red, blue or green. The highest 33% of intensities are reds, the middle 33% are greens and the bottom 33% are blues. This gives the viewer the ability to easily see the range of intensities present in the image.
 
