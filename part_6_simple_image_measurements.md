@@ -152,9 +152,9 @@ Click **OK** to add the calibration bar to your image.
 
 Often we want to know how many cells or object we have in an image. For a low number of objects you can easily count using the multi-point tool.
 
-Open your image and select the multi-point tool from the FIJI tool bar.
+Open **RGB-Blue.tif** and select the multi-point tool from the FIJI tool bar.
 
-![](/assets/part9/count_cells_point_tool.jpg)
+
 
 Right click the tool and open the **Point Tool** options window. Set up your points as you want them to appear on your image. Ensure **Label Points** and **Show All** are selected. Leave the window open.
 
