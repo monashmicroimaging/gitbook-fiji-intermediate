@@ -174,9 +174,9 @@ The window shows that we have 9 nuclei in this image. We always exclude partial 
 
 ## Analyse Particles {#analyse-particles}
 
-For an image with a large number of objects manually clicking to count can be a laborious task. For these images you can use the **Analyze Particles** tool.
+For an image with a large number of objects manually clicking to count can be a laborious task. For these images you can use the **Analyze Particles** tool. This tool also enables you to measure other aspects of teh objects \(such as area\) at the same time as counting.
 
-To use this tool, you first need to threshold your image as previously shown. Open the image **Nuclei-1.tif. **Apply a grey LUT if you desire. I find this makes thresholding easier. 
+To use this tool, you first need to threshold your image as previously shown. Open the image **Nuclei-1.tif. **Apply a grey LUT if you desire. I find this makes thresholding easier.
 
 ![](/assets/part 6/Analyze particles 1 - grey LUT.jpg)
 
@@ -186,7 +186,7 @@ Select a threshold that fits your data then click **Apply** to create a mask \(h
 
 ![](/assets/part 6/Analyze particles 3 - Threshold options.jpg)
 
-You will see several issues with this mask; gaps within the nuclei and small particles detected outside the nuclei. 
+You will see several issues with this mask; gaps within the nuclei and small particles detected outside the nuclei.
 
 ![](/assets/part 6/Analyze particles 4 - initial mask.jpg)
 
@@ -223,8 +223,6 @@ This set up will result in a number of new "results" windows. you will now have 
 ![](/assets/part 6/Analyze Particles 13 - Results.JPG)
 
 You can also see in the original image that the small outliers that we didn't want to count have been excluded from the analysis \(no ROI outline\) by adjusting the size. We would use the Outline map and the original image here to ensure we have measured only the objects we want, and adjust our optins and re-measure as needed.
-
-##  {#manual-tracking}
 
 ## Redirect Measurements {#overlay-masks}
 
