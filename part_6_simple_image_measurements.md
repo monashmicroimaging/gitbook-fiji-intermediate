@@ -152,9 +152,9 @@ Click **OK** to add the calibration bar to your image.
 
 Often we want to know how many cells or object we have in an image. For a low number of objects you can easily count manually using the multi-point tool.
 
-Open **RGB-Blue.tif** and select the multi-point tool from the FIJI tool bar. 
+Open **RGB-Blue.tif** and select the multi-point tool from the FIJI tool bar.
 
-If multiple points are showing in the tool icon \(as below\), you can simply click it on. 
+If multiple points are showing in the tool icon \(as below\), you can simply click it on.
 
 ![](/assets/part 6/Simple Count 1 - multipoint tool.JPG)
 
@@ -210,7 +210,7 @@ Outliers are still visible in the outlines image. You can go back and alter the 
 
 Masks generated on one image can also be used to make measurements on another image. This allows you to measure the same area in different channels or images.
 
-The easiest method for applying your mask to a different image during measurement is to redirect.
+The easiest method for applying your mask to a different image during measurement is to use 'redirect'.
 
 Generate a mask for your first image and make any measurements you require. Once that is complete, open your second image. Click on the mask again then go to **Analyze -&gt; Set Measurements**.
 
