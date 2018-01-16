@@ -176,33 +176,53 @@ The window shows that we have 9 nuclei in this image. We always exclude partial 
 
 For an image with a large number of objects manually clicking to count can be a laborious task. For these images you can use the **Analyze Particles** tool.
 
-To use this tool, you first need to threshold your image as previously shown. Select a threshold that fits your data then click **Apply** to create a mask.
+To use this tool, you first need to threshold your image as previously shown. Open the image **Nuclei-1.tif. **Apply a grey LUT if you desire. I find this makes thresholding easier. 
 
-![](/assets/part9/threshold_options.jpg)
+![](/assets/part 6/Analyze particles 1 - grey LUT.jpg)
 
-You will see several issues with this mask; gaps within the nuclei and small particles detected outside the nuclei. For counting these small particles can be problematic as they will be counted as an object, when they are in fact a false positive.
+Select a threshold that fits your data then click **Apply** to create a mask \(here, I used the Huang algorithm\).
 
-To remove these errors, apply the **Fill Holes** and **Remove Outliers** tools to the mask. This will give a mask covering the objects to be counted.
+![](/assets/part 6/Analyze particles 2 - Threshold menu.jpg)
 
-![](/assets/part9/threshold_mask_result.jpg)
+![](/assets/part 6/Analyze particles 3 - Threshold options.jpg)
 
-There is one problem remaining that will result in a false count with this mask. In several areas, nuclei were touching resulting in them being masked as a single object. To separate these we need to apply a **Watershed** binary filter to the mask. Select this from the **Analyze -&gt; Binary** menu as previously described to separate touching objects.
+You will see several issues with this mask; gaps within the nuclei and small particles detected outside the nuclei. 
 
-![](/assets/part9/threshold_watershed_result.jpg)
+![](/assets/part 6/Analyze particles 4 - initial mask.jpg)
 
-Now that we have an appropriate mask for the data we can count our objects using **Analyze Particles**. Find this under the **Analyze** menu.
+For counting these small particles can be problematic as they will be counted as an object, when they are in fact a false positive. To clean up the mask a little, we will apply the **Fill Holes** and **Despeckle** tools to the mask. Find these under the **Process **menu.
 
-![](/assets/part9/analyze_particles_menu.jpg)
+![](/assets/part 6/Analyze particles 5 - fill holes.jpg)
 
-In the resulting window, leave **Size** and **Circularity** at their default values. Set **Show:** to **Outlines** and tick the boxes as below. Press **OK** to measure the objects.
+![](/assets/part 6/Analyze particles 6 - despeckle.jpg)
 
-![](/assets/part9/analyze_particles_options.jpg)
+Another problem that will result in a false count with this mask is several areas where nuclei were touching, resulting in them being masked as a single object. To separate these we need to apply a **Watershed** binary filter to the mask. Select this from the **Process -&gt; Binary** menu as previously described to separate touching objects.
 
-The results, including count, area and size, are shown in the table and counted objects are shown in the outline image.
+![](/assets/part 6/Analyze particles 7 - watershed.jpg)
 
-![](/assets/part9/analyze_particles_result.jpg)
+This gives us a fairly neat mask for analysis. There are still a number of small objects that will be counted as false positives but we can exclude them during the analysis process.
 
-Outliers are still visible in the outlines image. You can go back and alter the size to remove these smaller objects and remeasure for more accurate results.
+![](/assets/part 6/Analyze particles 8 - final mask.jpg)
+
+Before we do our analysis, check the measurements you need are set by going to **Analyze -&gt; Set Measurements**. Here we will only check **Area.**
+
+![](/assets/part 6/Analyze particles 9 - set measurements menu.jpg)
+
+![](/assets/part 6/Analyze particles 10 - set measurements options.jpg)
+
+We can now count our objects using **Analyze Particles **tool. Find this under the **Analyze** menu.
+
+![](/assets/part 6/Analyze particles 11 - AP menu.jpg)
+
+In the resulting options box, we can adjust the size to exclude smaller objects. This eliminates those false positive specks thatremain in the mask. I have set the lower limit to 15 for this example. Leave the upper limit unchanged \(infinity\). Leave **Circularity** at the default values. Set **Show:** to **Outlines** and tick the boxes to **Display Results, Summarize, Add to Manager **and** Exclude on Edges** as shown below. Press **OK** to measure the objects.
+
+![](/assets/part 6/Analyze particles 12 - AP options.jpg)
+
+This set up will result in a number of new "results" windows. you will now have a results table displaying the selected measurements for each individual object detected \(in tihs example, Area only\). The Summary box will display the total count for you. An image of the outlines, numbered to matcht he results will be created, which you can save for future reference. We also have all objects added to the ROI manager which can be overlayed other images for measurements \(ie intesity in another channel\), or saved for future use.
+
+![](/assets/part 6/Analyze Particles 13 - Results.JPG)
+
+You can also see in the original image that the small outliers that we didn't want to count have been excluded from the analysis \(no ROI outline\) by adjusting the size. We would use the Outline map and the original image here to ensure we have measured only the objects we want, and adjust our optins and re-measure as needed.
 
 ##  {#manual-tracking}
 
