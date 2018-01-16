@@ -150,19 +150,27 @@ Click **OK** to add the calibration bar to your image.
 
 ## Simple Counting {#simple-counting}
 
-Often we want to know how many cells or object we have in an image. For a low number of objects you can easily count using the multi-point tool.
+Often we want to know how many cells or object we have in an image. For a low number of objects you can easily count manually using the multi-point tool.
 
-Open **RGB-Blue.tif** and select the multi-point tool from the FIJI tool bar.
+Open **RGB-Blue.tif** and select the multi-point tool from the FIJI tool bar. 
 
+If multiple points are showing in the tool icon \(as below\), you can simply click it on. 
 
+![](/assets/part 6/Simple Count 1 - multipoint tool.JPG)
 
-Right click the tool and open the **Point Tool** options window. Set up your points as you want them to appear on your image. Ensure **Label Points** and **Show All** are selected. Leave the window open.
+If only a single point is visible on the icon, switch it to multi-point by right clikcing and selecting **Multi-point Tool** from the options.
 
-![](/assets/part9/count_points_options.jpg)
+![](/assets/part 6/Simple Count 1b - multipoint tool selection.JPG)
+
+Once the tool is active \(indented\), double click on the icon again to open the **Point Tool** options window. Set up your points as you want them to appear on your image by selectin colour and size from the drop down menus. Ensure **Label Points** and **Show All** are selected. Leave the window open.
+
+![](/assets/part 6/Simple Count 2 - multipoint tool settings.JPG)
 
 Return to your image and click once on every object you want to count. A point will appear on the image for each click. As you click you will see a counter increasing at the bottom of the **Points Tool** window. Once you have clicked on all of your objects, the final number will be your object count. Each object will also be marked in the image as a check of whether you correctly counted the object.
 
-![](/assets/part9/count_cells_point_tool_results.jpg)
+![](/assets/part 6/Simple Count 3 - multipoint tool count.JPG)
+
+The window shows that we have 9 nuclei in this image. We always exclude partial nuclei/cells/objects at the edges of an image from analysis such as counts.
 
 ## Analyse Particles {#analyse-particles}
 
