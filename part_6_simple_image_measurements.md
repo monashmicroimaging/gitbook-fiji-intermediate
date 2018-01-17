@@ -226,19 +226,27 @@ You can also see in the original image that the small outliers that we didn't wa
 
 ## Redirect Measurements {#overlay-masks}
 
-Masks generated on one image can also be used to make measurements on another image. This allows you to measure the same area in different channels or images.
+Masks, thresholds or ROIs generated on one image can also be used to make measurements on another image. This allows you to measure the same area in different channels or images.
 
 The easiest method for applying your mask to a different image during measurement is to use 'redirect'.
 
-Generate a mask for your first image and make any measurements you require. Once that is complete, open your second image. Click on the mask again then go to **Analyze -&gt; Set Measurements**.
+To demonstrate this we will use the images **RGB-Blue.tif** and **RGB-Greed.tiff**. We will generate a mask of the nucleus image and use that to measure the intensity of teh green stain in the "nucleus" only.
 
-In the **Set Measurements** window, select the measurement criteria, if different from the previous, then select your second image from the drop down menu under **Redirect to:**.
+Open both images and generate a mask for your nuclei using the methods previously described. 
 
-![](/assets/part9/set_measurements_redirect_option.jpg)
+
+
+Ensure the mask is the active image \(click on the imge\) then go to **Analyze -&gt; Set Measurements**.
+
+
+
+In the **Set Measurements** window, select the measurement criteria, then select **RGB-Green.tif** from the drop down menu under **Redirect to:**.
+
+
 
 Click **OK** to perform the measurements on the second image. You will now get measurement for the second image in the areas under the original mask.
 
-![](/assets/part9/set_measurements_results_table.jpg)
+
 
 ## Masks to ROIs {#masks-to-rois}
 
