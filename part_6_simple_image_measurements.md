@@ -238,8 +238,6 @@ Open both images and generate a threshold for your nuclei using the methods prev
 
 ![](/assets/part 6/Redirect 2 - Threshold on nuclei settings.JPG)
 
-
-
 Ensure the thresholded nuclei image is active \(click on the imge\) then go to **Analyze -&gt; Set Measurements**.
 
 ![](/assets/part 6/Redirect 3 - Set Measurements menu.JPG)
@@ -270,40 +268,27 @@ We can now tell FIJI to measure any parameters we want in the green image, using
 
 In **Set Measurements**, add **Mean Grey Value** to the measurement settings, then select **RGB-Green.tif** from the drop down menu under **Redirect to:**.
 
-![](/assets/part 6/Redirect 9 - Set Measurements Option redirect.JPG)  
-
+![](/assets/part 6/Redirect 9 - Set Measurements Option redirect.JPG)
 
 Click **OK** to perform the measurements on the second image. You will now get measurement for the second image in the areas under the original mask.
 
 ![](/assets/part 6/Redirect 10 - measurements on green.JPG)
 
-you can see fromt he comparisson with the blue image measurement that we have measured the exact same area in the green image. And we now have the mean intensity for the pixels \(ie: your green stain\) within that area.
+You can see fromt he comparisson with the blue image measurement that we have measured the exact same area in the green image. And we now have the mean intensity for the pixels \(ie: your green stain\) within that area.
 
 ## Overlay ROIs {#masks-to-rois}
 
-
-
 ## Individual Measurements from Multiple ROIs
 
-To get individual measurements for areas in a mask, generate your mask as required then go to **Analyze -&gt; Anylze Particles**. 
+Yo get individual measurements for areas in a mask, generate your mask as required then go to **Analyze -&gt; Anylze Particles**.
 
 This time in the **Analyze particles** window, tick off every options box except **Add to Manager**. Select **OK**.
 
-
-
 The mask will be converted to ROIs in the ROI manager.
-
-
 
 You can now use this to make multiple measurements on your original image. Set your measurements and then click on **Measure** in the ROI manager. Note that for intensity measurements you should apply the ROIs or redirect to the original image as intensity can’t be measured in a mask.
 
 To apply the ROIs to another image, select your second image and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
 
-
-
 The ROIs generated from the mask will be applied to the second image and you can now set your measurements for the second image and measure the same area.
-
-
-
-
 
