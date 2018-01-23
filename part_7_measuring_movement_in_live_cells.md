@@ -1,6 +1,6 @@
-## PART 7: MEASUREING MOVEMENT IN LIVE CELLS {#manual-tracking}
+## PART 7: MEASURING MOVEMENT IN LIVE CELLS {#manual-tracking}
 
-When we capture cells over time, also known as times series or live cell imaging, we are presented with more analysis options. along with the other types of analysis presented above, we can also get several pieces of information from time series by tracking objects over time or exmining the dynamics of the cellsor their organelles. 
+When we capture cells over time, also known as times series or live cell imaging, we are presented with more analysis options. along with the other types of analysis presented above, we can also get several pieces of information from time series by tracking objects over time or exmining the dynamics of the cellsor their organelles.
 
 In this section we will show you two different methods for tracking objects in time series, as well as how to present the dynamics of a cellular component in a single imge \(known as a kymograph\). We will use the images **MovieStack.tif**, **Track.tif **and **Kymograph.tif **for demonstration.
 
