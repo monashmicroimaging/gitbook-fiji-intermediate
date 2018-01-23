@@ -6,7 +6,7 @@
 
 #### 
 
-#### **Notes Prepared by Dr Sarah Creed**
+#### **Notes Prepared by Dr Sarah Creed and Dr Kirstin Elgass**
 
 #### Presented by Dr Kirstin Elgass and Dr Sarah Creed
 
