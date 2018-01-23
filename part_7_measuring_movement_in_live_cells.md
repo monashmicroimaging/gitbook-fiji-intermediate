@@ -1,4 +1,10 @@
-## Manual Tracking {#manual-tracking}
+## PART 7: MEASUREING MOVEMENT IN LIVE CELLS {#manual-tracking}
+
+In this section we use the images  for demonstration.
+
+
+
+## Manual Tracking
 
 We can get several pieces of information from time series by tracking the objects over time. The simple method for tracking objects over time is to manually track them using the **Manual Tracking** tool.
 
@@ -28,8 +34,6 @@ Measurements will be displayed separately for each time point, these can be expo
 
 Note: the first measurements will not be accurate as the object has not moved yet \(ie: first measurement for distance is -1\) and these should be removed before averaging.
 
-
-
 ## TrackMate: Automated Live Cell Tracking {#trackmate-automated-live-cell-tracking}
 
 Open Track.tif in Fiji. Go to Plugins&gt;Tracking&gt;TrackMate. This opens the TrackMate window. In the first window, you can set the scale of your image \(should be pre-filled if your image is scaled correctly\) and a region of interest if you only want to analyse part of your image. We want to analyse the whole image, so just click next.
@@ -48,11 +52,11 @@ Simple LAP Tracker is a simplified version of the LAP Tracker and will work well
 
 Try the following options:
 
-1. Frame to frame linking: 10um, Gap closing: 10um   
+1. Frame to frame linking: 10um, Gap closing: 10um  
    You will see that some tracks are broken up into several tracks as the cells moved more than 10um between frames.  
    ![](/assets/part4/trackmate_1.jpg)
 
-2. Frame to frame linking: 50um, Gap closing: 20um.   
+2. Frame to frame linking: 50um, Gap closing: 20um.  
    You will see that the tracks are now better connected but there’s also many wrong connections in y direction.  
    ![](/assets/part4/trackmate_2.jpg)
 
@@ -64,4 +68,18 @@ As always, you will have to find the right settings for your experiment. In the 
 ![](/assets/part4/trackmate_options.jpg)
 
 Now we’re ready to export the results of our analysis. Press ‘Next’ and then press the ‘Analysis’ button. This will open tables with all the information on all your detected tracks and spots. You can save those as .csv and open in Excel or Prism for further analysis. Check out the Track Statistics window now: We have 106 tracks listed and get information such as duration, displacement, and speed on each of the tracks.
+
+## Kymographs {#kymographs}
+
+Kymographs are a way to represent a dynamic process as a single image. They are particularly useful to monitor and characterize the movement of a cell or organelle. They can be seen as an _x-t_ scan, where the intensity along a given line is plotted for all images of a stack. Each time point gives an intensity line, plotted _e.g._ along the x axis of the kymograph. These lines are stacked along the y axis for all frames. So we get an image where we move through space in the x direction and time in the y direction.
+
+Open _**Kymograph.tif**_** **and draw a line across one of the cells that stay in the same area for the whole time series.
+
+![](/assets/part4/kymograph_image.jpg)
+
+Go to Image&gt;Stacks&gt;Reslice and press ‘Ok’.
+
+![](/assets/part4/kmograph_result.jpg)
+
+The resulting image displays space on the x-axis, an intensity profile across the cells in brightfield and fluorescence. Time is displayed on the y-axis \(top: start, bottom: end\), you can see the green fluorescence intensity increase over time and the cell move left and right in the brightfield image.
 
