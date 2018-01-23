@@ -2,13 +2,9 @@
 
 Some of the basic analysis tools we have already used can also be adapted to give us more detailed information about the data we are analysing. For example, we previously used the **Analyse Particles** tool to count nuclei. You can use the same tool for analysing the morphology of your cells.
 
-In this section we use the image  for demonstration.
-
-
+In this section we use the image **Morphology.tif** for demonstration.
 
 ## Morphology Changes
-
-
 
 Under Analyse&gt;Set measurements select Area, Perimeter, Skewness, and Kurtosis. Open
 
