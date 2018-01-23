@@ -2,8 +2,6 @@
 
 In this section we use the images  for demonstration.
 
-
-
 ## Manual Tracking
 
 We can get several pieces of information from time series by tracking the objects over time. The simple method for tracking objects over time is to manually track them using the **Manual Tracking** tool.
@@ -73,11 +71,11 @@ Now we’re ready to export the results of our analysis. Press ‘Next’ and th
 
 Kymographs are a way to represent a dynamic process as a single image. They are particularly useful to monitor and characterize the movement of a cell or organelle. They can be seen as an _x-t_ scan, where the intensity along a given line is plotted for all images of a stack. Each time point gives an intensity line, plotted _e.g._ along the x axis of the kymograph. These lines are stacked along the y axis for all frames. So we get an image where we move through space in the x direction and time in the y direction.
 
-Open _**Kymograph.tif**_** **and draw a line across one of the cells that stay in the same area for the whole time series.
+Open **Kymograph.tif **and draw a line across one of the cells that stay in the same area for the whole time series.
 
 ![](/assets/part4/kymograph_image.jpg)
 
-Go to Image&gt;Stacks&gt;Reslice and press ‘Ok’.
+Go to Image&gt;Stacks&gt;Reslice and press **OK**.
 
 ![](/assets/part4/kmograph_result.jpg)
 
