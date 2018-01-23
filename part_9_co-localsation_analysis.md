@@ -1,4 +1,22 @@
-## Co-localisation Analysis {#co-localisation-analysis}
+## PART 9: CO-LOCALISATION ANALYSIS {#co-localisation-analysis}
+
+For fluorescent images we can examine whether two fluorophores \(hence; two proteins of interest\) are interacting by using co-localisation analysis. 
+
+In this section we use the image **Co-localisation.tif** for demonstration.
+
+But before we undertake co-localisation analysis there are several important factors that need to be considered. We will discuss these before going through the method for the analysis.
+
+
+
+## Size Matters
+
+It is important to note that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. The higher the resolution of an image, the more accurate hte result will be, with super-resolution images being the highest standard for determining true co-localisation. 
+
+
+
+
+
+## Co-localisation Analysis
 
 This workshop will concentrate on two different algorithms to calculate co-localization: Manders and Pearsons.
 
@@ -10,7 +28,7 @@ This workshop will concentrate on two different algorithms to calculate co-local
 
 …takes into account the fluorescence intensity of each pixel. If all bright pixels in channel 1 are also bright in channel 2, and all dim pixels in channel 1 are also dim in channel 2 then the Pearsons coefficient is 1. If there’s no co-localization, i.e. fluorescence intensities are randomly distributed in channel 1 and 2, then the Pearsons coefficient is 0. The two channels can also be anti-correlated, which means that all bright pixels in channel 1 are dim in channel 2, and vice versa. In other words, where there’s green signal, there is no red signal. In this case, the Pearsons coefficient is -1. Pearsons co-localization does not require thresholding and is therefore more robust than Manders. It also provides you with more information as fluorescence intensity is being taken into account and you get information on anti-correlation.
 
-Open _**Co-localization.tif**_** **and split channels. Duplicate the red channel and autothreshold and binarize the duplicated image to separate cells from background. Go to Analyze&gt;Colocalization&gt;Coloc2. Choose the red image as channel 1, the green image as channel 2, and the binary image as mask. Coloc2 will use autothresholding \(Costes method\) to calculate the Manders coefficients so no need for us to threshold the images. Tick the following boxes:
+Open **Co-localization.tif **and split channels. Duplicate the red channel and autothreshold and binarize the duplicated image to separate cells from background. Go to Analyze&gt;Colocalization&gt;Coloc2. Choose the red image as channel 1, the green image as channel 2, and the binary image as mask. Coloc2 will use autothresholding \(Costes method\) to calculate the Manders coefficients so no need for us to threshold the images. Tick the following boxes:
 
 ![](/assets/part4/colocalization_options.jpg)
 
