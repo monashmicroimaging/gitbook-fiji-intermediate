@@ -1,10 +1,12 @@
 ## PART 7: MEASUREING MOVEMENT IN LIVE CELLS {#manual-tracking}
 
-In this section we use the images  for demonstration.
+When we capture cells over time, also known as times series or live cell imaging, we are presented with more analysis options. along with the other types of analysis presented above, we can also get several pieces of information from time series by tracking objects over time or exmining the dynamics of the cellsor their organelles. 
+
+In this section we will show you two different methods for tracking objects in time series, as well as how to present the dynamics of a cellular component in a single imge \(known as a kymograph\). We will use the images **MovieStack.tif**, **Track.tif **and **Kymograph.tif **for demonstration.
 
 ## Manual Tracking
 
-We can get several pieces of information from time series by tracking the objects over time. The simple method for tracking objects over time is to manually track them using the **Manual Tracking** tool.
+The simple method for tracking objects over time is to manually track them using the **Manual Tracking** tool.
 
 Open your time series and then open the **Manual Tracking** tool from the menu **Analyze -&gt; Tracking**.
 
@@ -34,7 +36,7 @@ Note: the first measurements will not be accurate as the object has not moved ye
 
 ## TrackMate: Automated Live Cell Tracking {#trackmate-automated-live-cell-tracking}
 
-Open Track.tif in Fiji. Go to Plugins&gt;Tracking&gt;TrackMate. This opens the TrackMate window. In the first window, you can set the scale of your image \(should be pre-filled if your image is scaled correctly\) and a region of interest if you only want to analyse part of your image. We want to analyse the whole image, so just click next.
+Open **Track.tif** in Fiji. Go to Plugins&gt;Tracking&gt;TrackMate. This opens the TrackMate window. In the first window, you can set the scale of your image \(should be pre-filled if your image is scaled correctly\) and a region of interest if you only want to analyse part of your image. We want to analyse the whole image, so just click next.
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). Basically, it uses two different Gaussian filters, one slightly wider than the other one, and subtracts the two images to result a sharper image without background. Similar to what we did before in the Flattening paragraph.
 
