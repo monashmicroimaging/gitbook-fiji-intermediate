@@ -1,20 +1,16 @@
 ## PART 9: CO-LOCALISATION ANALYSIS {#co-localisation-analysis}
 
-For fluorescent images we can examine whether two fluorophores \(hence; two proteins of interest\) are interacting by using co-localisation analysis. 
+For fluorescent images we can examine whether two fluorophores \(hence; two proteins of interest\) are interacting by using co-localisation analysis.
 
 In this section we use the image **Co-localisation.tif** for demonstration.
 
 But before we undertake co-localisation analysis there are several important factors that need to be considered. We will discuss these before going through the method for the analysis.
 
+## Important Considerations
 
+_Resolution: _It is important to note that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. The higher the resolution of an image, the more accurate hte result will be, with super-resolution images being the highest standard for determining true co-localisation.
 
-## Size Matters
-
-It is important to note that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. The higher the resolution of an image, the more accurate hte result will be, with super-resolution images being the highest standard for determining true co-localisation. 
-
-
-
-
+_The Size of Antibodies and Tags:_
 
 ## Co-localisation Analysis
 
