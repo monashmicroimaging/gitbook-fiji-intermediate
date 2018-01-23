@@ -8,7 +8,7 @@ But before we undertake co-localisation analysis there are several important fac
 
 ## Important Considerations
 
-_Resolution: _It is important to note that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. The higher the resolution of an image, the more accurate hte result will be, with super-resolution images being the highest standard for determining true co-localisation.
+_Resolution_: It is important to note that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. The higher the resolution of an image, the more accurate hte result will be, with super-resolution images being the highest standard for determining true co-localisation.
 
 _The Size of Antibodies and Tags:_
 
