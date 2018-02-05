@@ -278,9 +278,15 @@ You can see fromt he comparisson with the blue image measurement that we have me
 
 ## Overlay ROIs {#masks-to-rois}
 
-## Individual Measurements from Multiple ROIs
+You can also overlay ROIs from the original image onto the second image using the ROI manager.
 
-Yo get individual measurements for areas in a mask, generate your mask as required then go to **Analyze -&gt; Anylze Particles**.
+To apply the ROIs to another image, select your second image and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
+
+The ROIs generated from the mask will be applied to the second image and you can now set your measurements for the second image and measure the same area.
+
+## ROIs from Particles
+
+To get individual measurements for areas in a mask, generate your mask as required then go to **Analyze -&gt; Anylze Particles**.
 
 This time in the **Analyze particles** window, tick off every options box except **Add to Manager**. Select **OK**.
 
@@ -288,7 +294,7 @@ The mask will be converted to ROIs in the ROI manager.
 
 You can now use this to make multiple measurements on your original image. Set your measurements and then click on **Measure** in the ROI manager. Note that for intensity measurements you should apply the ROIs or redirect to the original image as intensity can’t be measured in a mask.
 
-To apply the ROIs to another image, select your second image and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
 
-The ROIs generated from the mask will be applied to the second image and you can now set your measurements for the second image and measure the same area.
+
+
 
