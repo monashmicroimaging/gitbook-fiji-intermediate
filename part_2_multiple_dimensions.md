@@ -14,7 +14,7 @@ For most 3D projections you can leave the settings in the **3D Projection** wind
 
 If you check the box next to **Interpolate**, FIJI will guess at the image information between slices. While this helps to create a smooth projection it is adding information that is not in the original image. For quantitation this should be avoided, for presentation of your 3D projection you can use it.
 
-If the image is calibrated the **Slice spacing** should be populated correctly from the metadata. Note that this uses the z-step size, not the m/px calibration size.
+If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. Note that this is the z-step size used during image capture, not the calibration size.
 
 ![](/assets/part7/3d_project_options.jpg)
 
