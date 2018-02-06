@@ -1,6 +1,6 @@
 ## PART 7: MEASURING MOVEMENT IN LIVE CELLS {#manual-tracking}
 
-When we capture cells over time, also known as times series or live cell imaging, we are presented with more analysis options. along with the other types of analysis presented above, we can also get several pieces of information from time series by tracking objects over time or exmining the dynamics of the cellsor their organelles.
+When we capture cells over time, also known as times series or live cell imaging, we are presented with more analysis options. along with the other types of analysis presented above, we can also get several pieces of information from time series by tracking objects over time or exmining the dynamics of the cells or their organelles.
 
 In this section we will show you two different methods for tracking objects in time series, as well as how to present the dynamics of a cellular component in a single imge \(known as a kymograph\). We will use the images **MovieStack.tif**, **Track.tif **and **Kymograph.tif **for demonstration.
 
@@ -8,31 +8,37 @@ In this section we will show you two different methods for tracking objects in t
 
 The simple method for tracking objects over time is to manually track them using the **Manual Tracking** tool.
 
-Open your time series and then open the **Manual Tracking** tool from the menu **Analyze -&gt; Tracking**.
+Open the time series **MovieStack.tif **and then open the **Manual Tracking** tool from the menu **Plugins -&gt; Tracking**. 
 
-![](/assets/part9/tracking_menu.jpg)
+![](/assets/part 7/Manual tracking 1 - menu.jpg)
 
-![](/assets/part9/tracking_options.jpg)
-
-In the **Tracking** window set your parameters, including **Time Interval** \(5mins for this example\).
-
-If the xy calibration \(scale\) is not set automatically, enter the calibration value too.
+In the **Tracking** window, tick on **Show Parameters?** to see and set all calibration settings. You can then set your parameters, including **Time Interval** \(5mins for this example\). If the xy calibration \(scale\) is not set automatically, enter the calibration value too \(in this example it is automatically set correctly\).
 
 Select the option to show the tracks on the image if required by checking the box next to **Show path?**
 
-When you have set your parameters, click **Add Track** to start your first track.
+![](/assets/part 7/Manual tracking 2 - options.jpg)
 
-If you make a mistake during tracking you can **Delete the last point** or **Delete track** and select the track number to remove it entirely.
+When you have set your parameters, click **Add Track** to start your first track. 
 
-To begin tracking, after selecting **Add track** click on the image in the centre of the object you want to track. The series will automatically move to the next frame. Click the centre of the object again.
+![](/assets/part 7/Manual tracking 3 - add track.jpg)
 
-Continue until you have reached the end of the series. If you have selected an option to show the track it will be visible overlayed in the image as a yellow segmented line. Measurements for the object will be displayed in a results table.
+Then to begin tracking, click on the image in the centre of the object you want to track. The series will automatically move to the next frame. Click the centre of the object again.
 
-![](/assets/part9/tracking_result.jpg)
+Continue until you have reached the end of the series. If you have selected an option to show the track it will be visible overlayed in the image as a yellow segmented line. Measurements for the object will be displayed in a results table. 
 
 Measurements will be displayed separately for each time point, these can be exported to excel and averaged.
 
-Note: the first measurements will not be accurate as the object has not moved yet \(ie: first measurement for distance is -1\) and these should be removed before averaging.
+Note 1: results are cumulative. You can check the "track number" column in the results to see which results belong to which track, or save and then clear results between each cell or each image to ensure you know which results belong to which cell. 
+
+Note 2: the first measurements will not be accurate as the object has not moved yet \(ie: first measurement for distance is -1\) and these should be removed before averaging.
+
+![](/assets/part 7/Manual tracking 4 - track.jpg)
+
+Repeat the process above \(from **Add track**\) for each cell you want to track in the image. Generally we would avoid tracking cells that divide, leave or enter the field of view, or cross paths \(especially if you are unable to determine which cell is which once they separate again\).
+
+If you make a mistake during tracking you can **Delete the last point** \(1 below\) or select the track number from the drop down list and click on **Delete track **\(2 below\) to remove it entirely.
+
+![](/assets/part 7/Manual tracking 5 - delete options.jpg)
 
 ## TrackMate: Automated Live Cell Tracking {#trackmate-automated-live-cell-tracking}
 
