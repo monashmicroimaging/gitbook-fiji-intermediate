@@ -2,7 +2,7 @@
 
 Many of the simple FIJI functions that you have previously learnt about can be combined with other tools for more complex processes to analyse and measure your data. Here, our instructions become more speicified as wel go through several examples of common measurements using the different tools in FIJI.
 
-In this section we use the images **RGB-blue, RGB-green, Nuclei-1** and **MovieStack** for demonstration.
+In this section we use the images **RGB-blue, RGB-green** and** Nuclei-1** for demonstration.
 
 ## Area Measurements {#area-measurements}
 
@@ -293,8 +293,4 @@ This time in the **Analyze particles** window, tick off every options box except
 The mask will be converted to ROIs in the ROI manager.
 
 You can now use this to make multiple measurements on your original image. Set your measurements and then click on **Measure** in the ROI manager. Note that for intensity measurements you should apply the ROIs or redirect to the original image as intensity can’t be measured in a mask.
-
-
-
-
 
