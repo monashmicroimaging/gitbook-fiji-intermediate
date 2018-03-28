@@ -132,7 +132,7 @@ Often images will be captured with a 4th or 5th dimension; that is they will hav
 
 The dimmensions are presented within a single window, with each dimmesnion respresented individually and haivng its own slider. You can scroll through each dimension independently using these sliders.
 
-You can also use the same tools demonstrated in FIJI Basics for single dimmension stacks to alter and navigate the stack, but you will be asked which dimension you want to alter.
+You can use the same tools demonstrated in FIJI Basics for single dimmension stacks to alter and navigate the stack, but you will be asked which dimension you want to alter.
 
 Hyperstacks also have their own specific tools found under **Image -&gt; Hyperstack**. most of these tools can be used to reduce the dimmensionality in a specific way.
 
