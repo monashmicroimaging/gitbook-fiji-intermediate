@@ -8,27 +8,17 @@ In this section we use  **Spheroid-GFP.tif**  for 3D and **MovieStack.tif** for 
 
 When working with z-stacks, you can create a 3D projection of the stack by going to **Image -&gt; Stacks -&gt; 3D Project**.
 
-
-
 For most 3D projections you can leave the settings in the **3D Projection** window as default.
 
 If you check the box next to **Interpolate**, FIJI will guess the image information between slices. While this helps to create a smooth projection it is adding information that is not in the original image. For quantitation this should be avoided, for presentation of your 3D projection you can use it.
 
 If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. Note that this is the z-step size used during image capture, not the calibration size. Here we need to entre a step size of 2 microns.
 
-
-
 Select **OK** to create the projection.
 
 The resulting projection will have a slider at the bottom \(similar to a stack\) which you can use to rotate the 3D image.
 
-
-
 ## 3D Projections - Method 2 {#3d-projections}
-
-
-
-
 
 ## Orthogonal Views {#orthogonal-views}
 
@@ -36,11 +26,7 @@ An orthogonal projection is a view created in the YZ or XZ dimension of an image
 
 To generate orthogonal slices select your z-stack and go to **Image -&gt; Stack -&gt; Orthogonal View** \(or use shortcut Ctrl+Shift+H\).
 
-
-
 Two windows will open to the right of and below the original stack. These windows show the orthogonal projections in YZ and XZ respectively.
-
-
 
 To change the view seen in each window, move the yellow cross hair in the original stack and scroll through the stack to change plans as usual. Each of these projections can be saved for use later.
 
@@ -50,19 +36,13 @@ The orthogonal projection only lets you see one slice at a time and it has the o
 
 To generate an orthogonal stack go to **Image -&gt; Stacks -&gt; Reslice.**
 
-
-
 In the window that opens you can set how the stack should be resliced \(top, bottom, left, right\) from the drop down menu and, if not already calibrated, set the distance between slices.
 
 There is a tick box to select that says **Avoid Interpolation**. This should usually be ticked. As with the 3D projection, while interpolation will make the end result look better, it does this by adding extra data that wasn’t in the original image.
 
 Select **OK** to generate the resliced stack.
 
-
-
 The program will then ‘scan’ through the image from the selected direction and generate the new stack.
-
-
 
 ## Times Series and Saving Movies {#times-series-and-saving-movies}
 
@@ -88,7 +68,7 @@ Click **OK** to create and save the movie. A movie file will be generated.
 
 ![](/assets/part 2/Time 5 - avi movie file.JPG)
 
-The movie will not open and play automatically after saving. You can open and play the movie file in programs such asQuickTime, Windows Media Player or VCL Media Player to check the frame rate. Repeat teh process if a faster or slower rate is required.
+The movie will not open and play automatically after saving. You can open and play the movie file in programs such as QuickTime, Windows Media Player or VCL Media Player to check the frame rate. Repeat the process if a faster or slower rate is required.
 
 ![](/assets/part 2/Time 6 - movie play back.JPG)
 
@@ -150,27 +130,15 @@ Note that in this instance the start of the ROI line is also the start of the sc
 
 Often images will be captured with a 4th or 5th dimension; that is they will have a combination of multiple channels, z-sections and time. For these images the data will be presented as a hyperstack.
 
-The dimmensions are presented within a single window, with each dimmesnion respresented individually and haivng its own slider. You can scroll through each dimension independently using these sliders. 
-
-
+The dimmensions are presented within a single window, with each dimmesnion respresented individually and haivng its own slider. You can scroll through each dimension independently using these sliders.
 
 You can also use the same tools demonstrated in FIJI Basics for single dimmension stacks to alter and navigate the stack, but you will be asked which dimension you want to alter.
 
-
-
 Hyperstacks also have their own specific tools found under **Image -&gt; Hyperstack**. most of these tools can be used to reduce the dimmensionality in a specific way.
-
-
 
 **Hyperstack to Stack** will combine all dimensions into a single stack with c\_z\_t frames \(ie; here 61 z- planes \* 25 time points = 1525 frames\).
 
-
-
 **Reduce Dimensionality** will allow you to pick one dimension to remove or keep in the hyperstack.
 
-
-
 For example you can select time only \(by un-checking the box beside 61 slices\) and a single stack of all time points at the current z-plane will be generated.
-
-
 
