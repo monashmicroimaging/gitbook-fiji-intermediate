@@ -292,15 +292,25 @@ The ROIs generated from the mask will be applied to the second image and you can
 
 ![](/assets/part 6/Overlay from ROI 3 - ROIs in image 2.JPG)
 
-
-
 ## ROIs from Particles
 
-To get individual measurements for areas in a mask, generate your mask as required then go to **Analyze -&gt; Anylze Particles**.
+Using a threshold or mask will only give you a single measurement for the selection. To get individual measurements from a mask or threshold, generate your mask as required then go to **Analyze -&gt; Anylze Particles**.
+
+![](/assets/part 6/ROIs from Particles 1 - menu with thresholded image.jpg)
 
 This time in the **Analyze particles** window, tick off every options box except **Add to Manager**. Select **OK**.
 
-The mask will be converted to ROIs in the ROI manager.
+![](/assets/part 6/ROIs from Particles 2 - options.jpg)
 
-You can now use this to make multiple measurements on your original image. Set your measurements and then click on **Measure** in the ROI manager. Note that for intensity measurements you should apply the ROIs or redirect to the original image as intensity can’t be measured in a mask.
+The mask or threshold will be converted to ROIs in the ROI manager.
+
+![](/assets/part 6/ROIs from Particles 3 - ROIs.jpg)
+
+When using a mask, you can use filters to remove any unwanted particles before creating ROIs. When maintaining a threshold, you can clean up any unwanted ROIs by selecting them in the ROI manager and deleting. 
+
+You can now make individual measurements using the ROI manager as normal.
+
+![](/assets/part 6/ROIs from Particles 4 - measurement.jpg)
+
+Note that intensity measurements can't be made from a mask. To perform intensity measurements using this method, you should maintain a threshold before creating ROIs \(as shown here\) or you can overlay or redirect the ROIs created with a mask to a copy of the original image.
 
