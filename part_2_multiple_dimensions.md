@@ -12,7 +12,7 @@ When working with z-stacks, you can create a 3D projection of the stack by going
 
 For most 3D projections you can leave the settings in the **3D Projection** window as default. The **Projection Method** should be Brighest Point by default. If it isn't, change it from the drop down menu.
 
-If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. 
+If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually.
 
 _Note:_ that this is the z-step size used during image capture, not the calibration size. Here we need to enter a step size of 2 microns.
 
@@ -28,7 +28,21 @@ The resulting projection will have a slider at the bottom \(similar to a stack\)
 
 ## 3D Projections - Method 2 {#3d-projections}
 
+You can also create a volume view of your z-stack using a different 3D projection tool. Find this tool under **Plugins -&gt; 3D Viewer**.
 
+![](/assets/part 2/3D method 2 - 1.jpg)
+
+Select the image you want to project from the first drop down menu. You can give the projection a new name if you want to, or leave the default. Leave **Volume **\(default setting\) as the display type but ensure you change the **Resampling factor** from the default of 2 back to 1 so that o data is cut out of your image. 
+
+_Note:_ there is nowhere here to input the z-step size. You must have a calibrated image, or have put the z-step size in elsewhere first.
+
+![](/assets/part 2/3D method 2 - 2.jpg)
+
+Select **OK** to create your 3D volume.
+
+![](/assets/part 2/3D method 2 - 3.jpg)
+
+You can click and drag on the image to navigate around the volume.
 
 ## Orthogonal Views {#orthogonal-views}
 
@@ -36,15 +50,25 @@ An orthogonal projection is a view created in the YZ or XZ dimension of an image
 
 To generate orthogonal slices select your z-stack and go to **Image -&gt; Stack -&gt; Orthogonal View** \(or use shortcut Ctrl+Shift+H\).
 
+![](/assets/part 2/Orthoganol Views 1.jpg)
+
 Two windows will open to the right of and below the original stack. These windows show the orthogonal projections in YZ and XZ respectively.
 
-To change the view seen in each window, move the yellow cross hair in the original stack and scroll through the stack to change plans as usual. Each of these projections can be saved for use later.
+![](/assets/part 2/Orthogonal Views 2.jpg)
+
+To change the view seen in each window, move the yellow cross hair in the original stack and scroll through the stack to change plans as usual. 
+
+![](/assets/part 2/Orthogonal Views 3.jpg)
+
+Each of these projections can be saved for use later.
 
 ## Reslice Z {#reslice-z}
 
 The orthogonal projection only lets you see one slice at a time and it has the overlay lines in the way. Sometimes it can be useful to generate a stack of orthogonal slices instead. This is easily achieved by reslicing the stack along a different axis.
 
 To generate an orthogonal stack go to **Image -&gt; Stacks -&gt; Reslice.**
+
+
 
 In the window that opens you can set how the stack should be resliced \(top, bottom, left, right\) from the drop down menu and, if not already calibrated, set the distance between slices.
 
