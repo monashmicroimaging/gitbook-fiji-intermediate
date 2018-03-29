@@ -280,9 +280,19 @@ You can see fromt he comparisson with the blue image measurement that we have me
 
 You can also overlay ROIs from the original image onto the second image using the ROI manager.
 
-To apply the ROIs to another image, select your second image and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
+Open your two images \(here we use RGB-Blue and RGB-Green again\) and draw the required ROIs on image 1 \(RGB-Blue\), adding each to the ROI Manager as you go. Measure these in image 1 if needed.
+
+![](/assets/part 6/Overlay from ROI 1 - ROIs in manager.JPG)
+
+To apply the ROIs to another image, select your second image \(RGB-GReen\) and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
+
+![](/assets/part 6/Overlay from ROI 2 - overlay menu.JPG)
 
 The ROIs generated from the mask will be applied to the second image and you can now set your measurements for the second image and measure the same area.
+
+![](/assets/part 6/Overlay from ROI 3 - ROIs in image 2.JPG)
+
+
 
 ## ROIs from Particles
 
