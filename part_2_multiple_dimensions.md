@@ -172,13 +172,19 @@ Often images will be captured with a 4th or 5th dimension; that is they will hav
 
 The dimmensions are presented within a single window, with each dimmesnion respresented individually and haivng its own slider. You can scroll through each dimension independently using these sliders.
 
-You can use the same tools demonstrated in FIJI Basics for single dimmension stacks to alter and navigate the stack, but you will be asked which dimension you want to alter.
+![](/assets/part 2/Hyperstacks 1 - sliders.JPG)
 
-Hyperstacks also have their own specific tools found under **Image -&gt; Hyperstack**. most of these tools can be used to reduce the dimmensionality in a specific way.
+Hyperstacks have their own specific tools found under **Image -&gt; Hyperstack**. Most of these tools can be used to reduce the dimmensionality in a specific way.
+
+![](/assets/part 2/Hyperstacks 2 - hyperstacks menu.JPG)
 
 **Hyperstack to Stack** will combine all dimensions into a single stack with c\_z\_t frames \(ie; here 61 z- planes \* 25 time points = 1525 frames\).
+
+
 
 **Reduce Dimensionality** will allow you to pick one dimension to remove or keep in the hyperstack.
 
 For example you can select time only \(by un-checking the box beside 61 slices\) and a single stack of all time points at the current z-plane will be generated.
+
+In a hyperstack some of the tools demonstrated in FIJI Basics for single dimmensions stacks can also be applied. All can be used on a hyperstack following reduction in dimmensions as shown here.
 
