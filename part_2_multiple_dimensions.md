@@ -32,7 +32,7 @@ You can also create a volume view of your z-stack using a different 3D projectio
 
 ![](/assets/part 2/3D method 2 - 1.jpg)
 
-Select the image you want to project from the first drop down menu. You can give the projection a new name if you want to, or leave the default. Leave **Volume **\(default setting\) as the display type but ensure you change the **Resampling factor** from the default of 2 back to 1 so that o data is cut out of your image. 
+Select the image you want to project from the first drop down menu. You can give the projection a new name if you want to, or leave the default. Leave **Volume **\(default setting\) as the display type but ensure you change the **Resampling factor** from the default of 2 back to 1 so that o data is cut out of your image.
 
 _Note:_ there is nowhere here to input the z-step size. You must have a calibrated image, or have put the z-step size in elsewhere first.
 
@@ -56,7 +56,7 @@ Two windows will open to the right of and below the original stack. These window
 
 ![](/assets/part 2/Orthogonal Views 2.jpg)
 
-To change the view seen in each window, move the yellow cross hair in the original stack and scroll through the stack to change plans as usual. 
+To change the view seen in each window, move the yellow cross hair in the original stack and scroll through the stack to change plans as usual.
 
 ![](/assets/part 2/Orthogonal Views 3.jpg)
 
@@ -68,15 +68,21 @@ The orthogonal projection only lets you see one slice at a time and it has the o
 
 To generate an orthogonal stack go to **Image -&gt; Stacks -&gt; Reslice.**
 
+![](/assets/part 2/Reslice z 1 - menu.jpg)
 
-
-In the window that opens you can set how the stack should be resliced \(top, bottom, left, right\) from the drop down menu and, if not already calibrated, set the distance between slices.
+In the window that opens you can set the distance between slices, if not already calibrated \(again enter 2 here\), and chose how the stack should be resliced \(top, bottom, left, right\) from the drop down menu.
 
 There is a tick box to select that says **Avoid Interpolation**. This should usually be ticked. As with the 3D projection, while interpolation will make the end result look better, it does this by adding extra data that wasn’t in the original image.
 
 Select **OK** to generate the resliced stack.
 
+![](/assets/part 2/Reslice z 2 - options.jpg)
+
 The program will then ‘scan’ through the image from the selected direction and generate the new stack.
+
+![](/assets/part 2/Reslice z 3 - reslicing.jpg)
+
+![](/assets/part 2/Reslice z 4 -new stack.jpg)
 
 ## Times Series and Saving Movies {#times-series-and-saving-movies}
 
