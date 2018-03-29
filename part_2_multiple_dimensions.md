@@ -8,17 +8,27 @@ In this section we use  **Spheroid-GFP.tif**  for 3D and **MovieStack.tif** for 
 
 When working with z-stacks, you can create a 3D projection of the stack by going to **Image -&gt; Stacks -&gt; 3D Project**.
 
-For most 3D projections you can leave the settings in the **3D Projection** window as default.
+![](/assets/part 2/3D method 1 - 1.jpg)
+
+For most 3D projections you can leave the settings in the **3D Projection** window as default. The **Projection Method** should be Brighest Point by default. If it isn't, change it from the drop down menu.
+
+If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. 
+
+_Note:_ that this is the z-step size used during image capture, not the calibration size. Here we need to enter a step size of 2 microns.
 
 If you check the box next to **Interpolate**, FIJI will guess the image information between slices. While this helps to create a smooth projection it is adding information that is not in the original image. For quantitation this should be avoided, for presentation of your 3D projection you can use it.
 
-If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. Note that this is the z-step size used during image capture, not the calibration size. Here we need to entre a step size of 2 microns.
-
 Select **OK** to create the projection.
+
+![](/assets/part 2/3D method 1 - 2.jpg)
 
 The resulting projection will have a slider at the bottom \(similar to a stack\) which you can use to rotate the 3D image.
 
+![](/assets/part 2/3D method 1 - 3.jpg)
+
 ## 3D Projections - Method 2 {#3d-projections}
+
+
 
 ## Orthogonal Views {#orthogonal-views}
 
