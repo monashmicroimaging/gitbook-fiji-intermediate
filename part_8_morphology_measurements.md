@@ -12,9 +12,9 @@ Open the demo image, _**Morphology.tif.**_ Duplicate it, then set a treshold and
 
 Under **Analyze -&gt; Set Measurments** select Area, Perimeter, Skewness and Kurtois and click **OK.**
 
-
-
 Open the ROI Manager and check it is empty then run Analyse Particles on the binary image. You will get one ROI that outlines the cell, the results window shows you the perimeter of the cell.
+
+
 
 Now select the original image and press ‘Measure’ in the ROI Manager. You will get a second results line that gives you Skewness and Kurtosis of the cell.
 
