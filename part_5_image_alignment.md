@@ -30,7 +30,9 @@ You can then repeat the steps to add other panels if you have more than two imag
 
 ## Grid Stitching
 
-There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern. This is also found under **Plugins -&gt; Stichting -&gt; Grid/Collection Stitching.**
+There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern. This is also found under the  **Plugins -&gt; Stichting **menu.
+
+You do not need to have your images open in FIJI, but they must been named in specific manner
 
 
 
