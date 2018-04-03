@@ -32,6 +32,8 @@ You can then repeat the steps to add other panels if you have more than two imag
 
 There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern. This is also found under **Plugins -&gt; Stichting -&gt; Grid/Collection Stitching.**
 
+
+
 ## TrakEM2 Advanced Image Alignment {#trackem2-advanced-image-alignment}
 
 Go to File&gt;New&gt;TrakEM2 \(blank\) and create a storage folder as prompted by the software. Drag and drop _**folder TrakEM2**_** **into the main window \(large black area\) and open as stack. Enter the distance between images or the thickness of your sections depending on if you’re aligning a confocal z-stack or tissue sections. For the workshop data, please enter 20um.
