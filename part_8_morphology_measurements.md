@@ -8,7 +8,11 @@ In this section we use the image **Morphology.tif** for demonstration.
 
 Open the demo image, _**Morphology.tif.**_ Duplicate it, then set a treshold and create a binary of the image. Here I have used the Huang algorithm set at 12 and 255. Following binary creation I have used the 'fill holes', 'despeckle' and 'remove outliers' filters to clean up the binary.
 
+![](/assets/part 8/Morphology 1 - duplicate and binarize.JPG)
+
 Under **Analyze -&gt; Set Measurments** select Area, Perimeter, Skewness and Kurtois and click **OK.**
+
+
 
 Open the ROI Manager and check it is empty then run Analyse Particles on the binary image. You will get one ROI that outlines the cell, the results window shows you the perimeter of the cell.
 
