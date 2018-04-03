@@ -6,17 +6,27 @@ For stictching we use the demo images **Tile01.tif**\_** **\_through to **Tile06
 
 ## Pairwise Stitching {#stitching}
 
-Stictching combines multiple tiled image into a single large format image. One option to do this in FIJI is to use the **pairwise Stitching** plugin, found under the  **Plugins -&gt; Stitching -&gt; Pairwase Stitching**. This option allows you to combine images 2 at a time and is useful for small numbers of images, where there is no specific order.
+Stictching combines multiple tiled image into a single large format image. One option to do this in FIJI is to use the **pairwise Stitching** plugin, found under the  **Plugins -&gt; Stitching **menu. This option allows you to combine images 2 at a time and is useful for small numbers of images, where there is no specific order.
 
-First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images **Tile\_03.tif** and **Tile\_04.tif**. Select Pairwise Stiching from the menu by going to** Plugins -&gt; Stichting -&gt; Pairwise Stitching** as mentioned above.
+First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images **Tile\_03.tif** and **Tile\_04.tif**. Select Pairwise Stiching from the menu by going to** Plugins -&gt; Stichting -&gt; Pairwise Stitching**.
 
-Select Tile\_03\_ and \_Tile\_04 as your images \(the order doesn’t matter\) then click **OK**.
+![](/assets/part 5/Stitching 1 menu.jpg)
 
-In the second options window, you can give your final image a new name, but no other settings should need adjusting.
+In the Pairwaise stitching window, select Tile\_03 and Tile\_04 as your images from the drop down menus \(the order doesn’t matter\) then click **OK**.
+
+![](/assets/part 5/Stitching 2 options.jpg)
+
+In the second options window, you can give your final image a new name, but no other settings should need adjusting. Click **OK** to begin the stitching process.
+
+![](/assets/part 5/Stitching 3 options 2.jpg)
 
 A log window will show progress and your stiched image will open in a new window upon completion.
 
-You can then repeat teh steps to add other panels if you have more than two images, by opening the next image and using that plus your newly stitched image as your 2 images to combine.
+![](/assets/part 5/Stitching 4 Log.jpg)
+
+
+
+You can then repeat the steps to add other panels if you have more than two images, by opening the next image and using that plus your newly stitched image as your 2 images to combine.
 
 ## Grid Stitching
 
