@@ -10,8 +10,6 @@ Stictching combines multiple tiled image into a single large format image. One o
 
 First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images **Tile\_03.tif** and **Tile**_\*\*\_**\_**04.tif**. Select Pairwise Stiching from the menu by going to **Plugins -&gt; Stichting -&gt; Pairwise Stitching\*\* as mentioned above.
 
-
-
 Select Tile\_03\_ and \_Tile\_04 as your images \(the order doesn’t matter\) then click **OK**.
 
 In the second options window, you can give your final image a new name, but no other settings should need adjusting.
@@ -22,7 +20,7 @@ You can then use to add other panels if you have more than two, by opening the n
 
 ## Grid Stitching
 
-There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern. This is also found under **Plugins -&gt; Plugins -&gt; Stichting -&gt; Grid/Collection Stitching.**
+There also is a grid stitching option that you can use for larger numbers of images that were recorded with a motorized stage in a defined pattern. This is also found under **Plugins -&gt; Stichting -&gt; Grid/Collection Stitching.**
 
 ## TrakEM2 Advanced Image Alignment {#trackem2-advanced-image-alignment}
 
