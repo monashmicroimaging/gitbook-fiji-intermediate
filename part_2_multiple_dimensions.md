@@ -180,11 +180,15 @@ Hyperstacks have their own specific tools found under **Image -&gt; Hyperstack**
 
 **Hyperstack to Stack** will combine all dimensions into a single stack with c\_z\_t frames \(ie; here 61 z- planes \* 25 time points = 1525 frames\).
 
-
+![](/assets/part 2/Hyperstacks 3 - hyperstack to stack.JPG)
 
 **Reduce Dimensionality** will allow you to pick one dimension to remove or keep in the hyperstack.
 
 For example you can select time only \(by un-checking the box beside 61 slices\) and a single stack of all time points at the current z-plane will be generated.
+
+![](/assets/part 2/Hyperstacks 4 - Reduce options.JPG)
+
+![](/assets/part 2/Hyperstacks 5 - Reduced.JPG)
 
 In a hyperstack some of the tools demonstrated in FIJI Basics for single dimmensions stacks can also be applied. All can be used on a hyperstack following reduction in dimmensions as shown here.
 
