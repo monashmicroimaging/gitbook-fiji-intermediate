@@ -34,9 +34,37 @@ There also is a grid stitching option that you can use for larger numbers of ima
 
 You do not need to have your images open in FIJI, but they must been named in specific manner and all must be named in the same format \(ie: here they are all named Tile\_xx.tif\).
 
-Begin the process by going to **Plugins -&gt; Stitching -&gt; Grid/Collection Stitching**.
+Begin the process by going to **Plugins -&gt; Stitching -&gt; Grid/Collection stitching**.
 
+![](/assets/part 5/Stitching 7 menu - grid.jpg)
 
+In the first window, select the pattern of image acquisiton from the drop down menus for **Type** and **Direction**. The image below these menus will illustrate the selected pattern for clarity. Here the image were captured as "Snake by Rows" and "Right & Down".
+
+Click **OK** to proceed.
+
+![](/assets/part 5/Stitching 8 - colleciton pattern.jpg)
+
+In the next options window, check the grid size is correct and adjust to the correct number of rows \(x\) and Columns \(y\) as needed. Here we had 3 rows x 2 columns.
+
+Adjust the overlap to that used during automatic aquisiton or an estimate \(over-estimating is better than under\) is captured manually. Here we use 20% overlap.
+
+Enter the number of the first image in the sequence, or leave as 1 if all images are being included.
+
+Select the folder where your images are saved by browsing under **Directory**. Then finally ensure the file name format is entered as used for your files.
+
+![](/assets/part 5/Stitching 9 - grid stitch options.jpg)
+
+No other stitching/blending options should need to be altered from the default. 
+
+Click **OK** to proceed with stitching.
+
+![](/assets/part 5/Stitching 10 - grid stitch log.jpg)
+
+Again a log window will display your progress and the final image will open in a new image window upon completion.
+
+![](/assets/part 5/Stitching 11 - grid stitch result.jpg)
+
+Often times, especially when images were acquired manually \(as done here\), there will be black space at the edges where shifts were required to line up images accurately. The final image may be cropped to ensure smooth edges without these blank sections.
 
 ## TrakEM2 Advanced Image Alignment {#trackem2-advanced-image-alignment}
 
