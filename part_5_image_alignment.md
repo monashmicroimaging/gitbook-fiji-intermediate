@@ -1,36 +1,24 @@
 # PART 5: IMAGE ALIGNMENT {#part-3-image-alignment}
 
-Sometimes we have multiple images that belong together in one larger image. Often times these can be captured and processed to create this larger image during acquisition, but in some circumstances we need to combine the images manually after acquisition. In those cases, we can use tools in FIJI to combine or align these images into a seemless single image.  
+Sometimes we have multiple images that belong together in one larger image. Often times these can be captured and processed to create this larger image during acquisition, but in some circumstances we need to combine the images manually after acquisition. In those cases, we can use tools in FIJI to combine or align these images into a seemless single image.
 
-For stictching we use the demo images **Tile01.tif**_** **_through to **Tile06.tif** found in the Demo Images sub-folder titled 'Manual Stitching'. For TrackEM2 alignment we use the image set found in the demo images sub-folder titled 'TrackEM2'.
+For stictching we use the demo images **Tile01.tif**\_** **\_through to **Tile06.tif** found in the Demo Images sub-folder titled 'Manual Stitching'. For TrackEM2 alignment we use the image set found in the demo images sub-folder titled 'TrackEM2'.
 
 ## Pairwise Stitching {#stitching}
 
 Stictching combines multiple tiled image into a single large format image. One option to do this in FIJI is to use the **pairwise Stitching** plugin, found under the  **Plugins -&gt; Stitching -&gt; Pairwase Stitching**. This option allows you to combine images 2 at a time and is useful for small numbers of images, where there is no specific order.
 
-First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images **Tile\_03.tif** and **Tile**_**\_**_**04.tif**. Select Pairwise Stiching from the menu by going to **Plugins -&gt; Stichting -&gt; Pairwise Stitching** as mentioned above.
-
-![](/assets/part 5/Stitching 1 menu.jpg)
-
-Select Tile\_03_ and _Tile\_04 as your images \(the order doesn’t matter\) then click **OK**. 
+First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images **Tile\_03.tif** and **Tile**_\*\*\_**\_**04.tif**. Select Pairwise Stiching from the menu by going to **Plugins -&gt; Stichting -&gt; Pairwise Stitching\*\* as mentioned above.
 
 
+
+Select Tile\_03\_ and \_Tile\_04 as your images \(the order doesn’t matter\) then click **OK**.
 
 In the second options window, you can give your final image a new name, but no other settings should need adjusting.
 
-
-
-
-
 A log window will show progress and your stiched image will open in a new window upon completion.
 
-
-
-
-
 You can then use to add other panels if you have more than two, by opening the next image and using that plus your newly stitched image as your 2 images to combine.
-
-
 
 ## Grid Stitching
 
