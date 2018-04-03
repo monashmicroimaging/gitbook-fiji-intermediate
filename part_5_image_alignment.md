@@ -24,7 +24,7 @@ A log window will show progress and your stiched image will open in a new window
 
 ![](/assets/part 5/Stitching 4 Log.jpg)
 
-
+![](/assets/part 5/Stitching 5 original vs stitched .jpg)
 
 You can then repeat the steps to add other panels if you have more than two images, by opening the next image and using that plus your newly stitched image as your 2 images to combine.
 
