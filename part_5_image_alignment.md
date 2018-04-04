@@ -54,7 +54,7 @@ Select the folder where your images are saved by browsing under **Directory**. T
 
 ![](/assets/part 5/Stitching 9 - grid stitch options.jpg)
 
-No other stitching/blending options should need to be altered from the default. 
+No other stitching/blending options should need to be altered from the default.
 
 Click **OK** to proceed with stitching.
 
@@ -68,7 +68,11 @@ Often times, especially when images were acquired manually \(as done here\), the
 
 ## TrakEM2 Advanced Image Alignment {#trackem2-advanced-image-alignment}
 
-Go to File&gt;New&gt;TrakEM2 \(blank\) and create a storage folder as prompted by the software. Drag and drop _**folder TrakEM2**_** **into the main window \(large black area\) and open as stack. Enter the distance between images or the thickness of your sections depending on if you’re aligning a confocal z-stack or tissue sections. For the workshop data, please enter 20um.
+To align z-stack images or histological serial sections that have been imaged in different oritentations you can use the **TrackEM2 **tool.
+
+Go to begin go to **File -&gt; New -&gt; TrackEM2 \(blank\)**. 
+
+Create a storage folder in your desired directory as prompted by the software. Drag and drop _**folder TrakEM2**_** **into the main window \(large black area\) and open as stack. Enter the distance between images or the thickness of your sections depending on if you’re aligning a confocal z-stack or tissue sections. For the workshop data, please enter 20um.
 
 TrakEM2 will now load and display the images. You can zoom in and out by holding down Ctrl and turning the mouse wheel. You can play through the slices with the slider in the lower left corner of the main window. You can pan around by clicking with the mouse on the image and drag it around.
 
