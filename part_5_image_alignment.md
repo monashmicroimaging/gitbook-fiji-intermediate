@@ -70,11 +70,32 @@ Often times, especially when images were acquired manually \(as done here\), the
 
 To align z-stack images or histological serial sections that have been imaged in different oritentations you can use the **TrackEM2 **tool.
 
-Go to begin go to **File -&gt; New -&gt; TrackEM2 \(blank\)**. 
+Go to begin go to **File -&gt; New -&gt; TrackEM2 \(blank\)**.
 
-Create a storage folder in your desired directory as prompted by the software. Drag and drop _**folder TrakEM2**_** **into the main window \(large black area\) and open as stack. Enter the distance between images or the thickness of your sections depending on if you’re aligning a confocal z-stack or tissue sections. For the workshop data, please enter 20um.
+![](/assets/part 5/TrackEM2 1 - menu.jpg)
 
-TrakEM2 will now load and display the images. You can zoom in and out by holding down Ctrl and turning the mouse wheel. You can play through the slices with the slider in the lower left corner of the main window. You can pan around by clicking with the mouse on the image and drag it around.
+Create a storage folder in your desired directory as prompted by the software. 
+
+![](/assets/part 5/TrackEM2 2 - storage folder.JPG)  
+
+
+This will open a working area with several different windows.
+
+![](/assets/part 5/TrackEM2 3 - windows.JPG)
+
+Drag and drop your folder containing all images \(and only those images\)** **into the main window \(large black area\). In the demo images we have a folder called **TrackEM2** with images for use here.
+
+![](/assets/part 5/TrackEM2 4 - drag and drop.jpg)
+
+Select **Open as stack** when prompted. The enter the distance between images \(for z-stacks\) or the thickness of your sections \(for histological serial sections\). For the workshop data, please enter 20um.
+
+![](/assets/part 5/TrackEM2 5 - open as stack.JPG)
+
+![](/assets/part 5/TrackEM2 6 - slice thickness.JPG)
+
+TrakEM2 will now load and display the images. You can zoom in and out by holding down Ctrl and turning the mouse wheel. You can play through the slices with the slider in the lower left corner of the main window, below the thumbnails. The red outline in the thumbnails shows the image area \(which will enable you to easily see the area of each section within the image and how they do or don't line up\). You can pan around by clicking with the mouse on the image and drag it around.
+
+
 
 Left-click with the mouse on the image and then right-click and choose Align&gt;Align stack slices from the right-click menu. Accept all defaults by clicking ‘Ok’ three times.
 
