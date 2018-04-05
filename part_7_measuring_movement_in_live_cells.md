@@ -52,17 +52,19 @@ There’s different methods of detecting cells, the most common ones are LoG \(L
 
 In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 5. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click **Next **to continue.
 
-The TrackMate plugin will analyse all images in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again.
+The TrackMate plugin will analyse each image in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again.
 
 Now there’s options to filter out cells according to their quality. For this data set, we’ll ignore this filter and press **Next**.
 
 The next window will ask you to chose the view mode from a drop down menu. Here we will leave it as Hyperstack and again click **Next** to continue.
 
-Another set of filter options will come up. Click on the green plus button; in the drop-down menu you can see which filters you can choose: quality, radius, intensity and many more. You can add several filters by pressing the green plus button again and choose a different filter and the corresponding threshold. For this data set, we’re again going to ignore these filters. So remove any filters by pressing the red minus button and press next.
+Another set of filter options will come up. To add a filter, click on the green plus button then select the filter from the drop down menu and adjust the corresponding threshold. You can add several filters by repeating this process for each. For this data set, we’re again going to ignore these filters. So remove any filters you have added, by pressing the red minus button, and then click **Next**.
 
-Now we’re at the tracking options. Choose LAP \(Linear Assignment Problem\) tracker from the drop- down menu. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given in TrackMate below the selected algorithm.
+This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. **Simple LAP Tracker** will work well in most cases but here, we want to use penalties, so we need to choose the **LAP Tracker** \(LAP = Linear Assignment Problem\). Select this option from the drop down menu then click N**ext** to continue.
 
-Simple LAP Tracker is a simplified version of the LAP Tracker and will work well in most cases. Here, we want to use penalties, so we need to choose the LAP Tracker. In the next window, you can set distances on how far you expect your cells to travel per frame.
+
+
+In the next window, you can set distances on how far you expect your cells to travel per frame.
 
 Try the following options:
 
