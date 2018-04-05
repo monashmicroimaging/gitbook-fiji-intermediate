@@ -50,11 +50,13 @@ In the first window, you can set the scale of your image \(should be pre-filled 
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). For this image choose **DoG detector** from the drop down menu the click **Next**.
 
-In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 5. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click **Next **to continue. 
+In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 5. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click **Next **to continue.
 
-The TrackMate plugin will analyse all images in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again. 
+The TrackMate plugin will analyse all images in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again.
 
-Now there’s options to filter out cells according to their quality. For this data set, we’ll ignore this filter and press **Next**. 
+Now there’s options to filter out cells according to their quality. For this data set, we’ll ignore this filter and press **Next**.
+
+The next window will ask you to chose the view mode from a drop down menu. Here we will leave it as Hyperstack and again click **Next** to continue.
 
 Another set of filter options will come up. Click on the green plus button; in the drop-down menu you can see which filters you can choose: quality, radius, intensity and many more. You can add several filters by pressing the green plus button again and choose a different filter and the corresponding threshold. For this data set, we’re again going to ignore these filters. So remove any filters by pressing the red minus button and press next.
 
