@@ -50,7 +50,7 @@ In the first window, you can set the scale of your image \(should be pre-filled 
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). For this image choose **DoG detector** from the drop down menu the click **Next**.
 
-In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 10 microns for cell size and threshold of 30. Click on **Preview** to see what it detects. Repeat this at several different time points and make sure the threshold is set correctly so that all cells but no random background signal gets picked up. Adjust the diameter and threshold if needed to better detect the cells. 
+In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 5. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected.
 
 When you are happy with your selection click **Next **to continue.
 
