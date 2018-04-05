@@ -102,11 +102,11 @@ Left-click with the mouse on the image to activate the window, then right-click 
 
 Accept all defaults by clicking **OK **three times.
 
+![](/assets/part 5/TrackEM2 8b - align options combined.JPG)
 
+If you scroll through the slices now, you see that the sections are all aligned to each other.
 
-If you scroll through the slices now, you see that the sections are all aligned to each other. 
-
-To save your aligned image stack, right-click again, select **Export -&gt; Make flat image…** 
+To save your aligned image stack, right-click again, select **Export -&gt; Make flat image…**
 
 ![](/assets/part 5/TrackEM2 11 - save flat image.jpg)
 
