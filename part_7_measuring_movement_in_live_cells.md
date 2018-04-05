@@ -50,7 +50,9 @@ In the first window, you can set the scale of your image \(should be pre-filled 
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). For this image choose **DoG detector** from the drop down menu the click **Next**.
 
-In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 10 microns for cell size and threshold of 30. Click on **Preview** to see what it detects. Scroll through time, press preview at several different time points and make sure the threshold is set correctly so that all cells but no random background signal gets picked up. Just for fun, change diameter and threshold to see how it changes the detection of cells. But Diameter 10 micron and Threshold 30 are good settings for this data set, so go back to those before pressing ‘Next’. The software will now
+In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 10 microns for cell size and threshold of 30. Click on **Preview** to see what it detects. Repeat this at several different time points and make sure the threshold is set correctly so that all cells but no random background signal gets picked up. Adjust the diameter and threshold if needed to better detect the cells. 
+
+When you are happy with your selection click **Next **to continue.
 
 analyse all images of the time series and detect all cells with the given parameters. Once the detection is finished, press ‘Next’ again. Now there’s options to filter out cells according to their quality. For this data set, we’ll ignore this filter and press ‘Next’. Another set of filter options will come up. Click on the green plus button; in the drop-down menu you can see which filters you can choose: quality, radius, intensity and many more. You can add several filters by pressing the green plus button again and choose a different filter and the corresponding threshold. For this data set, we’re again going to ignore these filters. So remove any filters by pressing the red minus button and press next.
 
