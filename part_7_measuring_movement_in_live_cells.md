@@ -69,10 +69,8 @@ We can try a few different settings here to see what best fits our data:
 1. Frame to frame linking: 10um, Gap closing: 10um  
    You will see that some tracks are broken up into several tracks as the cells moved more than 10um between frames and some cells are not tracked for the entire time series.
 
-2. Frame to frame linking: 50um, Gap closing: 20um.  
-   You will see that the tracks are now better connected but there’s also many wrong connections in y direction.
-
-3. Now we’re going to apply penalties, as this is a flow experiment, cells are more likely to be found at longer distances in x \(with flow\) than in y. Try; Frame to frame linking: 50um, Penalty Y: 40um, Gap closing: 20um. You will see that all tracks are now well connected.
+2. Frame to frame linking: 150um, Gap closing: 20um.  
+   You will see that the tracks are now better connected. Scroll thorugh the time series a few times and look for any errors in the tracking.
 
 As always, you will have to find the right settings for your experiment. In the next step, you can filter tracks, similar to the spot selection filters before. This time, we’re going to use it: press on the green plus button. Check the drop-down menu for options available. Add a filter ‘Number of spots in track’ and set the filter between 2 and 3 so that we only get cells that appear in more than two frames. This leaves us with 106 out of 132 tracks.
 
