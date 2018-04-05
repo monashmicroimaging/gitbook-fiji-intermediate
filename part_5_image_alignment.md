@@ -74,10 +74,9 @@ Go to begin go to **File -&gt; New -&gt; TrackEM2 \(blank\)**.
 
 ![](/assets/part 5/TrackEM2 1 - menu.jpg)
 
-Create a storage folder in your desired directory as prompted by the software. 
+Create a storage folder in your desired directory as prompted by the software.
 
-![](/assets/part 5/TrackEM2 2 - storage folder.JPG)  
-
+![](/assets/part 5/TrackEM2 2 - storage folder.JPG)
 
 This will open a working area with several different windows.
 
@@ -95,9 +94,23 @@ Select **Open as stack** when prompted. The enter the distance between images \(
 
 TrakEM2 will now load and display the images. You can zoom in and out by holding down Ctrl and turning the mouse wheel. You can play through the slices with the slider in the lower left corner of the main window, below the thumbnails. The red outline in the thumbnails shows the image area \(which will enable you to easily see the area of each section within the image and how they do or don't line up\). You can pan around by clicking with the mouse on the image and drag it around.
 
+![](/assets/part 5/TrackEM2 6b - images open.JPG)
+
+Left-click with the mouse on the image to activate the window, then right-click and choose **Align -&gt; Align stack slices** from the right-click menu.
+
+![](/assets/part 5/TrackEM2 7 - align menu.jpg)
+
+Accept all defaults by clicking **OK **three times.
 
 
-Left-click with the mouse on the image and then right-click and choose Align&gt;Align stack slices from the right-click menu. Accept all defaults by clicking ‘Ok’ three times.
 
-If you scroll through the slices now, you see that the sections are all aligned to each other. To save your aligned image stack, right-click again, select Export&gt;Make flat image…, make sure that Scale is set to 100% \(you can reduce your image size here if you like but not recommended as you lose data\), select Type: RGB Color for histology images \(use 8-bit greyscale for single channel fluorescence images\), select Start: layer 1 and End: layer 7 \(or the last layer of you stack\). For Background Color set all three base colours to 255 which will give the final image a white background. If you have a fluorescence stack, you want to have a black background so you would need to set the three base colours to 0. Tick ‘Best Quality’ and press ‘Ok’. You can save the resulting final image as a tif image.
+If you scroll through the slices now, you see that the sections are all aligned to each other. 
+
+To save your aligned image stack, right-click again, select **Export -&gt; Make flat image…** 
+
+![](/assets/part 5/TrackEM2 11 - save flat image.jpg)
+
+Make sure that **Scale** is set to 100% \(you can reduce your image size here if you like but not recommended as you lose data\) and select **Type:** RGB Color \(for histology images\) or  8-bit greyscale \(for single channel fluorescence images\). Set your first and last images as the **Start **and **End** layers. For **Background Color** set all three base colours to 255 to give a white background \(for histology images\) or set all three base colours to 0 to give a black background \(fluorescent images\). Tick **‘Best Quality’** and ensure the final image is saving in .tif format, then click **OK** to save.
+
+![](/assets/part 5/TrackEM2 12 - save options.JPG)
 
