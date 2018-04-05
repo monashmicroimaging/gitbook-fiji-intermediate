@@ -42,7 +42,11 @@ If you make a mistake during tracking you can **Delete the last point** \(1 belo
 
 ## TrackMate: Automated Live Cell Tracking {#trackmate-automated-live-cell-tracking}
 
-Open **AutoTrack.tif** in Fiji. Go to Plugins&gt;Tracking&gt;TrackMate. This opens the TrackMate window. In the first window, you can set the scale of your image \(should be pre-filled if your image is scaled correctly\) and a region of interest if you only want to analyse part of your image. We want to analyse the whole image, so just click next.
+For large numbers of cells, very fast movment or long imaging times it can be difficult to track cells manually. For these circumstacnes you can do automated tracking.
+
+First open **AutoTrack.tif** in Fiji, then go to **Plugins -&gt; Tracking -&gt; TrackMate**. 
+
+In the first window, you can set the scale of your image \(should be pre-filled if your image is scaled\). you can also add a region of interest here if you only want to analyse part of your image. As our image is scaled correctly and we want to analyse the whole image we don't need to make any changes here. Click **Next** to continue.
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). Basically, it uses two different Gaussian filters, one slightly wider than the other one, and subtracts the two images to result a sharper image without background. Similar to what we did before in the Flattening paragraph.
 
