@@ -60,16 +60,14 @@ The next window will ask you to chose the view mode from a drop down menu. Here 
 
 Another set of filter options will come up. To add a filter, click on the green plus button then select the filter from the drop down menu and adjust the corresponding threshold. You can add several filters by repeating this process for each. For this data set, we’re again going to ignore these filters. So remove any filters you have added, by pressing the red minus button, and then click **Next**.
 
-This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. **Simple LAP Tracker** will work well in most cases but here, we want to use penalties, so we need to choose the **LAP Tracker** \(LAP = Linear Assignment Problem\). Select this option from the drop down menu then click N**ext** to continue.
+This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. **Simple LAP Tracker** will work well in most cases but here, we want to use specific parameters and penalties, so we need to choose the **LAP Tracker** \(LAP = Linear Assignment Problem\). Select this option from the drop down menu then click N**ext** to continue.
 
+In the next window, you can set distances on how far you expect your cells to travel per frame. Set your distances for **Frame to frame linking** and** Gap closing**  and click **Next **to assess the tracking accuracy. Click the **Back** arrow to return and modify values.
 
-
-In the next window, you can set distances on how far you expect your cells to travel per frame.
-
-Try the following options:
+We can try a few different settings here to see what best fits our data:
 
 1. Frame to frame linking: 10um, Gap closing: 10um  
-   You will see that some tracks are broken up into several tracks as the cells moved more than 10um between frames.
+   You will see that some tracks are broken up into several tracks as the cells moved more than 10um between frames and some cells are not tracked for the entire time series.
 
 2. Frame to frame linking: 50um, Gap closing: 20um.  
    You will see that the tracks are now better connected but there’s also many wrong connections in y direction.
