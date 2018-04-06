@@ -50,7 +50,7 @@ In the first window, you can set the scale of your image \(should be pre-filled 
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). For this image choose **DoG detector** from the drop down menu the click **Next**.
 
-In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 5. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click **Next **to continue.
+In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 500. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click **Next **to continue.
 
 The TrackMate plugin will analyse each image in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again.
 
@@ -60,7 +60,7 @@ The next window will ask you to chose the view mode from a drop down menu. Here 
 
 Another set of filter options will come up. To add a filter, click on the green plus button then select the filter from the drop down menu and adjust the corresponding threshold. You can add several filters by repeating this process for each. For this data set, we’re again going to ignore these filters. So remove any filters you have added, by pressing the red minus button, and then click **Next**.
 
-This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. **Simple LAP Tracker** will work well in most cases but here, we want to use specific parameters and penalties, so we need to choose the **LAP Tracker** \(LAP = Linear Assignment Problem\). Select this option from the drop down menu then click N**ext** to continue.
+This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. **Simple LAP Tracker** will work well in most cases but here, we want to use specific parameters and penalties, so we need to choose the **LAP Tracker** \(LAP = Linear Assignment Problem\). Select this option from the drop down menu then click **Next** to continue.
 
 In the next window, you can set distances on how far you expect your cells to travel per frame. Set your distances for **Frame to frame linking** and** Gap closing**  and click **Next **to assess the tracking accuracy. Click the **Back** arrow to return and modify values.
 
@@ -69,12 +69,18 @@ We can try a few different settings here to see what best fits our data:
 1. Frame to frame linking: 10um, Gap closing: 10um  
    You will see that some tracks are broken up into several tracks as the cells moved more than 10um between frames and some cells are not tracked for the entire time series.
 
-2. Frame to frame linking: 150um, Gap closing: 20um.  
+2. Frame to frame linking: 120um, Gap closing: 50um.  
    You will see that the tracks are now better connected. Scroll thorugh the time series a few times and look for any errors in the tracking.
 
-As always, you will have to find the right settings for your experiment. In the next step, you can filter tracks, similar to the spot selection filters before. This time, we’re going to use it: press on the green plus button. Check the drop-down menu for options available. Add a filter ‘Number of spots in track’ and set the filter between 2 and 3 so that we only get cells that appear in more than two frames. This leaves us with 106 out of 132 tracks.
+3. We do have a couple of cells that are not being tracked accurately. To ammend this we will use **Feature Penalties**. Go back to the tracker settings using the **Back** arrow button. Under **Frame to frame linking** click the green plus button. From the new drop down menu select the **Quality** filter and adjust the threshold for the filter to 2. Click **Next** to see the result.
 
-Now we’re ready to export the results of our analysis. Press ‘Next’ and then press the ‘Analysis’ button. This will open tables with all the information on all your detected tracks and spots. You can save those as .csv and open in Excel or Prism for further analysis. Check out the Track Statistics window now: We have 106 tracks listed and get information such as duration, displacement, and speed on each of the tracks.
+The two long tracks in the centre of the field of view are now tracking more accurately. As always, you will have to find the right settings for your experiment. When you are happy with your tracks, click **Next** again to continue.
+
+
+
+In the next step you will find** Filter tracks**, similar to the spot selection filters before. To add a track filter, follow the same protocol as spot filters; press on the green plus button, choose your filter from the drop down menu and adjust the threshold. Repeat for any additional filters you want to add. I am not going to use any additional track filters on tis data, so uset he red minus button to delete any you have added, then click on **Next**.
+
+Now we can export the results of our analysis. In this window click on the **Analysis** button. This will open tables with all the information on all your detected tracks and spots. You can save these as .csv and open in Excel or Prism for further analysis. The summary of the results is best found in the Track Statistics window. We have 26 tracks listed with results such as duration, displacement, and speed.
 
 ## Kymographs {#kymographs}
 
