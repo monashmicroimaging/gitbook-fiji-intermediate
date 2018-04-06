@@ -1,6 +1,6 @@
 # PART 4: IMAGE CORRECTION {#part-2-image-correction}
 
-There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demon images _DAPI \_Uneven.tif, time\_series\_bleach.tif, Spheroid – shift.tif,_
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demon images _DAPI \_Uneven.tif, Bleached.tif, Spheroid\_Shift.tif,_
 
 ## Flatten {#flatten}
 
@@ -12,11 +12,11 @@ Using the image calculator described in Part 3 of this manual \(**Process -&gt; 
 
 This results in a flattened image which will now be easier to threshold accurately.
 
-Note:** **there is also a background subtraction in \(**Process -&gt; Subtract Background**\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
+**Note: **There is also a background subtraction option in FIJI \(**Process -&gt; Subtract Background**\). However, while this will remove even background it won’t help with uneven background and consequent thresholding issues.
 
 ## Bleach Correction {#bleach-correction}
 
-Open the demonstration image **time\_series\_bleach.tif **and go to **Image -&gt; Adjust -&gt; Bleach Correction**.
+Open the demonstration image _Bleached.tif_ and go to **Image -&gt; Adjust -&gt; Bleach Correction**.
 
 ![](/assets/part 4/Bleach Correction 1 - menu.jpg)
 
@@ -38,7 +38,7 @@ A new window will open with your result when the correction is completed. Here I
 
 Correction of image shifts or drift during imaging requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file into the plugins folder of your FIJI software and restart FIJI.
 
-Once you have the plugins installed, open **Spheroid \_Shift.tif **and scroll through the stack. You will see that the image shifts \(the spheriod makes a sudden jump to the left\) at frame 51.
+Once you have the plugins installed, open _Spheroid \_Shift.tif_** **and scroll through the stack. You will see that the image shifts \(the spheriod makes a sudden jump to the left\) at frame 51.
 
 ![](/assets/part 4/Registration 1 - frame shift.JPG)
 
