@@ -2,7 +2,7 @@
 
 Creating thresholds and masks and applying filters forms the basis for a number of analysis methods. This section outlines the various options for masks and filters and how to apply them to your images prior to analysis.
 
-The image _Nuclei-1.tif _and image set ‘_RGBstackProjection, RGB-blue, RGB-green _and _RGB-red_’ are used for demonstration purposes in this section.
+The image _Nuclei-1.tif \_and image set ‘RGBstackProjection, RGB-blue, RGB-green \_and \_RGB-red_’ are used for demonstration purposes in this section.
 
 ## Threshold Image {#threshold-image}
 
@@ -16,9 +16,7 @@ A red overlay will be placed on the parts of the image that are selected by the 
 
 ![](/assets/part 3/Threshold 2.JPG)
 
-The drop down box on the left \(the one that says 'Default' in the image above\) has 16 different auto threshold algorithms to choose from. Choose the threshold that looks liek the best fit for your data then further adjust by moving the sliders above. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. 
-
-
+The drop down box on the left \(the one that says 'Default' in the image above\) has 16 different auto threshold algorithms to choose from. Choose the threshold that looks liek the best fit for your data then further adjust by moving the sliders above. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded.
 
 ![](/assets/part 3/Threshold 3.JPG)
 
@@ -174,7 +172,7 @@ Once you are happy with the threshold, click **Apply** or create a mask or binar
 
 **Find Maxima** is particularly helpful for segmenting images of dense cell populations or objects.
 
-Select your image and the go to **Find Maxima**. 
+Select your image and the go to **Find Maxima**.
 
 In the options window, select the box next to **Preview point selection** to see the default settings. These default settings will create a dense selection. Ensure **Exclude edge maxima** is selected.
 
