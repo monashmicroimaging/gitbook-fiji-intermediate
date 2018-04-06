@@ -32,15 +32,25 @@ FIJI has a co-localisation plugin available that will allow you to carry out ana
 
 To begin analysis, open the demo image **Co-localization.tif **and split channels. We only need the red and green channels here, so close the image for the blue channel.
 
-Our first step is to create a binary of the red channel to allow the plugin to separate the cells from the background. To do this, first duplicate the red channel, then threshold and create a binary of the duplicate. Make any neccessary adjustments to your binary to ensure accurate representation of the cells. 
+![](/assets/part 9/CoLoc 1 - images.JPG)
+
+Our first step is to create a binary of the red channel to allow the plugin to separate the cells from the background. To do this, first duplicate the red channel, then threshold and create a binary of the duplicate. Make any neccessary adjustments to your binary to ensure accurate representation of the cells.
+
+![](/assets/part 9/CoLoc 2 - images and binary.JPG)
 
 Go to **Analyze -&gt; Colocalization -&gt; Coloc2**.
 
+![](/assets/part 9/CoLoc 3 - menu.JPG)
+
 In the options window, choose the red image as channel 1, the green image as channel 2, and your binary image as mask fromt he drop down menus. Coloc2 will use autothresholding to calculate the Manders coefficients, leave this option as the default **Costes** method. Tick on the following options \(if not already on by default\): **Display Images in Result**, **Mander's Correlation**,  **2D Instensity Histogram**. Leave the **PSF** and **Costes randomisations** at 2 and 10 respectively.
+
+
 
 Once your options are set, click on **OK** to begin the calculation.
 
 After calculation, a results window will open, containing a graph and a table of values.
+
+
 
 Let’s try to understand these values. Manders coefficients without thresholds is 1. That will be the case for almost all images and just means that there is some kind of signal in all pixles. Not useful!
 
