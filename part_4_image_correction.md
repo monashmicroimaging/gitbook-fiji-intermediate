@@ -72,31 +72,23 @@ This plugin can be used in the same way for slower drift over time.
 
 ## Image Deconvolution {#image-deconvolution}
 
-Deconvolution is a mathematical process that takes into account the shape of the laser focus \(called point spread function or PSF\) and uses that to remove out-of-focus light from the image thus improving resolution and signal-to-noise ratio.
+Deconvolution is a mathematical process that takes into account the shape of the laser focus \(called point spread function or PSF\) and uses that to remove out-of-focus light from the image therefore improving resolution and signal-to-noise ratio.
 
-To deconvolve an image you will need the plugin \_"Iterative Deconvolve 3D" \_and a PSF image from the microscope you captured your images on.
+To deconvolve an image you will need the plugin "Iterative Deconvolve 3D" and a PSF image from the microscope you captured your images on.
 
-If you have not already done so, download Iterative\_Deconvolve\_3D.class from [http://imagej.net/Iterative\_Deconvolve\_3D](http://imagej.net/Iterative_Deconvolve_3D). Copy Iterative\_Deconvolve\_3D.class into your Fiji Plugins folder, then re-start FIJI if it was already open.
+If you have not already done so, download _Iterative\_Deconvolve\_3D.class_ from [http://imagej.net/Iterative\_Deconvolve\_3D](http://imagej.net/Iterative_Deconvolve_3D). Copy _Iterative\_Deconvolve\_3D.class_ into your FIJI Plugins folder, then re-start FIJI if it was already open.
 
 The PSF can easily be recorded on a microscope by imaging 100nm fluorescent beads. For this example we have a PSF and matching image ready for you.
 
-Open _**Malaria.tif**_** **and _**PSF.tif**_. Scroll through the PSF file to see what it looks like. It’s a z-stack of a fluorescent bead.
+Open _Deconvolution\_Stack.tif and PSF.tif_, both found in the "Deconvolution" subfolder in the Demo images. Scroll through the PSF file to see what it looks like. It’s a z-stack of a fluorescent bead.
 
 Go to **Plugins -&gt; Iterative Deconvolve 3D**.
 
+Select _Deconvolution\_Stack.tif _ under Image and _PSF.tif_ under Point Spread Function from the drop down menus, then select number of iterations \(try 10 and 100 and compare the resulting images\).
 
-
-Select Malaria.tif under Image and PSF.tif under Point Spread Function from the drop down menus, then select number of iterations \(try 10 and 100 and compare the resulting images\).
-
-
-
-Click **OK **and wait for the deconvolution process to run. A log of iterations will be displayed, which will tell you when deconvolution is completed. A new windo with the deconvolved image will open.
-
-
+Click **OK **and wait for the deconvolution process to run. A log of iterations will be displayed, which will tell you when deconvolution is completed. A new window with the deconvolved image will open.
 
 Compare your deconvolved image to the original and repeat if neccessary with increasaed or decreased iterations.
-
-
 
 Save your final image when you are happy with the result.
 
