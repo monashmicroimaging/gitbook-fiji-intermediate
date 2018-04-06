@@ -4,15 +4,17 @@ For fluorescent images we can examine whether two fluorophores \(hence; two prot
 
 In this section we use the image **Co-localisation.tif** for demonstration.
 
-But before we undertake co-localisation analysis there are several important factors that need to be considered. We will discuss these before going through the method for the analysis.
-
 ## Important Considerations
 
-_Resolution and the Limitations of the Microscope_: It is important to note that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. The higher the resolution of an image, the more accurate hte result will be, with super-resolution images being the highest standard for determining true co-localisation.
+It is important to remember that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. Before we undertake co-localisation analysis there are several important factors that need to be considered.
+
+_Resolution and the Limitations of the Microscope_: The higher the resolution of an image, the more accurate the result will be, with super-resolution images being the highest standard for determining true co-localisation.
 
 _The Size of Antibodies and Tags:_
 
-## Co-localisation Analysis
+_Acquisition Parameters and Differences in Fluorophores:_
+
+## Co-localisation Analysis Algorithms
 
 This workshop will concentrate on two different algorithms to calculate co-localization: Manders and Pearsons.
 
@@ -24,13 +26,29 @@ This workshop will concentrate on two different algorithms to calculate co-local
 
 …takes into account the fluorescence intensity of each pixel. If all bright pixels in channel 1 are also bright in channel 2, and all dim pixels in channel 1 are also dim in channel 2 then the Pearsons coefficient is 1. If there’s no co-localization, i.e. fluorescence intensities are randomly distributed in channel 1 and 2, then the Pearsons coefficient is 0. The two channels can also be anti-correlated, which means that all bright pixels in channel 1 are dim in channel 2, and vice versa. In other words, where there’s green signal, there is no red signal. In this case, the Pearsons coefficient is -1. Pearsons co-localization does not require thresholding and is therefore more robust than Manders. It also provides you with more information as fluorescence intensity is being taken into account and you get information on anti-correlation.
 
-Open **Co-localization.tif **and split channels. Duplicate the red channel and autothreshold and binarize the duplicated image to separate cells from background. Go to Analyze&gt;Colocalization&gt;Coloc2. Choose the red image as channel 1, the green image as channel 2, and the binary image as mask. Coloc2 will use autothresholding \(Costes method\) to calculate the Manders coefficients so no need for us to threshold the images. Tick the following boxes:
+## Co-localisation Analysis
 
-![](/assets/part4/colocalization_options.jpg)
+FIJI has a co-localisation plugin available that will allow you to carry out analysis in a few steps.
 
-And press ‘Ok’. After some calculation time, we get the following results:
+To begin analysis, open the demo image **Co-localization.tif **and split channels. We only need the red and green channels here, so close the image for the blue channel. 
 
-![](/assets/part4/colocalization_results.jpg)
+Our first step is to create a binary of the red channel to allow the plugin to separate the cells from the background. To do this, first duplicate the red channel, then threshold and create a binary of the duplicate. make any neccessary adjustments to your binary to ensure accurate representation of the cells.
+
+Go to **Analyze -&gt; Colocalization -&gt; Coloc2**. 
+
+
+
+In the options window, choose the red image as channel 1, the green image as channel 2, and your binary image as mask. Coloc2 will use autothresholding \(Costes method\) to calculate the Manders coefficients so there is no need for us to threshold the images. Tick on the following options: 
+
+
+
+Once your options are set, click on **OK** to begin the calculation. 
+
+
+
+After calculation, a results window will open, containing a graph and a table of values.
+
+
 
 Let’s try to understand these values. Manders coefficients without thresholds is 1. That will be the case for almost all images and just means that there is some kind of signal in all pixles. Not useful!
 
