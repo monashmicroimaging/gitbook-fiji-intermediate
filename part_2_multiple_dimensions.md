@@ -102,7 +102,7 @@ A window with saving options will open, which will allow you to set specific asp
 
 ![](/assets/part 2/Time 3 - avi save options 1.JPG)
 
-Where possible you should create your movie without compression \(chose **None** from the drop down menu under **Compression**\). The ideal frame rate will be dependent on your images and time interval \(ie: the fewer frames in the movie, the slower the frame rate should be\). Sometimes a trial an error of different frame rates will be needed to generate a movie that plays at an appropriate speed. For this example we can use a frame rate of 8 frames per second \(fps\).
+Where possible you should create your movie without compression \(chose 'None' from the drop down menu under **Compression**\). The ideal frame rate will be dependent on your images and time interval \(ie: the fewer frames in the movie, the slower the frame rate should be\). Sometimes a trial an error of different frame rates will be needed to generate a movie that plays at an appropriate speed. For this example we can use a frame rate of 8 frames per second \(fps\).
 
 ![](/assets/part 2/Time 4 - avi save options 2.JPG)
 
@@ -126,7 +126,7 @@ In the **Time Stamper** window you will need to enter the time frame between ima
 
 In this example, the time interval is 5mins \(enter 5.00 for minutes or 300 for seconds\). How you enter the interval will also determine the time stamp format. If using the time format - '00:00' with the invterval entered in minutes, you will see HR:MIN in the time stamp. If the invterval was entered in seconds, you will see MIN:SEC in the time stamp. If using a sufix, the interval and suffix must have matching formats \(ie: don't enter 300 as your interval and then use mins for the suffix\).
 
-Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the **X Location** and **Y Location** boxes. 
+Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the **X Location** and **Y Location** boxes.
 
 **Note:** The pixel co-ordinates become the starting point for your time stamp, not the centre point.
 
@@ -152,7 +152,7 @@ Follow the instructions to instert a time stamp as described above, only now the
 
 ![](/assets/part 2/Time Stamp 6 - ROI for placement auto placement detection.JPG)
 
-**Note:** The _middle_ of the ROI box is the start of the time stamp position. 
+**Note:** The _middle_ of the ROI box is the start of the time stamp position.
 
 ![](/assets/part 2/Time Stamp 7 - Placement at ROi.JPG)
 
@@ -174,25 +174,25 @@ Follow the steps to insert a scale bar as normal. This time in the options, the 
 
 Often images will be captured with a 4th or 5th dimension; that is they will have a combination of multiple channels, z-sections and time. For these images the data will be presented as a hyperstack.
 
-The dimmensions are presented within a single window, with each dimmesnion respresented individually and haivng its own slider. You can scroll through each dimension independently using these sliders.
+The dimensions are presented within a single window, with each dimesnion respresented individually and haivng its own slider. You can scroll through each dimension independently using these sliders.
 
 ![](/assets/part 2/Hyperstacks 1 - sliders.JPG)
 
-Hyperstacks have their own specific tools found under **Image -&gt; Hyperstack**. Most of these tools can be used to reduce the dimmensionality in a specific way.
+Hyperstacks have their own specific tools found under **Image -&gt; Hyperstack**. Most of these tools can be used to reduce the dimensionality in a specific way.
 
 ![](/assets/part 2/Hyperstacks 2 - hyperstacks menu.JPG)
 
-**Hyperstack to Stack** will combine all dimensions into a single stack with c\_z\_t frames \(ie; here 61 z- planes \* 25 time points = 1525 frames\).
+**Hyperstack to Stack** will combine all dimensions into a single stack with c\_z\_t frames \(ie; here 1 colour \* 61 z- planes \* 25 time points = 1525 frames\).
 
 ![](/assets/part 2/Hyperstacks 3 - hyperstack to stack.JPG)
 
 **Reduce Dimensionality** will allow you to pick one dimension to remove or keep in the hyperstack.
 
-For example you can select time only \(by un-checking the box beside 61 slices\) and a single stack of all time points at the current z-plane will be generated.
+For example you can select time only by un-checking the box beside 61 slices, and a single stack of all time points at the current z-plane will be generated.
 
 ![](/assets/part 2/Hyperstacks 4 - Reduce options.JPG)
 
 ![](/assets/part 2/Hyperstacks 5 - Reduced.JPG)
 
-In a hyperstack some of the tools demonstrated in FIJI Basics for single dimmensions stacks can also be applied. All can be used on a hyperstack following reduction in dimmensions as shown here.
+In a hyperstack some of the tools demonstrated in FIJI Basics for single dimension stacks can also be applied. And all can be used on a hyperstack following reduction in dimensions as shown here.
 
