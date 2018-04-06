@@ -2,13 +2,13 @@
 
 Sometimes we have multiple images that belong together in one larger image. Often times these can be captured and processed to create this larger image during acquisition, but in some circumstances we need to combine the images manually after acquisition. In those cases, we can use tools in FIJI to combine or align these images into a seemless single image.
 
-For stictching we use the demo images **Tile01.tif**\_** **\_through to **Tile06.tif** found in the Demo Images sub-folder titled 'Manual Stitching'. For TrackEM2 alignment we use the image set found in the demo images sub-folder titled 'TrackEM2'.
+For stictching we use the demo images _Tile01.tif _through to _Tile06.tif_ found in the demo images sub-folder titled 'Manual Stitching'. For TrackEM2 alignment we use the image set found in the demo images sub-folder titled 'TrackEM2'.
 
 ## Pairwise Stitching {#stitching}
 
 Stictching combines multiple tiled image into a single large format image. One option to do this in FIJI is to use the **pairwise Stitching** plugin, found under the  **Plugins -&gt; Stitching **menu. This option allows you to combine images 2 at a time and is useful for small numbers of images, where there is no specific order.
 
-First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images **Tile\_03.tif** and **Tile\_04.tif**. Select Pairwise Stiching from the menu by going to** Plugins -&gt; Stichting -&gt; Pairwise Stitching**.
+First you need to open at least 2 images that you want to sticth. Here we will use the the two demonstration images _Tile\_03.tif _and _Tile\_04.tif_. Select Pairwise Stiching from the menu by going to** Plugins -&gt; Stichting -&gt; Pairwise Stitching**.
 
 ![](/assets/part 5/Stitching 1 menu.jpg)
 
@@ -82,7 +82,7 @@ This will open a working area with several different windows.
 
 ![](/assets/part 5/TrackEM2 3 - windows.JPG)
 
-Drag and drop your folder containing all images \(and only those images\)** **into the main window \(large black area\). In the demo images we have a folder called **TrackEM2** with images for use here.
+Drag and drop your folder containing all images \(and only those images\)** **into the main window \(large black area\). In the demo images we have a folder called _TrackEM2_ with images for use here.
 
 ![](/assets/part 5/TrackEM2 4 - drag and drop.jpg)
 
