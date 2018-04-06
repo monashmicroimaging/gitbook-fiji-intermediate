@@ -46,15 +46,27 @@ For large numbers of cells, very fast movment or long imaging times it can be di
 
 First open **AutoTrack.tif** in Fiji, then go to **Plugins -&gt; Tracking -&gt; TrackMate**.
 
+![](/assets/part 7/Auto track 1 - menu.jpg)
+
 In the first window, you can set the scale of your image \(should be pre-filled if your image is scaled\). you can also add a region of interest here if you only want to analyse part of your image. As our image is scaled correctly and we want to analyse the whole image we don't need to make any changes here. Click **Next** to continue.
+
+![](/assets/part 7/Auto track 2 - scale options.jpg)
 
 There’s different methods of detecting cells, the most common ones are LoG \(Laplacian of Gaussian\) and DoG \(Difference of Gaussian\). For this image choose **DoG detector** from the drop down menu the click **Next**.
 
+![](/assets/part 7/Auto track 3 - detector.jpg)
+
 In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 500. Click on **Preview** to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click **Next **to continue.
+
+![](/assets/part 7/Auto track 4 - size and threshold.jpg)
 
 The TrackMate plugin will analyse each image in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again.
 
+![](/assets/part 7/Auto track 5 - log.jpg)
+
 Now there’s options to filter out cells according to their quality. You can adjust the filter threshold using the sliders or try the **Auto** threshold settings by clicking ont he **Auto **button. For this data set though, we’ll ignore this filter and press **Next**.
+
+
 
 The next window will ask you to chose the view mode from a drop down menu. Here we will leave it as Hyperstack and again click **Next** to continue.
 
