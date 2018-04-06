@@ -2,7 +2,7 @@
 
 Many of the simple FIJI functions that you have previously learnt about can be combined with other tools for more complex processes to analyse and measure your data. Here, our instructions become more speicified as wel go through several examples of common measurements using the different tools in FIJI.
 
-In this section we use the images **RGB-blue, RGB-green** and** Nuclei-1** for demonstration.
+In this section we use the images _RGB-blue.tif, RGB-green.tif, NeuralTubeRed.tif_ and _Nuclei-1.tif_ for demonstration.
 
 ## Area Measurements {#area-measurements}
 
@@ -10,21 +10,21 @@ To perform any measurements on our image we must ensure the scale is calibrated.
 
 We also need to select an area within the image that we want to measure. Without a selection, the program would give an area measurement for the entire image, rather than just the area of interest. In this example we will use a threshold, but you can also select a specific area to measure by using an ROI.
 
-Open the image **RGB-blue. **Check that the scale is calibrated before carrying out any further steps.
+Open the image_ RGB-blue.tif_.** **Check that the scale is calibrated before carrying out any further steps.
 
-For colour images I like to apply a grey LUT to allow better contrast between the stain and background during thresholding.** **You may also like to **Duplicate** the original image and work on a copy. This image is already grey, but apply a grey LUT if you are working with a colour image, then duplicate the image if you would like, and go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
+For colour images I like to apply a grey LUT to allow better contrast between the stain and background during thresholding.** **You may also like to **Duplicate** the original image and work on a copy. This image is already grey, but apply a grey LUT if you are working with a colour image and duplicate the image if you would like. Then go to **Image -&gt; Adjust -&gt; Threshold** \(or use short cut Ctl + Shift + T\).
 
 ![](/assets/part 6/Area 1 - Threshold Menu.jpg)
 
-Fit your threshold to the data as best as possible. Here I have used the _Default_ algorithm set at 65 and 255.Find a threshold that works for you.
+Fit your threshold to the data as best as possible. Here I have used the _Default_ algorithm set at 65 and 255. For your own data you will need to find a threshold that works for you.
 
 ![](/assets/part 6/Area 2 - Threshold Options.JPG)
 
 Close the options box to keep the selection as a threshold, or click **Apply** to generate mask as previously described.
 
-If you choose to work with the threshold you can skip straight to measurements from here, however the threshold is not always a perfect selection of the data. Which is why we often create the mask.
+If you choose to work with the threshold you can skip straight to measurements from here, however the threshold is not always a perfect selection of the data. Which is why we often create a mask instead.
 
-If you are working with a mask you can perfect your selection using filters. You can see in this image mask but there are a few blemishes that may affect the measurement. You can see below that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
+If you are working with a mask you can perfect your selection using filters. In this image mask there are a few blemishes that may affect the measurement. You can see below that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.
 
 ![](/assets/part 6/Area 3 - Mask.JPG)
 
@@ -40,7 +40,7 @@ Next we will remove the small spots detected outside the nucleus using the **Rem
 
 ![](/assets/part 6/Area 6 - Remove Outliers Menu.jpg)
 
-Turn on the preview, ensure it is set to act on the Bright or Dark part of the mask underthe  _Which outliers_ drp down menu \(this will be dependant on your mask colours - for me it needs to be set to Dark\). Set a pixel radius that captures all spots outside the nuclei, in my example the default setting of 2 works nicely. Find an option that works for your image. Click **OK** to apply the filter.
+Turn on the preview, ensure it is set to act on the Bright or Dark part of the mask underthe  _Which outliers_ drop down menu \(this will be dependant on your mask colours - for me it needs to be set to Dark\). Set a pixel radius that captures all spots outside the nuclei, in my example the default setting of 2 works nicely. Find an option that works for your image. Click **OK** to apply the filter.
 
 ![](/assets/part 6/Area 7 - Remove Outliers Options.JPG)
 
@@ -72,9 +72,9 @@ If you have used a mask for your measurement, you may notice a rather large numb
 
 ![](/assets/part 6/Area 13 - Measurement Mask vs Threshold.JPG)
 
-Sometimes FIJI will measure a mask as expected perfectly fine. But often It will still easure the entire image, disregarding the selected/masked area. You can fix this with a simple additional step.
+Sometimes FIJI will measure a mask as expected perfectly fine. But often It will still measure the entire image, disregarding the selected/masked area. You can fix this with a simple additional step.
 
-Go to **Edit -&gt; Selection -&gt; Create selection**. \(Masked area must be black on a white background here and the ROI selection will be for the black component of the image\)
+Go to **Edit -&gt; Selection -&gt; Create selection**. \(Masked area must be black on a white background here as the ROI selection will be for the black component of the image\)
 
 ![](/assets/part 6/Area 14 - Create Selection.jpg)
 
@@ -88,13 +88,13 @@ Repeat the measurement \(**Analyze -&gt; Measure**\). You should have the correc
 
 ## Mean Intensity Measurements {#mean-intensity-measurements}
 
-To generate a basic intensity measurement we apply a similar method as the basic area measurement. However, for intesntiy measurements, even with the output parameters set to **Limit to threshold**, or using ROIs, if we try to measure a mask we will only get intensity readings on the intensity values within the mask itself \(0 and 255 as it is a black and white image\), not in the image. Therefore, when measuring intensity the threshold MUST be maintained, never converted to a mask or binary.
+To generate a basic intensity measurement we apply a similar method as the basic area measurement. However, for intesntiy measurements, even with the output parameters set to **Limit to threshold**, or using ROIs, if we try to measure a mask we will only get intensity readings on the values within the mask itself \(0 and 255 as it is a black and white image\). Therefore, when measuring intensity the threshold MUST be maintained, never converted to a mask or binary.
 
-To do this, open the image **RGB\_Blue.tif** and repeat your thresholding. Go to **Image -&gt; Adjust Threshold**.
+To measure intensity, open the image _RGB\_Blue.tif_ and repeat your thresholding. Go to **Image -&gt; Adjust Threshold**.
 
 ![](/assets/part 6/Intensity 1 - threshold menu.jpg)
 
-Find the threshold to best fit the data \(I have again used Default at 65 and 255\). But DO NOT press apply! Close the options box using the cross at the top.
+Find the threshold to best fit the data \(I have again used Default at 65 and 255\). But DO NOT press apply! Close the threshold options box using the cross at the top right.
 
 ![](/assets/part 6/Intensity 2 - threshold options.jpg)
 
@@ -102,7 +102,7 @@ This will give you an image with the stain selected by threshold, but not conver
 
 ![](/assets/part 6/Intensity 3 - thresholded image.jpg)
 
-With a threshold we can no longer make modifications in order to perfect our seelction. What we see here is what we will measure.
+With a threshold we can no longer make modifications in order to perfect our selection. What we see here is what we will measure.
 
 So we can now go straight to setting our measurement paramenters. Again go to **Analyse -&gt; Set Measurements**.
 
@@ -128,7 +128,7 @@ This will give you a measurement for the intensity in the original image, limite
 
 For a visual representation of the intensity, you can map the intensities across the image very simply using a LUT.
 
-Open he image **NeuralTubeRed.tif** and go to **Image -&gt; Look up Tables**, and select the LUT **Rainbow RGB** from the bottom of the list \(or select the Rainbow LUT form the LUT menu in the tool bar\).
+Open the image _NeuralTubeRed.tif_ and go to **Image -&gt; Look up Tables** and select the LUT **Rainbow RGB** from the bottom of the list \(or select the Rainbow LUT from the LUT menu in the tool bar\).
 
 ![](/assets/part 6/RainbowLut 1 - menu.jpg)
 
@@ -152,7 +152,7 @@ Click **OK** to add the calibration bar to your image.
 
 Often we want to know how many cells or object we have in an image. For a low number of objects you can easily count manually using the multi-point tool.
 
-Open **RGB-Blue.tif** and select the multi-point tool from the FIJI tool bar.
+Open _RGB-Blue.tif_ and select the multi-point tool from the FIJI tool bar \(as demonstrated in FIJI Basics\).
 
 If multiple points are showing in the tool icon \(as below\), you can simply click it on.
 
@@ -162,21 +162,23 @@ If only a single point is visible on the icon, switch it to multi-point by right
 
 ![](/assets/part 6/Simple Count 1b - multipoint tool selection.JPG)
 
-Once the tool is active \(indented\), double click on the icon again to open the **Point Tool** options window. Set up your points as you want them to appear on your image by selectin colour and size from the drop down menus. Ensure **Label Points** and **Show All** are selected. Leave the window open.
+Once the tool is active \(indented\), double click on the icon again to open the **Point Tool** options window. Set up your points as you want them to appear on your image by selecting colour and size from the drop down menus. Ensure **Label Points** and **Show All** are selected. Leave the window open.
 
 ![](/assets/part 6/Simple Count 2 - multipoint tool settings.JPG)
 
-Return to your image and click once on every object you want to count. A point will appear on the image for each click. As you click you will see a counter increasing at the bottom of the **Points Tool** window. Once you have clicked on all of your objects, the final number will be your object count. Each object will also be marked in the image as a check of whether you correctly counted the object.
+Return to your image and click once on every object you want to count. A point will appear on the image for each click. As you click you will see a counter increasing at the bottom of the **Points Tool** window. Once you have clicked on all of your objects, the final number will be your object count. Each object will also be marked in the image as a check of whether you correctly counted the objects.
 
 ![](/assets/part 6/Simple Count 3 - multipoint tool count.JPG)
 
-The window shows that we have 9 nuclei in this image. We always exclude partial nuclei/cells/objects at the edges of an image from analysis such as counts.
+The window shows that we have 9 nuclei in this image. 
+
+**Note:** We always exclude partial nuclei/cells/objects at the edges of an image from analysis such as counts.
 
 ## Analyse Particles {#analyse-particles}
 
-For an image with a large number of objects manually clicking to count can be a laborious task. For these images you can use the **Analyze Particles** tool. This tool also enables you to measure other aspects of teh objects \(such as area\) at the same time as counting.
+For an image with a large number of objects manually clicking to count can be a laborious task. For these images you can use the **Analyze Particles** tool. This tool also enables you to measure other aspects of the objects \(such as area\) at the same time as counting.
 
-To use this tool, you first need to threshold your image as previously shown. Open the image **Nuclei-1.tif. **Apply a grey LUT if you desire. I find this makes thresholding easier.
+To use this tool, you first need to threshold your image as previously shown. Open the image _Nuclei-1.tif_.** **Apply a grey LUT if you desire. I find this makes thresholding easier.
 
 ![](/assets/part 6/Analyze particles 1 - grey LUT.jpg)
 
@@ -214,15 +216,15 @@ We can now count our objects using **Analyze Particles **tool. Find this under t
 
 ![](/assets/part 6/Analyze particles 11 - AP menu.jpg)
 
-In the resulting options box, we can adjust the size to exclude smaller objects. This eliminates those false positive specks thatremain in the mask. I have set the lower limit to 15 for this example. Leave the upper limit unchanged \(infinity\). Leave **Circularity** at the default values. Set **Show:** to **Outlines** and tick the boxes to **Display Results, Summarize, Add to Manager **and** Exclude on Edges** as shown below. Press **OK** to measure the objects.
+In the options window, we can adjust the size to exclude smaller objects. This eliminates those false positive specks that remained in the mask. I have set the lower limit to 15 for this example. Leave the upper limit unchanged \(infinity\). Leave **Circularity** at the default values. Set **Show:** to 'Outlines' and tick the boxes to **Display Results, Summarize, Add to Manager **and** Exclude on Edges** as shown below. Press **OK** to measure the objects.
 
 ![](/assets/part 6/Analyze particles 12 - AP options.jpg)
 
-This set up will result in a number of new "results" windows. you will now have a results table displaying the selected measurements for each individual object detected \(in tihs example, Area only\). The Summary box will display the total count for you. An image of the outlines, numbered to matcht he results will be created, which you can save for future reference. We also have all objects added to the ROI manager which can be overlayed other images for measurements \(ie intesity in another channel\), or saved for future use.
+This set up will result in a number of new "results" windows. you will now have a results table displaying the selected measurements for each individual object detected \(in this example, Area only\). The Summary box will display the total count for you. An image of the outlines, numbered to match the results will be created, which you can save for future reference. We also have all objects added to the ROI manager which can be overlayed other images for measurements \(ie intesity in another channel\), or saved for future use.
 
 ![](/assets/part 6/Analyze Particles 13 - Results.JPG)
 
-You can also see in the original image that the small outliers that we didn't want to count have been excluded from the analysis \(no ROI outline\) by adjusting the size. We would use the Outline map and the original image here to ensure we have measured only the objects we want, and adjust our optins and re-measure as needed.
+You can also see in the original image that the small outliers that we didn't want to count have been excluded from the analysis \(no ROI outline\) by adjusting the size. We would use the Outline map and the original image here to ensure we have measured only the objects we want, and adjust our optins and re-measure if needed.
 
 ## Redirect Measurements {#overlay-masks}
 
@@ -230,9 +232,9 @@ Masks, thresholds or ROIs generated on one image can also be used to make measur
 
 One method for applying your selection to a different image during measurement is to use 'redirect'.
 
-To demonstrate this we will use the images **RGB-blue.tif** and **RGB-green.tiff**. We will generate a threshold of the nuclei \(blue\) image and use that to measure the intensity of the stain in the "nucleus" only on the green image. We will also measure the area under the threshold in both the original image, then the green image to confrim it is measuring the same area in both images.
+To demonstrate this we will use the images _RGB-blue.tif_ and _RGB-green.tif_. We will generate a threshold of the nuclei \(blue\) image and use that to measure the intensity of the stain in the "nucleus" only on the green image. We will also measure the area under the threshold in both the original image and the green image to confrim it is measuring the same area in both.
 
-Open both images and generate a threshold for your nuclei using the methods previously described.
+Open both images and generate a threshold for your nuclei using the methods previously described. In this instance leave it as a threshold only, don't generate a mask.
 
 ![](/assets/part 6/Redirect 1 - threshold on nuclei menu.jpg)
 
@@ -246,7 +248,7 @@ In the **Set Measurements** window, select **Area** as the measurement criteria.
 
 ![](/assets/part 6/Redirect 4 - Set Measurements Option Area only.JPG)
 
-Once your parameters are set, go to **Analyze -&gt; Measure** to generate teh measurement.
+Once your parameters are set, go to **Analyze -&gt; Measure** to generate the measurement.
 
 ![](/assets/part 6/Redirect 5 - Measure menu.JPG)
 
@@ -262,7 +264,7 @@ This will 'outline' the thresholded area as an ROI in the nuclei image.
 
 ![](/assets/part 6/Redirect 8 - Threshold with selection.JPG)
 
-We can now tell FIJI to measure any parameters we want in the green image, using this selection. To do this we open the **Set Measurements** settins again.
+We can now tell FIJI to measure any parameters we want in the green image, using this selection. To do this we open the **Set Measurements** settings again.
 
 ![](/assets/part 6/Redirect 3 - Set Measurements menu.JPG)
 
@@ -274,17 +276,17 @@ Click **OK** to perform the measurements on the second image. You will now get m
 
 ![](/assets/part 6/Redirect 10 - measurements on green.JPG)
 
-You can see fromt he comparisson with the blue image measurement that we have measured the exact same area in the green image. And we now have the mean intensity for the pixels \(ie: your green stain\) within that area.
+You can see from the comparisson with the blue image measurement that we have measured the exact same area in the green image. And we now have the mean intensity for the green image pixels \(ie: your green stain\) within that area.
 
 ## Overlay ROIs {#masks-to-rois}
 
 You can also overlay ROIs from the original image onto the second image using the ROI manager.
 
-Open your two images \(here we use RGB-Blue and RGB-Green again\) and draw the required ROIs on image 1 \(RGB-Blue\), adding each to the ROI Manager as you go. Measure these in image 1 if needed.
+Open your two images \(here we use RGB-Blue and RGB-Green again\) and draw the required ROIs on image 1 \(RGB-Blue\), adding each to the ROI Manager as you go \(as shown in FIJI Basics\). Measure these in image 1 if needed.
 
 ![](/assets/part 6/Overlay from ROI 1 - ROIs in manager.JPG)
 
-To apply the ROIs to another image, select your second image \(RGB-GReen\) and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
+To apply the ROIs to another image, select your second image \(RGB-Green\) and go to **Image -&gt; Overlay -&gt; From ROI Manager**.
 
 ![](/assets/part 6/Overlay from ROI 2 - overlay menu.JPG)
 
@@ -292,9 +294,11 @@ The ROIs generated from the mask will be applied to the second image and you can
 
 ![](/assets/part 6/Overlay from ROI 3 - ROIs in image 2.JPG)
 
+**Note:** you can also activate teh second image by clicking on it, then select an individual ROI from manager to display and measure it individually in the second image.
+
 ## ROIs from Particles
 
-Using a threshold or mask will only give you a single measurement for the selection. To get individual measurements from a mask or threshold, generate your mask as required then go to **Analyze -&gt; Anylze Particles**.
+You can also generate ROIS to overlay to a second image using the **Analyze Particles** tool.
 
 ![](/assets/part 6/ROIs from Particles 1 - menu with thresholded image.jpg)
 
@@ -306,11 +310,11 @@ The mask or threshold will be converted to ROIs in the ROI manager.
 
 ![](/assets/part 6/ROIs from Particles 3 - ROIs.jpg)
 
-When using a mask, you can use filters to remove any unwanted particles before creating ROIs. When maintaining a threshold, you can clean up any unwanted ROIs by selecting them in the ROI manager and deleting. 
+When using a mask, you can use filters to remove any unwanted particles before creating ROIs. When maintaining a threshold, you can clean up any unwanted ROIs by changing the particle size in Analyze Particles options as shown before or selecting them in the ROI manager and deleting.
 
 You can now make individual measurements using the ROI manager as normal.
 
 ![](/assets/part 6/ROIs from Particles 4 - measurement.jpg)
 
-Note that intensity measurements can't be made from a mask. To perform intensity measurements using this method, you should maintain a threshold before creating ROIs \(as shown here\) or you can overlay or redirect the ROIs created with a mask to a copy of the original image.
+**Note:** Remember that intensity measurements can't be made from a mask. To perform intensity measurements using this method, you should maintain a threshold before creating ROIs \(as shown here\) or you can overlay or redirect the ROIs created with a mask to a copy of the original image.
 
