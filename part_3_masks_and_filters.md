@@ -2,7 +2,7 @@
 
 Creating thresholds and masks and applying filters forms the basis for a number of analysis methods. This section outlines the various options for masks and filters and how to apply them to your images prior to analysis.
 
-The image **Nuclei-1** and image set ‘**RGBstackProjection, RGB-blue, RGB-green** and **RGB-red**’ are used for demonstration purposes in this section.
+The image _Nuclei-1.tif _and image set ‘_RGBstackProjection, RGB-blue, RGB-green _and _RGB-red_’ are used for demonstration purposes in this section.
 
 ## Threshold Image {#threshold-image}
 
@@ -12,33 +12,41 @@ To apply a threshold, select your image and go to **Image -&gt; Adjust -&gt; Thr
 
 ![](/assets/part 3/Threshold 1.JPG)
 
-A red mask will be placed on the parts of the image that are selected by the threshold and a window will open where you can adjust the threshold on the image. In the window that opens, ensure the box beside **Dark background** is checked.
+A red overlay will be placed on the parts of the image that are selected by the threshold and a window will open where you can adjust the threshold on the image. In the window that opens, ensure the box beside **Dark background** is checked for fluorescence images.
 
 ![](/assets/part 3/Threshold 2.JPG)
 
-The drop down box on the left \(the one that says default in the image above\) has 16 different auto threshold algorithms to choose from. You can adjust the threshold by moving the sliders. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. Select the threshold that best suits your data and adjust as needed.
+The drop down box on the left \(the one that says 'Default' in the image above\) has 16 different auto threshold algorithms to choose from. Choose the threshold that looks liek the best fit for your data then further adjust by moving the sliders above. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded. 
+
+
 
 ![](/assets/part 3/Threshold 3.JPG)
 
 ![](/assets/part 3/Threshold 4.JPG)
 
-When you are happy with the selection \(ie: the red covers the parts of the image you want selected\), close the threshold box to keep is as a threshold only \(A in the image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(Note: there will be more details on masks and binaries in the next sub-section\).
+Rather than manually adjust, you can also select your algorithm and use the **Auto** button to allow the program to adjust the threshold levels for you.
+
+Reset will remove any overlayed threshold and allow you to begin again.
+
+When you are happy with the selection \(ie: the red covers the parts of the image you want selected well, without any additional background\), close the threshold box to keep is as a threshold only \(A in the image below\), or click **Apply** \(B in the image below\) then close the threshold box to convert it to a mask. \(**Note:** there will be more details on masks and binaries in the next sub-section\).
 
 ![](/assets/part 3/Threshold 5.jpg)
 
-You can also automatically test the range of threshold algorithms on your image without scrollin through the dropdown list one at a time.
+You can also automatically test the range of threshold algorithms on your image without scrolling through the dropdown list one at a time.
 
 To use the auto-test for thresholds, go to **Image -&gt; Adjust -&gt; Auto Threshold**.
 
 ![](/assets/part 3/Auto Threshold 1.jpg)
 
-In the dialog box that opens up set the **Method** to **Try All**, make sure the **White objects on black background** and **Show threshold values in log window** boxes are ticked. Press **OK**.
+In the dialog box that opens up set the **Method** to **Try All**, make sure the **White objects on black background** \(for fluorescence images\) and **Show threshold values in log window** boxes are ticked. Press **OK**.
 
 ![](/assets/part 3/Auto Threshold 2.jpg)
 
 A montage will be generated showing what each auto threshold algorithm would produce on the image. The list in the log that was created will show the order of the algorithms used in the montage.
 
 ![](/assets/part 3/Auto Threshold 3.jpg)
+
+From this montage you can decide which algorthim may suit your data the best and apply it using the steps above.
 
 ## Creating a Mask {#creating-a-mask}
 
@@ -84,29 +92,29 @@ Similar to this is **Fill Holes**.
 
 ![](/assets/part 3/filled binary.jpg)
 
-Sometimes you will need to add or remove a small layer from the edges of the mask. This could be useful for things like membrane measurements or morphology analysis.
+Sometimes you will need to add or remove a small layer from the edges of the mask/binary. This could be useful for things like membrane measurements or morphology analysis.
 
-To add or remove from the edges of a mask or binary you can use the **Dilate** or **Erode** tools. **Dilate** will add a thin layer around the edge of the existing mask. **Erode** will remove a thin layer from around the edge of the mask.
+To add or remove from the edges of a mask or binary you can use the **Dilate** or **Erode** tools. **Dilate** will add a thin layer \(1 pixel\) around the edge of the existing mask/binary. **Erode** will remove a thin layer \(1 pixel\) from around the edge of the mask/binary.
 
 ![](/assets/part 3/erode and dilate comparisson.jpg)
 
-Sometimes separate objects in your image will be touching. When you create a mask of these they will appear as a single object. This can be a problem for some types of analysis, such as counting. But you can use the **Watershed** tool to detect and separate these objects within the mask so they can be counted as individual objects again.
+Sometimes separate objects in your image will be touching. When you create a mask/binary of these they will appear as a single object. This can be a problem for some types of analysis, such as counting. But you can use the **Watershed** tool to detect and separate these objects so they can be counted as individual objects again.
 
 ![](/assets/part 3/Watershed comparisson.jpg)
 
-It is important to note that all of these adjustments will always work on the "black" park of the image so keep this in mind if your colours are reversed.
+**Note: **It is important to remember that all of these adjustments will always work on the "black" park of the image so keep this in mind if your colours are reversed.
 
 ## Clear Inside/Outside {#clear-inside-outside}
 
-Clear inside and outside can also be useful for adjusting your binaries before making measurements. Sometimes there can be small blemishes in your image that effect your measurements. Or you may want to focus your measurement on a single area of the image. You can crop the image to remove items before analysis, or you can use the clear functions.
+Clear inside and outside can also be useful for adjusting your masks or binaries before making measurements. Sometimes there can be small blemishes in your image that effect your measurements. Or you may want to focus your measurement on a single area of the image. You can crop the image to remove items before analysis, or you can use the clear functions.
 
-Note: We strongly advise against removing objects from images before analysis and publishing of results. **Removal of any image information that can alter the outcome can be considered image manipulation.** Use these functions with care and caution and always on a duplicated image so that the original remains unaltered.
+**Note:** We strongly advise against removing objects from images before analysis and publishing of results. **Removal of any image information that can alter the outcome can be considered image manipulation.** Use these functions with care and caution and always on a duplicated image so that the original remains unaltered.
 
 To use the clear functions you first need to draw an ROI around the area you wish to clear, or keep.
 
 ![](/assets/part 3/Image with ROI.JPG)
 
-In this example we are using cells for emphasis, but clear functions are usually applied to binaries/masks to remove blemishes or mistakes prior to analysis and we do not recommend removing cells from images in this manner.
+**Note: **In this example we are using cells for emphasis, but clear functions are usually applied to binaries/masks only to remove blemishes or mistakes from thresholding prior to analysis and we do not recommend removing cells from images in this manner.
 
 Once you have your ROI, go to **Edit -&gt; Clear** to clear the inside of the ROI.
 
@@ -166,13 +174,13 @@ Once you are happy with the threshold, click **Apply** or create a mask or binar
 
 **Find Maxima** is particularly helpful for segmenting images of dense cell populations or objects.
 
-Select your image and the go to **Find Maxima**. A window will open with options for the selection.
+Select your image and the go to **Find Maxima**. 
 
-Select the box next to **Preview point selection** to see the default settings. These default settings will create a dense selection. Ensure **Exclude edge maxima** is selected.
+In the options window, select the box next to **Preview point selection** to see the default settings. These default settings will create a dense selection. Ensure **Exclude edge maxima** is selected.
 
 ![](/assets/part 3/Mind Maxima Options.JPG)
 
-Increase the **Noise tolerance** to show reduce the point selection range on the image. For segmentation, 1 point per cell is ideal. Ensure that **Preview point selection** is ticked on, then adjust the Noise tolerance to best fit your data. For segmentation, select **Segmented Particles** from the drop down list under **Output type**.
+Increase the **Noise tolerance** to reduce the point selection range on the image. For segmentation, 1 point per cell is ideal. Ensure that **Preview point selection** is still ticked on, then adjust the Noise tolerance to best fit your data. For segmentation, select **Segmented Particles** from the drop down list under **Output type**.
 
 ![](/assets/part 3/find Maxima on Nuclei 1.JPG)
 
@@ -184,11 +192,11 @@ This mask can be used in combination with cell stains to segment and measure ind
 
 ## Image Filters {#image-filters}
 
-Filters can be used to “smooth” your images before analysis. These are another helpful tool for removing blemishes or ensuring that your mask fits the data well before analysis.
+Filters can be used to “smooth” your images before analysis. These are another helpful tool for removing blemishes or ensuring that your mask fits the data before analysis.
 
 As with a lot of functions used to aid analysis, filters should be used with care and caution so as to not manipulate the outcome of the data. Filters should only be applied to allow the best fit to the image and not to force the image to fit a preconceived idea. Filters should never be used to alter or enhance images for publication purposes and should be applied prior to analysis ONLY to ensure accurate selection of data and NEVER to remove or enhance any feature that will alter the analysis result.
 
-You can find some filters directly under the **Process** menu. Others are found under **Process -&gt; Filters** or **Process -&gt; Noise**.
+You can find some filters directly under the **Process** menu. Others are found under **Process -&gt; Noise** or **Process -&gt; Filters**.
 
 ![](/assets/part 3/Filters menu.jpg)
 
