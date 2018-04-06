@@ -2,7 +2,7 @@
 
 Creating thresholds and masks and applying filters forms the basis for a number of analysis methods. This section outlines the various options for masks and filters and how to apply them to your images prior to analysis.
 
-The image _Nuclei-1.tif _and image set_ ‘RGBstackProjection, RGB-blue, RGB-green _and _RGB-red_’ are used for demonstration purposes in this section.
+The image _Nuclei-1.tif_ and the image set ‘_RGBstackProjection, RGB-blue, RGB-green_ and _RGB-red_’ are used for demonstration purposes in this section.
 
 ## Threshold Image {#threshold-image}
 
