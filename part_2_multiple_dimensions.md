@@ -10,13 +10,13 @@ When working with z-stacks, you can create a 3D projection of the stack by going
 
 ![](/assets/part 2/3D method 1 - 1.jpg)
 
-For most 3D projections you can leave the settings in the **3D Projection** window as default. 
+For most 3D projections you can leave the settings in the **3D Projection** window as default.
 
 The **Projection Method** should be Brighest Point by default. If it isn't, change it from the drop down menu.
 
 If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. Here we need to enter a step size of 2 microns.
 
-**Note:** The slice spacing is the z-step size used during image capture, not the calibration size. 
+**Note:** The slice spacing is the z-step size used during image capture, not the calibration size.
 
 If you check the box next to **Interpolate**, FIJI will 'guess' the image information between slices and fill in the  blanks. While this helps to create a smooth projection it is adding information that is not in the original image. For quantitation this should never be used, however, for presentation of your 3D projection you can use it to create a nicer image.
 
@@ -66,7 +66,7 @@ Each of these projections can be saved as tiff images for use later.
 
 ## Reslice Z {#reslice-z}
 
-The orthogonal projection only lets you see one slice at a time and it has the overlay lines in the way. Sometimes it can be useful to generate a stack of orthogonal slices instead. This is easily achieved by reslicing the stack along a different axis.
+The orthogonal projection only lets you see one slice at a time and it has the overlay lines in the way. For this reason it can be useful to generate a new stack of orthogonal views instead. This is easily achieved by reslicing the stack along a different axis.
 
 To generate an orthogonal stack go to **Image -&gt; Stacks -&gt; Reslice.**
 
@@ -88,7 +88,7 @@ The program will then ‘scan’ through the image from the selected direction a
 
 ## Times Series and Saving Movies {#times-series-and-saving-movies}
 
-Time series will also open as a stack that you can work with in a similar manner to colour or z-series stacks.
+Time series will also open as a stack that you can work with in a similar manner to colour or z-stacks.
 
 ![](/assets/part 2/Time 1 - time stack.JPG)
 
@@ -102,7 +102,7 @@ A window with saving options will open, which will allow you to set specific asp
 
 ![](/assets/part 2/Time 3 - avi save options 1.JPG)
 
-Where possible you should create your movie without compression \(chose **None** from the drop down menu under **Compression**\). The ideal frame rate will be dependent on your images and time interval \(ie: the fewer frames in the movie, the slower the frame rate should be\). Sometimes a trial an error of different frame rates will be needed to generate a movie that plays at an appropriate speed. For this example we can use a frame rate of 8 fps.
+Where possible you should create your movie without compression \(chose **None** from the drop down menu under **Compression**\). The ideal frame rate will be dependent on your images and time interval \(ie: the fewer frames in the movie, the slower the frame rate should be\). Sometimes a trial an error of different frame rates will be needed to generate a movie that plays at an appropriate speed. For this example we can use a frame rate of 8 frames per second \(fps\).
 
 ![](/assets/part 2/Time 4 - avi save options 2.JPG)
 
@@ -116,19 +116,19 @@ The movie will not open and play automatically after saving. You can open and pl
 
 ## Adding a Time Stamp and Scale Bar to Movies
 
-Before saving your movie you can embed a time stamp, whihc helps the view understand the time interval and total time of the movie. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
+Before saving your movie you can embed a time stamp, whihc helps the viewer understand the time interval and total time of the movie as they are watching it. To add a time stamp, select your time series stack and go to **Image -&gt; Stack -&gt; Time Stamper**.
 
 ![](/assets/part 2/Time Stamp 1 - menu.jpg)
 
-In the **Time Stamper** window you will need to enter the interval between images and the format you want the time stamp to be in. You can also specify the location in pixels.
+In the **Time Stamper** window you will need to enter the time frame between images und **Interval** and the format you want the time stamp to be in. You can also specify the **X Location** and **Y Location** of the time stamp in the image \(given in pixels\).
 
 ![](/assets/part 2/Time Stamp 2 - options 1.JPG)
 
-In this example, the time interval is 5mins \(enter 5.00 for minutes or 300 for seconds\). How the interval is entered will determine the appearence of the time stamp if using the 'time format 00:00'. If entered in minutes, you will see HR:MIN time stamp. If entered in seconds, you will see MIN:SEC time stamp. If using a sufix, the interval and suffix must have matching formats \(ie: don't enter 300 and use mins or the suffix\).
+In this example, the time interval is 5mins \(enter 5.00 for minutes or 300 for seconds\). How you enter the interval will also determine the time stamp format. If using the time format - '00:00' with the invterval entered in minutes, you will see HR:MIN in the time stamp. If the invterval was entered in seconds, you will see MIN:SEC in the time stamp. If using a sufix, the interval and suffix must have matching formats \(ie: don't enter 300 as your interval and then use mins for the suffix\).
 
-Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the X Location and y Location boxes. Note - these will become the starting point for your time stamp.
+Pixels for an approximate location can be found by hovering the mouse over the area of the image you wish to use. Pixel co-ordinates will be displayed in the information bar. Enter the pixel co-ordinates you want for placement in the **X Location** and **Y Location** boxes. 
 
-Choose to include a suffix \(sec, min, etc\) or use the time format ‘00:00’ by checking the box. Ensure this is a match for the interval enterd, as specified above.
+**Note:** The pixel co-ordinates become the starting point for your time stamp, not the centre point.
 
 ![](/assets/part 2/Time Stamp 3 - options 2.JPG)
 
@@ -148,13 +148,15 @@ For time stamps, use a rectangular ROI and outline the area you want to place th
 
 ![](/assets/part 2/Time Stamp 5 - ROI for placement.JPG)
 
-Follow the instructions to instert a time stamp as described above, only now the X Location and Y Location boxes will be automatically filled with co-ordinates from the ROI. Do not change these. Enter your other values as required and click **OK** to instert the time stamp.
+Follow the instructions to instert a time stamp as described above, only now the **X Location** and **Y Location** boxes will be automatically filled with co-ordinates from the ROI. Do not change these. Enter your other values as required and click **OK** to instert the time stamp.
 
 ![](/assets/part 2/Time Stamp 6 - ROI for placement auto placement detection.JPG)
 
-Note that the _middle_ of the ROI box is the start of the time stamp position. Click anywhere on the image to remove the ROI. Save your movie file as normal.
+**Note:** The _middle_ of the ROI box is the start of the time stamp position. 
 
 ![](/assets/part 2/Time Stamp 7 - Placement at ROi.JPG)
+
+Once you have insterted your time stamp, click anywhere on the image to remove the ROI. Save your movie file as normal.
 
 For scale bar placement, use the line ROI tool and draw a line in the area you want to place the scale bar.
 
@@ -164,7 +166,7 @@ Follow the steps to insert a scale bar as normal. This time in the options, the 
 
 ![](/assets/part 2/Time - Scale ROI for placement options.JPG)
 
-Note that in this instance the start of the ROI line is also the start of the scale bar.
+**Note:** For scale bars, the start of the ROI line is also the start of the scale bar.
 
 ![](/assets/part 2/Time - Scale ROI for placement final position.JPG)
 
