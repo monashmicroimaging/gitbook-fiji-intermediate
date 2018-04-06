@@ -34,13 +34,13 @@ Choose **Histogram Matching** from the drop down menu in the pop-up window and t
 
 There is other options that you can try \(Simple Ratio and Exponential Fit\) which are quicker but in our experience don’t work as well. Have a try with your images and see which one works best for your data.
 
-FIJI will display a log displaying the progress as each frame is corrected.
+FIJI will open a log displaying the progress as each frame is corrected.
 
-![](/assets/part 4/Bleach Correction 3 - Log.JPG)
+
 
 A new window will open with your result when the correction is completed. \(Here I have duplicated the final frame to demonstrate he difference between the original and corrected image\)
 
-![](/assets/part 4/Bleach Correction 4 - comparison.JPG)
+
 
 ## Image Registration / Drift Correction {#image-registration-drift-correction}
 
@@ -96,7 +96,7 @@ Click **OK **and wait for the deconvolution process to run. A log of iterations 
 
 ![](/assets/part 4/Deconvolve 3 - iterations log.JPG)
 
- Compare your deconvolved image to the original and repeat if neccessary with increasaed or decreased iterations.
+Compare your deconvolved image to the original and repeat if neccessary with increasaed or decreased iterations.
 
 ![](/assets/part 4/Deconvolve 4 - comparisson.JPG)
 
