@@ -1,6 +1,6 @@
 # PART 4: IMAGE CORRECTION {#part-2-image-correction}
 
-There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demon images _DAPI \_Uneven.tif, Bleached.tif, Spheroid\_Shift.tif,_
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demonstration images _DAPI \_Uneven.tif, Bleached.tif, Spheroid\_Shift.tif, Deconvolution\_Stack.tif and PSF.tif_
 
 ## Flatten {#flatten}
 
