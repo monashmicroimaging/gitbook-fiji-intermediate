@@ -14,11 +14,11 @@ Some plugins are pre-installed in FIJI, others you will have to download and ins
 
 ## Plugins Required From Separate Downloads
 
-Drift Correction/Image Registration: Google ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as zipfiles. Unzip both files and then move the .jar file into the plugins folder of your FIJI software.
+**Drift Correction/Image Registration:** Google ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as zipfiles. Unzip both files and then move the .jar file into the plugins folder of your FIJI software.
 
-Deconvolution: Iterative\_Deconvolve\_3D.class from [http://imagej.net/Iterative\_Deconvolve\_3D](http://imagej.net/Iterative_Deconvolve_3D)
+**Deconvolution:** Download _Iterative\_Deconvolve\_3D.class_ from [http://imagej.net/Iterative\_Deconvolve\_3D](http://imagej.net/Iterative_Deconvolve_3D)
 
-**NOTE** that there’s also an Iterative\_Deconvolve\_3D.java available which didn’t work for me!
+**Note:** There’s also an Iterative\_Deconvolve\_3D.java available. The.java file does not work and you need to make sure you download the .class file instead.
 
 
 
