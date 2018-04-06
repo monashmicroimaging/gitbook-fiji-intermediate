@@ -11,6 +11,6 @@
 * [PART 8: MORPHOLOGY MEASUREMENTS](part-8-morphology-measurements.md)
 * [PART 9: CO-LOCALSATION ANALYSIS](part-9-co-localsation-analysis.md)
 * [Acknowledgements](acknowledgements.md)
+* [Use and Distribution of Workshop Notes](use-and-distribution-of-workshop-notes.md)
 * [Demonstration Images](demonstration-images.md)
-* [Use and Distribution of Workshop Notes](use_and_distribution_of_workshop_notes.md)
 
