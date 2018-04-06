@@ -2,15 +2,15 @@
 
 For fluorescent images we can examine whether two fluorophores \(hence; two proteins of interest\) are interacting by using co-localisation analysis.
 
-In this section we use the image _Colocalisation.tif _for demonstration.
+In this section we use the image _Colocalisation.tif_ for demonstration.
 
 ## Important Considerations
 
 It is important to remember that co-localisation analysis is not an exact measurement, and numerous factors can alter the outcome of your analysis. Before you undertake co-localisation analysis there are several important factors that need to be considered.
 
-_Resolution and the Limitations of the Microscope_: Resolution refers to the ability to distinguish two seperate objects as seperate. The size of proteins and fluorophores wihtin your cells will be smaller than the resolution limitations on a light microscope \(widefield or confocal\) as such two tagged proteins that are not actually occupying the same space but are close can appear to be co-localised, simply becasue they could not be resolved. The higher the resolution of an image, the more accurate the result will be, with super-resolution images being the highest standard for determining true co-localisation. 
+_Resolution and the Limitations of the Microscope_: Resolution refers to the ability to distinguish two seperate objects as seperate. The size of proteins and fluorophores wihtin your cells will be smaller than the resolution limitations on a light microscope \(widefield or confocal\) as such two tagged proteins that are not actually occupying the same space but are close can appear to be co-localised, simply becasue they could not be resolved. The higher the resolution of an image, the more accurate the result will be, with super-resolution images being the highest standard for determining true co-localisation.
 
-_The Size of Antibodies and Tags:_ Antibodies and fluorescent tags are bigger than you might expect. The addition of an antibody \(or antibodies\) or fluorescent tag to your protein of interest can add considerable size and it is important to remember that we are viewing that fluorescent marker with our imaging, not the protein of interest directly. As such, two fluorescent markers sitting side by side or even within the same space may not neccessarily mean that your two proteins also overlap. There may still be considerable distance between proteins that is being occupied and diminissed by the size of the antibodies or tags.
+_The Size of Antibodies and Tags:_ Antibodies and fluorescent tags are bigger than you might expect. The addition of an antibody \(or antibodies\) or fluorescent tag to your protein of interest can add considerable size and it is important to remember that we are viewing that fluorescent marker with our imaging, not the protein of interest directly. As such, two fluorescent markers sitting side by side or even within the same space may not neccessarily mean that your two proteins also overlap. There may still be considerable distance between proteins that is being occupied and diminished by the size of the antibodies or tags.
 
 _Spectral Overlap:_ Although fluorescent markers have a 'peak' emission the actual emission spectrum often has a long tail. This means that it can also be detected at a higher wavelength, often overlapping with a fluorphore in the next 'colour' range. Therefore it is important to select your fluorescent markers carefully when imaging for co-localisation to ensure minimal spectral overlap. It is also important use image acquisition parameters that minimise the potential for any overlap \(such as sequential scanning on a confocal microscope\). Failure to do this may mean your "co-localistation" is simply the same dye being imaged in both channels.
 
