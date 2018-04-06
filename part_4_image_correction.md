@@ -84,9 +84,9 @@ Open _Deconvolution\_Stack.tif and PSF.tif_, both found in the "Deconvolution" s
 
 Go to **Plugins -&gt; Iterative Deconvolve 3D**.
 
-Select _Deconvolution\_Stack.tif _ under Image and _PSF.tif_ under Point Spread Function from the drop down menus, then select number of iterations \(try 10 and 100 and compare the resulting images\).
+Select _Deconvolution\_Stack.tif _ under Image and _PSF.tif_ under Point Spread Function from the drop down menus, then select number of iterations \(try 10 and 100 and compare the resulting images\). For this image you will also need to change **Wiener filter gamma** to 0, and **Terminate interation if mean delta &lt;x%** to 0.01. Click **OK **and wait for the deconvolution process to run.
 
-Click **OK **and wait for the deconvolution process to run. A log of iterations will be displayed, which will tell you when deconvolution is completed. A new window with the deconvolved image will open.
+ A log of iterations will be displayed, which will tell you when deconvolution is completed. A new window with the deconvolved image will open.
 
 Compare your deconvolved image to the original and repeat if neccessary with increasaed or decreased iterations.
 
