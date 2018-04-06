@@ -64,33 +64,55 @@ The TrackMate plugin will analyse each image in the time series and detect all c
 
 ![](/assets/part 7/Auto track 5 - log.jpg)
 
-Now there’s options to filter out cells according to their quality. You can adjust the filter threshold using the sliders or try the **Auto** threshold settings by clicking ont he **Auto **button. For this data set though, we’ll ignore this filter and press **Next**.
+Now there’s options to filter out cells according to their quality. You can adjust the filter threshold using the sliders or try the **Auto** threshold settings by clicking on the **Auto **button. For this data set though, we’ll ignore this filter and press **Next**.
 
-
+![](/assets/part 7/Auto track 6 - quality filter.jpg)
 
 The next window will ask you to chose the view mode from a drop down menu. Here we will leave it as Hyperstack and again click **Next** to continue.
 
+![](/assets/part 7/Auto track 7 - display.jpg)
+
 Another set of filter options will come up. To add a filter, click on the green plus button then select the filter from the drop down menu and adjust the corresponding threshold. You can add several filters by repeating this process for each. For this data set, we’re again going to ignore these filters. So remove any filters you have added, by pressing the red minus button, and then click **Next**.
+
+![](/assets/part 7/Auto track 8b - Spot Filters combined.jpg)
 
 This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. **Simple LAP Tracker** will work well in most cases but here, we want to use specific parameters and penalties, so we need to choose the **LAP Tracker** \(LAP = Linear Assignment Problem\). Select this option from the drop down menu then click **Next** to continue.
 
-In the next window, you can set distances on how far you expect your cells to travel per frame. Set your distances for **Frame to frame linking** and** Gap closing**  and click **Next **to assess the tracking accuracy. Click the **Back** arrow to return and modify values.
+![](/assets/part 7/Auto track 10 - Track option.jpg)
+
+In the next window, you can set distances on how far you expect your cells to travel per frame. Set your distances for **Frame to frame linking** and** Gap closing**  and click **Next **to assess the tracking accuracy. 
 
 We can try a few different settings here to see what best fits our data:
 
-1. Frame to frame linking: 10um, Gap closing: 10um  
-   You will see that some tracks are broken up into several tracks as the cells moved more than 10um between frames and some cells are not tracked for the entire time series.
+1. Under **Frame to frame linking** set the Max Distance as 10 microns and under **Gap closing** again set 10 microns.  
+    ![](/assets/part 7/Auto track 11b - LAP Combined 1.jpg)At any point here you can click the **Back** arrow after tracking \(in the log window\) to return and change the parameters or **Next** \(in the log window\) to keep the tracks and continue.
 
-2. Frame to frame linking: 120um, Gap closing: 50um.  
-   You will see that the tracks are now better connected. Scroll thorugh the time series a few times and look for any errors in the tracking.
+![](/assets/part 7/Auto Track 17 - LAP Log.JPG)
 
-3. We do have a couple of cells that are not being tracked accurately. To ammend this we will use **Feature Penalties**. Go back to the tracker settings using the **Back** arrow button. Under **Frame to frame linking** click the green plus button. From the new drop down menu select the **Quality** filter and adjust the threshold for the filter to 2. Click **Next** to see the result.
 
-The two long tracks in the centre of the field of view are now tracking more accurately. As always, you will have to find the right settings for your experiment. When you are happy with your tracks, click **Next** again to continue.
 
-In the next step you will find** Filter tracks**, similar to the spot selection filters before. To add a track filter, follow the same protocol as spot filters; press on the green plus button, choose your filter from the drop down menu and adjust the threshold. Repeat for any additional filters you want to add. I am not going to use any additional track filters on tis data, so uset he red minus button to delete any you have added, then click on **Next**.
+Our initial settings didn't track our cells very well. You can see that some tracks are broken up into several tracks as the cells moved more than 10um between frames and some cells are not tracked for the entire time series. So lets try some different settings:
 
-Now we can export the results of our analysis. In this window click on the **Analysis** button. This will open tables with all the information on all your detected tracks and spots. You can save these as .csv and open in Excel or Prism for further analysis. The summary of the results is best found in the Track Statistics window. We have 26 tracks listed with results such as duration, displacement, and speed.
+2. Under **Frame to frame linking** set the Max Distance as 120 microns and under **Gap closing** again set 50 microns.
+
+![](/assets/part 7/Auto track 13b - LAP combined 2.jpg)  
+Here we see that the tracks are now better connected. Scroll thorugh the time series a few times and look for any errors in the tracking.
+
+We do have a couple of cells that are not being tracked accurately. To ammend this we will use **Feature Penalties**. Go back to the tracker settings using the **Back** arrow button. Under **Frame to frame linking** click the green plus button. From the new drop down menu select the **Quality** filter and adjust the threshold for the filter to 2. Click **Next** to see the result.
+
+![](/assets/part 7/Auto track 15b - LAP combined 3.jpg)The two long tracks in the centre of the field of view are now a more accurate respresentation. As always, you will have to find the right settings for your experiment. When you are happy with your tracks, click **Next** in the log window to continue.
+
+In the next step you will find** Filter tracks**, similar to the spot selection filters before. To add a track filter, follow the same protocol as spot filters; press on the green plus button, choose your filter from the drop down menu and adjust the threshold. Repeat for any additional filters you want to add. I am not going to use any additional track filters on this data, so use the red minus button to delete any you have added, then click on **Next**.
+
+![](/assets/part 7/Auto Track 18 - Track Filters.JPG)
+
+Now we can export the results of our analysis. In this window click on the **Analysis** button. 
+
+![](/assets/part 7/Auto Track 19 - Analysis.JPG)
+
+This will open tables with all the information on all your detected tracks and spots. You can save these as .csv and open in Excel or Prism for further analysis. The summary of the results is best found in the Track Statistics window. We have 26 tracks listed with results such as duration, displacement, and speed.
+
+![](/assets/part 7/Auto Track 20 - Track Results.JPG)
 
 ## Kymographs {#kymographs}
 
