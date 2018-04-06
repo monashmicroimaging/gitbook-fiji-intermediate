@@ -8,9 +8,15 @@ Sometimes, an uneven background in your image hinders image analysis because you
 
 Open the image _DAPI \_Uneven.tif._** **As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 50\) to the duplicated image.
 
+![](/assets/part 4/Flatten 1 - blur duplicate.JPG)
+
 Using the image calculator described in Part 3 of this manual \(**Process -&gt; Image Calculator**\), subtract the duplicate \(Gaussian blurred\) image from the original image.
 
-This results in a flattened image which will now be easier to threshold accurately.
+![](/assets/part 4/Flatten 2 - image calculator.JPG)
+
+This results in a flattened image which will be easier to threshold accurately.
+
+![](/assets/part 4/Flatten 3b - threshold comparisons.JPG)
 
 **Note: **There is also a background subtraction option in FIJI \(**Process -&gt; Subtract Background**\). However, while this will remove even background it won’t help with uneven background and consequent thresholding issues.
 
