@@ -84,19 +84,19 @@ Open _**Malaria.tif**_** **and _**PSF.tif**_. Scroll through the PSF file to see
 
 Go to **Plugins -&gt; Iterative Deconvolve 3D**.
 
-![](/assets/part 4/Deconvolve 1 - menu.jpg)
+
 
 Select Malaria.tif under Image and PSF.tif under Point Spread Function from the drop down menus, then select number of iterations \(try 10 and 100 and compare the resulting images\).
 
-![](/assets/part 4/Deconvolve 2 - options.JPG)
+
 
 Click **OK **and wait for the deconvolution process to run. A log of iterations will be displayed, which will tell you when deconvolution is completed. A new windo with the deconvolved image will open.
 
-![](/assets/part 4/Deconvolve 3 - iterations log.JPG)
+
 
 Compare your deconvolved image to the original and repeat if neccessary with increasaed or decreased iterations.
 
-![](/assets/part 4/Deconvolve 4 - comparisson.JPG)
+
 
 Save your final image when you are happy with the result.
 
