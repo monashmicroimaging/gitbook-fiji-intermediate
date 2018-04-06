@@ -56,7 +56,7 @@ Select **RigidBody** from the drop down menu next to **Transformation** in the p
 
 ![](/assets/part 4/Registration 3 - options.JPG)
 
-**NOTE:** There are four selections for the type of transformation.
+**Note:** There are four selections for the type of transformation. You may need to test several on your data to determine the best option.
 
 **Translation:** Will move planes in X and Y
 
