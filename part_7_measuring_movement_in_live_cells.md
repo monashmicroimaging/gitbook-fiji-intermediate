@@ -54,7 +54,7 @@ In the next window, enter the expected size of your cells and a threshold. Here,
 
 The TrackMate plugin will analyse each image in the time series and detect all cells with the given parameters. Once the detection is finished, press **Next** again.
 
-Now there’s options to filter out cells according to their quality. For this data set, we’ll ignore this filter and press **Next**.
+Now there’s options to filter out cells according to their quality. You can adjust the filter threshold using the sliders or try the **Auto** threshold settings by clicking ont he **Auto **button. For this data set though, we’ll ignore this filter and press **Next**.
 
 The next window will ask you to chose the view mode from a drop down menu. Here we will leave it as Hyperstack and again click **Next** to continue.
 
@@ -75,8 +75,6 @@ We can try a few different settings here to see what best fits our data:
 3. We do have a couple of cells that are not being tracked accurately. To ammend this we will use **Feature Penalties**. Go back to the tracker settings using the **Back** arrow button. Under **Frame to frame linking** click the green plus button. From the new drop down menu select the **Quality** filter and adjust the threshold for the filter to 2. Click **Next** to see the result.
 
 The two long tracks in the centre of the field of view are now tracking more accurately. As always, you will have to find the right settings for your experiment. When you are happy with your tracks, click **Next** again to continue.
-
-
 
 In the next step you will find** Filter tracks**, similar to the spot selection filters before. To add a track filter, follow the same protocol as spot filters; press on the green plus button, choose your filter from the drop down menu and adjust the threshold. Repeat for any additional filters you want to add. I am not going to use any additional track filters on tis data, so uset he red minus button to delete any you have added, then click on **Next**.
 
