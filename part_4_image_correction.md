@@ -1,24 +1,16 @@
 # PART 4: IMAGE CORRECTION {#part-2-image-correction}
 
-There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demon images **DAPI \_Uneven.tif**, **time\_series\_bleach.tif**, **Spheroid – shift.tif**, 
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demon images _DAPI \_Uneven.tif, time\_series\_bleach.tif, Spheroid – shift.tif,_
 
 ## Flatten {#flatten}
 
-Sometimes, your image might have an uneven background that hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that.
+Sometimes, an uneven background in your image hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that.
 
-Open the image **DAPI \_Uneven.tif. **As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 20\) to the duplicated image.
+Open the image _DAPI \_Uneven.tif._** **As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 50\) to the duplicated image.
 
-![](/assets/part 4/Flatten 1 - blur duplicate b.JPG)
-
-Using the image calculator described in Part 3 of this manual \(**Process -&gt; Image Calculator**\) and subtract the blurred image 9image 2\) from the original image \(image 1\).
-
-![](/assets/part 4/Flatten 2 - image calculator b.jpg)
+Using the image calculator described in Part 3 of this manual \(**Process -&gt; Image Calculator**\), subtract the duplicate \(Gaussian blurred\) image from the original image.
 
 This results in a flattened image which will now be easier to threshold accurately.
-
-![](/assets/part 4/Flatten 3 - result.JPG)
-
-![](/assets/part 4/Flatten 4 - threshold comparisons b.JPG)
 
 Note:** **there is also a background subtraction in \(**Process -&gt; Subtract Background**\) which will remove even background but won’t help with uneven background and consequent thresholding issues.
 
@@ -46,7 +38,7 @@ A new window will open with your result when the correction is completed. Here I
 
 Correction of image shifts or drift during imaging requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file into the plugins folder of your FIJI software and restart FIJI.
 
-Once you have the plugins installed, open _**Spheroid – shift.tif**_** **and scroll through the stack. You will see that the image shifts \(the spheriod makes a sudden jump to the left\) at frame 51.
+Once you have the plugins installed, open **Spheroid \_Shift.tif **and scroll through the stack. You will see that the image shifts \(the spheriod makes a sudden jump to the left\) at frame 51.
 
 ![](/assets/part 4/Registration 1 - frame shift.JPG)
 
@@ -70,7 +62,7 @@ Select **RigidBody** from the drop down menu next to **Transformation** in the p
 
 FIJI will move through the stack as it corrects for the unwanted movements. Results will display in the original image window. For this reason it can be useful to work with a duplicate in case the first correction is not acceptable.
 
-This plugin can be used in the same way for drift correction over time.
+This plugin can be used in the same way for slower drift over time.
 
 ## Image Deconvolution {#image-deconvolution}
 
