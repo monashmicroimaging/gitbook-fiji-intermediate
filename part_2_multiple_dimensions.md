@@ -1,8 +1,8 @@
 ## PART 2: MULTIPLE DIMENSIONS {#3d-projections}
 
-Our images often contain more than just a single flat picture. We can have multiple colour channels, introduction of the z-plane \(3D\), time series, or any combination of the above. In all of these case your data may be displayed in an image stack. In FIJI Basics we went through how to navigate an image stack. All of those apply to images with multiple dimensions of any kind, but when we add in the z plane and/or time we also need expand on our toolset to allow us to present the data in in the most accurate way possible. Here we will show you more tools for working with your multi-dimensional \(3D, time series, 4D\) image stacks.
+Our images often contain more than just a single flat picture. We can have multiple colour channels, introduction of the z-plane \(3D\), time series, or any combination of the above. In all of these case your data may be displayed in an image stack. In FIJI Basics we went through how to navigate and alter an image stack. Those instructions can be easily applied to images with a single multiple dimension of any kind \(eg: z-stacks only\), but when we add in more than 1 extra demmension \(eg: z-stacks AND time series\) we also need expand on our toolset to allow us to present the data in in the most accurate and effective way possible. Here we will show you more tools for working with your multi-dimensional \(3D, time series, 4D\) image stacks.
 
-In this section we use  **Spheroid-GFP.tif**  for 3D and **MovieStack.tif** for time series. **HyperStack.tif** will also be used for demonstration.
+In this section we use _Spheroid.tif_ for 3D and _MovieStack.tif_ for time series. _HyperStack.tif_ will also be used for demonstration.
 
 ## 3D Projections - Method 1 {#3d-projections}
 
@@ -10,13 +10,15 @@ When working with z-stacks, you can create a 3D projection of the stack by going
 
 ![](/assets/part 2/3D method 1 - 1.jpg)
 
-For most 3D projections you can leave the settings in the **3D Projection** window as default. The **Projection Method** should be Brighest Point by default. If it isn't, change it from the drop down menu.
+For most 3D projections you can leave the settings in the **3D Projection** window as default. 
 
-If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually.
+The **Projection Method** should be Brighest Point by default. If it isn't, change it from the drop down menu.
 
-_Note:_ that this is the z-step size used during image capture, not the calibration size. Here we need to enter a step size of 2 microns.
+If the image is calibrated the **Slice spacing** should be populated correctly from the metadata, but sometimes will need to be entered manually. Here we need to enter a step size of 2 microns.
 
-If you check the box next to **Interpolate**, FIJI will guess the image information between slices. While this helps to create a smooth projection it is adding information that is not in the original image. For quantitation this should be avoided, for presentation of your 3D projection you can use it.
+**Note:** The slice spacing is the z-step size used during image capture, not the calibration size. 
+
+If you check the box next to **Interpolate**, FIJI will 'guess' the image information between slices and fill in the  blanks. While this helps to create a smooth projection it is adding information that is not in the original image. For quantitation this should never be used, however, for presentation of your 3D projection you can use it to create a nicer image.
 
 Select **OK** to create the projection.
 
@@ -32,9 +34,9 @@ You can also create a volume view of your z-stack using a different 3D projectio
 
 ![](/assets/part 2/3D method 2 - 1.jpg)
 
-Select the image you want to project from the first drop down menu. You can give the projection a new name if you want to, or leave the default. Leave **Volume **\(default setting\) as the display type but ensure you change the **Resampling factor** from the default of 2 back to 1 so that o data is cut out of your image.
+Select the image you want to project from the first drop down menu. You can give the projection a new name if you want to, or leave the default. Leave **Volume **\(default setting\) as the display type but ensure you change the **Resampling factor** from the default of 2 back to 1 so that no data is cut out of your image.
 
-_Note:_ there is nowhere here to input the z-step size. You must have a calibrated image, or have put the z-step size in elsewhere first.
+**Note:** There is now section in these settings to alter the z-step size. You must have a calibrated image, or have calibrated the z-step size in elsewhere first.
 
 ![](/assets/part 2/3D method 2 - 2.jpg)
 
@@ -56,11 +58,11 @@ Two windows will open to the right of and below the original stack. These window
 
 ![](/assets/part 2/Orthogonal Views 2.jpg)
 
-To change the view seen in each window, move the yellow cross hair in the original stack and scroll through the stack to change plans as usual.
+To change the view seen in each window, move the cross hair in the original stack to change positions and scroll through the stack to change planes.
 
 ![](/assets/part 2/Orthogonal Views 3.jpg)
 
-Each of these projections can be saved for use later.
+Each of these projections can be saved as tiff images for use later.
 
 ## Reslice Z {#reslice-z}
 
