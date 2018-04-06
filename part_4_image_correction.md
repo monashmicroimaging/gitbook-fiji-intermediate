@@ -1,12 +1,12 @@
 # PART 4: IMAGE CORRECTION {#part-2-image-correction}
 
-There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The images used for demonstration purposes are given in each sub-section.
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demon images **DAPI \_Uneven.tif**, **time\_series\_bleach.tif**, **Spheroid – shift.tif**, 
 
 ## Flatten {#flatten}
 
 Sometimes, your image might have an uneven background that hinders image analysis because you can’t threshold your features of interest without also thresholding some of the background. Flattening the image can help with that.
 
-Open the image \_**Dapi – uneven.tif. **As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 20\) to the duplicated image.
+Open the image **DAPI \_Uneven.tif. **As shown in previous workshops/sections, duplicate the image and then apply a large Gaussian blur \(e.g. radius 20\) to the duplicated image.
 
 ![](/assets/part 4/Flatten 1 - blur duplicate b.JPG)
 
@@ -24,7 +24,7 @@ Note:** **there is also a background subtraction in \(**Process -&gt; Subtract B
 
 ## Bleach Correction {#bleach-correction}
 
-Open the demonstration image _**Dapi – time.tif**_** **and go to **Image -&gt; Adjust -&gt; Bleach Correction**.
+Open the demonstration image **time\_series\_bleach.tif **and go to **Image -&gt; Adjust -&gt; Bleach Correction**.
 
 ![](/assets/part 4/Bleach Correction 1 - menu.jpg)
 
