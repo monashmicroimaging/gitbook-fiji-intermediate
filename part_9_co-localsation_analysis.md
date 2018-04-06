@@ -44,13 +44,13 @@ Go to **Analyze -&gt; Colocalization -&gt; Coloc2**.
 
 In the options window, choose the red image as channel 1, the green image as channel 2, and your binary image as mask fromt he drop down menus. Coloc2 will use autothresholding to calculate the Manders coefficients, leave this option as the default **Costes** method. Tick on the following options \(if not already on by default\): **Display Images in Result**, **Mander's Correlation**,  **2D Instensity Histogram**. Leave the **PSF** and **Costes randomisations** at 2 and 10 respectively.
 
-
-
 Once your options are set, click on **OK** to begin the calculation.
+
+![](/assets/part 9/CoLoc 4 - options.JPG)
 
 After calculation, a results window will open, containing a graph and a table of values.
 
-
+![](/assets/part 9/CoLoc 5 - results.JPG)
 
 Let’s try to understand these values. Manders coefficients without thresholds is 1. That will be the case for almost all images and just means that there is some kind of signal in all pixles. Not useful!
 
