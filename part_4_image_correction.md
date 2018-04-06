@@ -42,7 +42,7 @@ A new window will open with your result when the correction is completed. Here I
 
 ## Image Registration / Drift Correction {#image-registration-drift-correction}
 
-Correction of image shifts or drift during imaging requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file into the plugins folder of your FIJI software and restart FIJI.
+Correction of image shifts or drift during imaging requires installation of two stack registration plugins. If you have not already done this, do so now by Googling ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as .zip files. Unzip both files and then move the .jar file from each into the plugins folder of your FIJI software and restart FIJI.
 
 Once you have the plugins installed, open _Spheroid \_Shift.tif_** **and scroll through the stack. You will see that the image shifts \(the spheriod makes a sudden jump to the left\) at frame 51.
 
@@ -86,7 +86,7 @@ Go to **Plugins -&gt; Iterative Deconvolve 3D**.
 
 Select _Deconvolution\_Stack.tif _ under Image and _PSF.tif_ under Point Spread Function from the drop down menus, then select number of iterations \(try 10 and 100 and compare the resulting images\). For this image you will also need to change **Wiener filter gamma** to 0, and **Terminate interation if mean delta &lt;x%** to 0.01. Click **OK **and wait for the deconvolution process to run.
 
- A log of iterations will be displayed, which will tell you when deconvolution is completed. A new window with the deconvolved image will open.
+A log of iterations will be displayed, which will tell you when deconvolution is completed. A new window with the deconvolved image will open.
 
 Compare your deconvolved image to the original and repeat if neccessary with increasaed or decreased iterations.
 
