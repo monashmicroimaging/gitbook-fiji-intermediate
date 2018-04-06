@@ -10,9 +10,9 @@ FIJI is an open-source software, which means everyone can use it but also means 
 
 These workshops are not able to cover every tool availble in FIJI, but here we will be focusing on the most common types of image analysis and where possible will demonstrate different methods available. For some analysis tools which have multiple plugins we may feel that one is more accurate or approporiate than the other, and in these circumstances we will only focus on the more suitable analysis tool.
 
-Some plugins are pre-installed in FIJI, others you will have to download and install yourself. We will be using both types of plugins in this workshop to show you the general process.
-
 ## Plugins Required From Separate Downloads
+
+Some plugins are pre-installed in FIJI, others you will have to download and install yourself. We will be using both types of plugins in this workshop. The following plugins will need to be downloaded and installed.
 
 **Drift Correction/Image Registration:** Google ‘StackReg FIJI’ and ‘TurboReg FIJI’ and download both plugins. They will appear as zipfiles. Unzip both files and then move the .jar file into the plugins folder of your FIJI software.
 
