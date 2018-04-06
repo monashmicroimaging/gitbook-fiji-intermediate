@@ -32,7 +32,7 @@ FIJI has a co-localisation plugin available that will allow you to carry out ana
 
 To begin analysis, open the demo image **Co-localization.tif **and split channels. We only need the red and green channels here, so close the image for the blue channel.
 
-Our first step is to create a binary of the red channel to allow the plugin to separate the cells from the background. To do this, first duplicate the red channel, then threshold and create a binary of the duplicate. make any neccessary adjustments to your binary to ensure accurate representation of the cells.
+Our first step is to create a binary of the red channel to allow the plugin to separate the cells from the background. To do this, first duplicate the red channel, then threshold and create a binary of the duplicate. Make any neccessary adjustments to your binary to ensure accurate representation of the cells. 
 
 Go to **Analyze -&gt; Colocalization -&gt; Coloc2**.
 
@@ -44,7 +44,7 @@ After calculation, a results window will open, containing a graph and a table of
 
 Let’s try to understand these values. Manders coefficients without thresholds is 1. That will be the case for almost all images and just means that there is some kind of signal in all pixles. Not useful!
 
-Manders with thresholds is better: we have a Manders coefficient of 0.43 for the red channel and 0.47 for the green channel. That means that inside the mask, 43% of the red pixels are also green, 47% of the green pixels are also red, which makes sense when you look at the images.
+Manders with thresholds is better: we have a Manders coefficient of 0.43 for the red channel and 0.47 for the green channel. That means that inside the mask, 43% of the red pixels are also green, 47% of the green pixels are also red.
 
 Pearsons coefficient without threshold is 0.70, which means the signal in both channels is correlated, the above and below values are not really crucial, but a nice control. Above threshold is also correlated, while below threshold is randomly distributed.
 
