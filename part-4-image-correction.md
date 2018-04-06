@@ -1,6 +1,6 @@
 # PART 4: IMAGE CORRECTION {#part-2-image-correction}
 
-There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demonstration images _DAPI \_Uneven.tif, Bleached.tif, Spheroid\_Shift.tif, Deconvolution\_Stack.tif and PSF.tif_
+There are a number of tools in FIJI that can be useful for advanced correction of your images and image series. In this section we will go through the different tools available for correcting imaging artefacts and flaws. The demonstration images _DAPI \_Uneven.tif, Bleached.tif, Spheroid\_Shift.tif, Deconvolution\_Stack.tif _and_ PSF.tif_
 
 ## Flatten {#flatten}
 
@@ -80,7 +80,7 @@ If you have not already done so, download _Iterative\_Deconvolve\_3D.class_ from
 
 The PSF can easily be recorded on a microscope by imaging 100nm fluorescent beads. For this example we have a PSF and matching image ready for you.
 
-Open _Deconvolution\_Stack.tif and PSF.tif_, both found in the "Deconvolution" subfolder in the Demo images. Scroll through the PSF file to see what it looks like. It’s a z-stack of a fluorescent bead.
+Open _Deconvolution\_Stack.tif _and_ PSF.tif_, both found in the "Deconvolution" subfolder in the Demo images. Scroll through the PSF file to see what it looks like. It’s a z-stack of a fluorescent bead.
 
 Go to **Plugins -&gt; Iterative Deconvolve 3D**.
 
