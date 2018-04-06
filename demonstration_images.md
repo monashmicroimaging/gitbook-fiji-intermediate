@@ -4,31 +4,29 @@ All of the images used for the FIJI Intermediate Image Analysis Workshop are mad
 
 Demonstrations Images were generously provided by the following contributors:
 
-**Spheroid.tif**[^1] …………………...…………............……….....….………………..…. Kirstin Elgass_, Monash Micro-Imaging at MHTP_
+**Spheroid.tif**[^1] …………………...…………...............……….....….………………..…. Kirstin Elgass_, Monash Micro-Imaging at MHTP_
 
-**HyperStack.tif**[^2] ……………..….………........………………….....……………………. _Sarah Creed, Monash Micro-Imaging at MHTP_
+**HyperStack.tif**[^2] ……………..….………...........………………….....……………………. _Sarah Creed, Monash Micro-Imaging at MHTP_
 
-**Nuclei-1.tif** ….……............……….……........…………………....………………… _Kirstin Elgass, Monash Micro-Imaging at MHTP_
+**Nuclei-1.tif** ….……............……….……............…………………....………………… _Kirstin Elgass, Monash Micro-Imaging at MHTP_
 
-**RGBStackProjection.tif**[^3]** **..…………….................………...………………….. _Sarah Creed, Monash Micro-Imaging at MHTP_
+**RGBStackProjection.tif**[^3]** **..……………....................………...………………….. _Sarah Creed, Monash Micro-Imaging at MHTP_
 
-**DAPI\_Uneven**[^4]** **.............................................._ Kirstin Elgass and Sarah Creed, Monash Micro Imaging at MHTP_
+**DAPI\_Uneven**[^4]** **................................................._ Kirstin Elgass and Sarah Creed, Monash Micro Imaging at MHTP_
 
-**Bleached.tif** ............................................................................. _Kirstin Elgass, Monash Micro Imaging at MHTP_
+**Bleached.tif** ................................................................................ _Kirstin Elgass, Monash Micro Imaging at MHTP_
 
-**NeuralTubeRed.tif** ......................................... _Catherine Cochrane, CCR, Hudson Institute of Medical Research_
+**NeuralTubeRed.tif** ............................................ _Catherine Cochrane, CCR, Hudson Institute of Medical Research_
 
-**AutoTrack.tif** .................................................................................................. _Nils Nesheim, Monash University_
+**AutoTrack.tif** ..................................................................................................... _Nils Nesheim, Monash University_
 
-**Kymograph.tif**[^5]_ .................................... Rebecca Lim, The Ritchie Centre, Hudson Institute of Medical Research_
+**Kymograph.tif**[^5]_ ...................................... Rebecca Lim, The Ritchie Centre, Hudson Institute of Medical Research_
 
+**Image Set: Deconvolution** .......................................................... _Kirstin Elgass, Monash Micro-Imaging at MHTP_
 
+**Image Set: Manual Stitching** ........................................................ _Sarah Creed, Monash Micro Imaging at MHTP_
 
-**Image Set: Manual Stitching** ...................................................... _Sarah Creed, Monash Micro Imaging at MHTP_
-
-**Image Set: TrackEM2** .................................... _Anqi Li, _T_he Ritchie Centre, Hudson Institute of Medical Research_
-
-
+**Image Set: TrackEM2** .................................. _Anqi Li, \_T\_he Ritchie Centre, Hudson Institute of Medical Research_
 
 [^1]: Captured at the UWA Centre for Microscopy, Characterisation and Analysis. Also used to generate Spheroid\_Shift.tif 
 
