@@ -1,0 +1,457 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PART 7: MEASURING MOVEMENT IN LIVE CELLS · Fiji Intermediate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Monash Micro Imaging">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-8-morphology-measurements.html" />
+    
+    
+    <link rel="prev" href="part-6-simple-image-measurements.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Fiji Intermediate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    PART 1:INTRODUCTION TO FIJI INTERMEDIATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part-2-multiple-dimensions.html">
+            
+                <a href="part-2-multiple-dimensions.html">
+            
+                    
+                    PART 2: MULTIPLE DIMENSIONS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-3-masks-and-filters.html">
+            
+                <a href="part-3-masks-and-filters.html">
+            
+                    
+                    PART 3: MASKS AND FILTERS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="part-4-image-correction.html">
+            
+                <a href="part-4-image-correction.html">
+            
+                    
+                    PART 4: IMAGE CORRECTION
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="part-5-image-alignment.html">
+            
+                <a href="part-5-image-alignment.html">
+            
+                    
+                    PART 5: IMAGE ALIGNMENT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="part-6-simple-image-measurements.html">
+            
+                <a href="part-6-simple-image-measurements.html">
+            
+                    
+                    PART 6: SIMPLE IMAGE MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="part-7-measuring-movement-in-live-cells.html">
+            
+                <a href="part-7-measuring-movement-in-live-cells.html">
+            
+                    
+                    PART 7: MEASURING MOVEMENT IN LIVE CELLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="part-8-morphology-measurements.html">
+            
+                <a href="part-8-morphology-measurements.html">
+            
+                    
+                    PART 8: MORPHOLOGY MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="part-9-co-localsation-analysis.html">
+            
+                <a href="part-9-co-localsation-analysis.html">
+            
+                    
+                    PART 9: CO-LOCALSATION ANALYSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="acknowledgements.html">
+            
+                <a href="acknowledgements.html">
+            
+                    
+                    Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="use-and-distribution-of-workshop-notes.html">
+            
+                <a href="use-and-distribution-of-workshop-notes.html">
+            
+                    
+                    Use and Distribution of Workshop Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="demonstration-images.html">
+            
+                <a href="demonstration-images.html">
+            
+                    
+                    Demonstration Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >PART 7: MEASURING MOVEMENT IN LIVE CELLS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="manual-tracking">PART 7: MEASURING MOVEMENT IN LIVE CELLS </h2>
+<p>When we capture cells over time, also known as times series or live cell imaging, we are presented with more analysis options. along with the other types of analysis presented above, we can also get several pieces of information from time series by tracking objects over time or exmining the dynamics of the cells or their organelles.</p>
+<p>In this section we will show you two different methods for tracking objects in time series, as well as how to present the dynamics of a cellular component in a single imge (known as a kymograph). We will use the images <em>MovieStack.tif, AutoTrack.tif</em><strong> </strong>and <em>Kymograph.tif</em><strong> </strong>for demonstration.</p>
+<h2 id="manual-tracking">Manual Tracking</h2>
+<p>The simple method for tracking objects over time is to manually track them using the <strong>Manual Tracking</strong> tool.</p>
+<p>Open the time series <em>MovieStack.tif</em><strong> </strong>and then open the <strong>Manual Tracking</strong> tool from the menu <strong>Plugins -&gt; Tracking</strong>.</p>
+<p><img src="assets/part 7/Manual tracking 1 - menu.jpg" alt=""></p>
+<p>In the <strong>Tracking</strong> window, tick on <strong>Show Parameters?</strong> to see and set all calibration settings. You can then set your parameters, including <strong>Time Interval</strong> (5mins for this example). If the xy calibration (scale) is not set automatically, enter the calibration value too (in this example it is automatically set correctly).</p>
+<p>Select the option to show the tracks on the image if required by checking the box next to <strong>Show path?</strong></p>
+<p><img src="assets/part 7/Manual tracking 2 - options.jpg" alt=""></p>
+<p>When you have set your parameters, click <strong>Add Track</strong> to start your first track.</p>
+<p><img src="assets/part 7/Manual tracking 3 - add track.jpg" alt=""></p>
+<p>Then to begin tracking, click on the image in the centre of the object you want to track. The series will automatically move to the next frame. Click the centre of the object again.</p>
+<p>Continue until you have reached the end of the series. If you have selected an option to show the track it will be visible overlayed in the image as a segmented line. Measurements for the object will be displayed in a results table.</p>
+<p>Measurements will be displayed separately for each time point, these can be exported to excel and averaged.</p>
+<p><strong>Note 1:</strong> Manual tracking results are cumulative. You can check the &quot;track number&quot; column in the results to see which results belong to which track, or save and then clear results between each cell or each image to ensure you know which results belong to which cell.</p>
+<p><strong>Note 2:</strong> The first measurements will not be accurate as the object had not moved yet (ie: first measurement for distance is -1) and these should be removed from the data before averaging, and is not considered manipulation of data as it is not an actual measurement.</p>
+<p><img src="assets/part 7/Manual tracking 4 - track.jpg" alt=""></p>
+<p>Repeat the process above (from <strong>Add track</strong>) for each cell you want to track in the image. Generally we would avoid tracking cells that divide, leave or enter the field of view. If cells cross paths, make sure you are able to determine which cell is which once they separate again, otherwise exclude these from tracking as well.</p>
+<p>If you make a mistake during tracking you can <strong>Delete the last point</strong> (1 below) or select the track number from the drop down list and click on <strong>Delete track </strong>(2 below) to remove it entirely and sart again.</p>
+<p><img src="assets/part 7/Manual tracking 5 - delete options.jpg" alt=""></p>
+<h2 id="trackmate-automated-live-cell-tracking">TrackMate: Automated Live Cell Tracking </h2>
+<p>For large numbers of cells, very fast movment or long imaging times it can be difficult to track cells manually. For these circumstacnes you can do automated tracking.</p>
+<p>First open _AutoTrack.tif _in Fiji, then go to <strong>Plugins -&gt; Tracking -&gt; TrackMate</strong>.</p>
+<p><img src="assets/part 7/Auto track 1 - menu.jpg" alt=""></p>
+<p>In the first window, you can set the scale of your image (should be pre-filled if your image is scaled). you can also add a region of interest here if you only want to analyse part of your image. As our image is scaled correctly and we want to analyse the whole image we don&apos;t need to make any changes here. Click <strong>Next</strong> to continue.</p>
+<p><img src="assets/part 7/Auto track 2 - scale options.jpg" alt=""></p>
+<p>There&#x2019;s different methods of detecting cells, the most common ones are LoG (Laplacian of Gaussian) and DoG (Difference of Gaussian). For this image choose <strong>DoG detector</strong> from the drop down menu the click <strong>Next</strong>.</p>
+<p><img src="assets/part 7/Auto track 3 - detector.jpg" alt=""></p>
+<p>In the next window, enter the expected size of your cells and a threshold. Here, please enter a diameter of 12 microns for cell size and threshold of 500. Click on <strong>Preview</strong> to see what it detects. Repeat this at several different time points and adjust the diameter and threshold if needed to better detect the cells and eliminate any background signal that gets detected. When you are happy with your selection click <strong>Next </strong>to continue.</p>
+<p><img src="assets/part 7/Auto track 4 - size and threshold.jpg" alt=""></p>
+<p>The TrackMate plugin will analyse each image in the time series and detect all cells with the given parameters. Once the detection is finished, press <strong>Next</strong> again.</p>
+<p><img src="assets/part 7/Auto track 5 - log.jpg" alt=""></p>
+<p>Now there&#x2019;s options to filter out cells according to their quality. You can adjust the filter threshold using the sliders or try the <strong>Auto</strong> threshold settings by clicking on the <strong>Auto </strong>button. For this data set though, we&#x2019;ll ignore this filter and press <strong>Next</strong>.</p>
+<p><img src="assets/part 7/Auto track 6 - quality filter.jpg" alt=""></p>
+<p>The next window will ask you to chose the view mode from a drop down menu. Here we will leave it as Hyperstack and again click <strong>Next</strong> to continue.</p>
+<p><img src="assets/part 7/Auto track 7 - display.jpg" alt=""></p>
+<p>Another set of filter options will come up. To add a filter, click on the green plus button then select the filter from the drop down menu and adjust the corresponding threshold. You can add several filters by repeating this process for each. For this data set, we&#x2019;re again going to ignore these filters. So remove any filters you have added, by pressing the red minus button, and then click <strong>Next</strong>.</p>
+<p><img src="assets/part 7/Auto track 8b - Spot Filters combined.jpg" alt=""></p>
+<p>This brings us to the tracking options. All the options are different algorithms on how to connect the detected spots. Descriptions of the algorithm and how they work are given below the selected algorithm. <strong>Simple LAP Tracker</strong> will work well in most cases but here, we want to use specific parameters and penalties, so we need to choose the <strong>LAP Tracker</strong> (LAP = Linear Assignment Problem). Select this option from the drop down menu then click <strong>Next</strong> to continue.</p>
+<p><img src="assets/part 7/Auto track 10 - Track option.jpg" alt=""></p>
+<p>In the next window, you can set distances on how far you expect your cells to travel per frame. Set your distances for <strong>Frame to frame linking</strong> and<strong> Gap closing</strong>  and click <strong>Next </strong>to assess the tracking accuracy.</p>
+<p>We can try a few different settings here to see what best fits our data:</p>
+<p>Under <strong>Frame to frame linking</strong> set the Max Distance as 10 microns and under <strong>Gap closing</strong> again set 10 microns.  </p>
+<p> <img src="assets/part 7/Auto track 11b - LAP Combined 1.jpg" alt="">At any point here you can click the <strong>Back</strong> arrow after tracking (in the log window) to return and change the parameters or <strong>Next</strong> (in the log window) to keep the tracks and continue.</p>
+<p><img src="assets/part 7/Auto Track 17 - LAP Log.JPG" alt=""></p>
+<p>Our initial settings didn&apos;t track our cells very well. You can see that some tracks are broken up into several tracks as the cells moved more than 10um between frames and some cells are not tracked for the entire time series. So lets try some different settings:</p>
+<p>Under <strong>Frame to frame linking</strong> set the Max Distance as 120 microns and under <strong>Gap closing</strong> again set 50 microns.</p>
+<p><img src="assets/part 7/Auto track 13b - LAP combined 2.jpg" alt=""><br>Here we see that the tracks are now better connected. Scroll thorugh the time series a few times and look for any errors in the tracking.</p>
+<p>We do have a couple of cells that are not being tracked accurately. To ammend this we will use <strong>Feature Penalties</strong>. Go back to the tracker settings using the <strong>Back</strong> arrow button. Under <strong>Frame to frame linking</strong> click the green plus button. From the new drop down menu select the <strong>Quality</strong> filter and adjust the threshold for the filter to 2. Click <strong>Next</strong> to see the result.</p>
+<p><img src="assets/part 7/Auto track 15b - LAP combined 3.jpg" alt="">The two long tracks in the centre of the field of view are now a more accurate respresentation. As always, you will have to find the right settings for your data each time you use an analysis tool. When you are happy with your tracks, click <strong>Next</strong> in the log window to continue.</p>
+<p>In the next step you will find<strong> Filter tracks</strong>, similar to the spot selection filters before. To add a track filter, follow the same protocol as spot filters; press on the green plus button, choose your filter from the drop down menu and adjust the threshold. Repeat for any additional filters you want to add. I am not going to use any additional track filters on this data, so use the red minus button to delete any you have added, then click on <strong>Next</strong>.</p>
+<p><img src="assets/part 7/Auto Track 18 - Track Filters.JPG" alt=""></p>
+<p>Now we can export the results of our analysis. In this window click on the <strong>Analysis</strong> button.</p>
+<p><img src="assets/part 7/Auto Track 19 - Analysis.JPG" alt=""></p>
+<p>This will open tables with all the information on all your detected tracks and spots. You can save these as .csv and open in Excel or Prism for further analysis. The summary of the results is best found in the Track Statistics window. We have 26 tracks listed with results such as duration, displacement, and speed.</p>
+<p><img src="assets/part 7/Auto Track 20 - Track Results.JPG" alt=""></p>
+<h2 id="kymographs">Kymographs </h2>
+<p>Kymographs are a way to represent a dynamic process as a single image. They are particularly useful to monitor and characterize the movement of a cell, membrane or organelle or a change in fluorescence over time. They can be seen as an <em>x-t</em> scan, where the intensity along a given line is plotted for all images of a time series. Each time point gives an intensity line, plotted <em>e.g.</em> along the x axis of the kymograph. These lines are stacked along the y axis for all frames. So we get an image where we move through space in the x direction and time in the y direction.</p>
+<p>Open <em>Kymograph.tif</em><strong> </strong>and scroll through time to find a cell that stays in the same area for the whole time series. An example of one of these cells is shown inside the ROI below.</p>
+<p><img src="assets/part 7/Kymo 1 - example cell.JPG" alt=""></p>
+<p>Switch to line ROI and draw a line trough the cell you want to analyse.</p>
+<p><img src="assets/part 7/Kymo 2 - line ROi through cell.JPG" alt=""></p>
+<p>Go to <strong>Image -&gt; Stacks -&gt; Reslice</strong> and press <strong>OK</strong> in the resulting window.</p>
+<p><img src="assets/part 7/Kymo 3 - reslice menu.JPG" alt=""></p>
+<p><img src="assets/part 7/Kymo 4 - reslice options.JPG" alt=""></p>
+<p>The resulting image displays space on the x-axis, an intensity profile across the cells in brightfield and fluorescence. Time is displayed on the y-axis (top: start, bottom: end), you can see the green fluorescence intensity increase over time and the cell move left and right in the brightfield image.</p>
+<p><img src="assets/part 7/Kymo 5 - resultB.JPG" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-6-simple-image-measurements.html" class="navigation navigation-prev " aria-label="Previous page: PART 6: SIMPLE IMAGE MEASUREMENTS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-8-morphology-measurements.html" class="navigation navigation-next " aria-label="Next page: PART 8: MORPHOLOGY MEASUREMENTS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PART 7: MEASURING MOVEMENT IN LIVE CELLS","level":"1.8","depth":1,"next":{"title":"PART 8: MORPHOLOGY MEASUREMENTS","level":"1.9","depth":1,"path":"part-8-morphology-measurements.md","ref":"part-8-morphology-measurements.md","articles":[]},"previous":{"title":"PART 6: SIMPLE IMAGE MEASUREMENTS","level":"1.7","depth":1,"path":"part-6-simple-image-measurements.md","ref":"part-6-simple-image-measurements.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Monash Micro Imaging","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Fiji Intermediate","gitbook":"*"},"file":{"path":"part-7-measuring-movement-in-live-cells.md","mtime":"2018-04-07T02:21:02.348Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-07T02:25:25.814Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

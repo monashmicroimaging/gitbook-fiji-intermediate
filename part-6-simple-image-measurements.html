@@ -1,0 +1,549 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PART 6: SIMPLE IMAGE MEASUREMENTS · Fiji Intermediate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Monash Micro Imaging">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-7-measuring-movement-in-live-cells.html" />
+    
+    
+    <link rel="prev" href="part-5-image-alignment.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Fiji Intermediate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    PART 1:INTRODUCTION TO FIJI INTERMEDIATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part-2-multiple-dimensions.html">
+            
+                <a href="part-2-multiple-dimensions.html">
+            
+                    
+                    PART 2: MULTIPLE DIMENSIONS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-3-masks-and-filters.html">
+            
+                <a href="part-3-masks-and-filters.html">
+            
+                    
+                    PART 3: MASKS AND FILTERS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="part-4-image-correction.html">
+            
+                <a href="part-4-image-correction.html">
+            
+                    
+                    PART 4: IMAGE CORRECTION
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="part-5-image-alignment.html">
+            
+                <a href="part-5-image-alignment.html">
+            
+                    
+                    PART 5: IMAGE ALIGNMENT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="part-6-simple-image-measurements.html">
+            
+                <a href="part-6-simple-image-measurements.html">
+            
+                    
+                    PART 6: SIMPLE IMAGE MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-7-measuring-movement-in-live-cells.html">
+            
+                <a href="part-7-measuring-movement-in-live-cells.html">
+            
+                    
+                    PART 7: MEASURING MOVEMENT IN LIVE CELLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="part-8-morphology-measurements.html">
+            
+                <a href="part-8-morphology-measurements.html">
+            
+                    
+                    PART 8: MORPHOLOGY MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="part-9-co-localsation-analysis.html">
+            
+                <a href="part-9-co-localsation-analysis.html">
+            
+                    
+                    PART 9: CO-LOCALSATION ANALYSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="acknowledgements.html">
+            
+                <a href="acknowledgements.html">
+            
+                    
+                    Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="use-and-distribution-of-workshop-notes.html">
+            
+                <a href="use-and-distribution-of-workshop-notes.html">
+            
+                    
+                    Use and Distribution of Workshop Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="demonstration-images.html">
+            
+                <a href="demonstration-images.html">
+            
+                    
+                    Demonstration Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >PART 6: SIMPLE IMAGE MEASUREMENTS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="part-9-simple-image-measurements">PART 6: SIMPLE IMAGE MEASUREMENTS </h1>
+<p>Many of the simple FIJI functions that you have previously learnt about can be combined with other tools for more complex processes to analyse and measure your data. Here, our instructions become more speicified as wel go through several examples of common measurements using the different tools in FIJI.</p>
+<p>In this section we use the images <em>RGB-blue.tif, RGB-green.tif, NeuralTubeRed.tif</em> and <em>Nuclei-1.tif</em> for demonstration.</p>
+<h2 id="area-measurements">Area Measurements </h2>
+<p>To perform any measurements on our image we must ensure the scale is calibrated. Checking and setting the scale calibration was covered in FIJI Basics.</p>
+<p>We also need to select an area within the image that we want to measure. Without a selection, the program would give an area measurement for the entire image, rather than just the area of interest. In this example we will use a threshold, but you can also select a specific area to measure by using an ROI.</p>
+<p>Open the image<em> RGB-blue.tif</em>.<strong> </strong>Check that the scale is calibrated before carrying out any further steps.</p>
+<p>For colour images I like to apply a grey LUT to allow better contrast between the stain and background during thresholding.<strong> </strong>You may also like to <strong>Duplicate</strong> the original image and work on a copy. This image is already grey, but apply a grey LUT if you are working with a colour image and duplicate the image if you would like. Then go to <strong>Image -&gt; Adjust -&gt; Threshold</strong> (or use short cut Ctl + Shift + T).</p>
+<p><img src="assets/part 6/Area 1 - Threshold Menu.jpg" alt=""></p>
+<p>Fit your threshold to the data as best as possible. Here I have used the <em>Default</em> algorithm set at 65 and 255. For your own data you will need to find a threshold that works for you.</p>
+<p><img src="assets/part 6/Area 2 - Threshold Options.JPG" alt=""></p>
+<p>Close the options box to keep the selection as a threshold, or click <strong>Apply</strong> to generate mask as previously described.</p>
+<p>If you choose to work with the threshold you can skip straight to measurements from here, however the threshold is not always a perfect selection of the data. Which is why we often create a mask instead.</p>
+<p>If you are working with a mask you can perfect your selection using filters. In this image mask there are a few blemishes that may affect the measurement. You can see below that we have some small speckled areas detected outside the nuclei, as well as some spots within the nuclei that are not masked completely.</p>
+<p><img src="assets/part 6/Area 3 - Mask.JPG" alt=""></p>
+<p>To take care of these &apos;gaps&apos; in the nuclei mask we are going to use the <strong>Fill Holes</strong> option found under <strong>Process -&gt; Binary -&gt; Fill Holes</strong>.</p>
+<p><img src="assets/part 6/Area 4 - Fill Holes Menu.jpg" alt=""></p>
+<p>This will complete the mask over areas that contained gaps previously.</p>
+<p><img src="assets/part 6/Area 5 - Filled Mask.JPG" alt=""></p>
+<p>Next we will remove the small spots detected outside the nucleus using the <strong>Remove Outliers</strong> filter. Go to <strong>Process -&gt; Noise -&gt; Remove Outliers</strong>.</p>
+<p><img src="assets/part 6/Area 6 - Remove Outliers Menu.jpg" alt=""></p>
+<p>Turn on the preview, ensure it is set to act on the Bright or Dark part of the mask underthe  <em>Which outliers</em> drop down menu (this will be dependant on your mask colours - for me it needs to be set to Dark). Set a pixel radius that captures all spots outside the nuclei, in my example the default setting of 2 works nicely. Find an option that works for your image. Click <strong>OK</strong> to apply the filter.</p>
+<p><img src="assets/part 6/Area 7 - Remove Outliers Options.JPG" alt=""></p>
+<p>You should now have a mask that nicely represents the nuclei in the original image.</p>
+<p><img src="assets/part 6/Area 8 - Final Mask.JPG" alt=""></p>
+<p>To measure the area in either your thresholded image or your mask, you first need to set your output parameters. Go to <strong>Analyse -&gt; Set Measurements</strong>.</p>
+<p><img src="assets/part 6/Area 9 - Set Measurements Menu.jpg" alt=""></p>
+<p>In the <strong>Set Measurements</strong> window you can choose what you want to measure by clicking on or off the checkboxes beside different parameters. Here we will turn on <strong>Area</strong> only.</p>
+<p>Ensure you also have <strong>Limit to threshold </strong>selected in the options so that FIJI does not measure the entire image.</p>
+<p>Click <strong>OK</strong> to save the output parameters.</p>
+<p><img src="assets/part 6/Area 10 - Set Measurements Options.JPG" alt=""></p>
+<p>Now that the parameters are set, to measure the area of the nuclei using the parameters you have just set go to <strong>Analyze -&gt; Measure</strong> (or shortcut Ctrl+M).</p>
+<p><img src="assets/part 6/Area 11 - Measure Menu.jpg" alt=""></p>
+<p>This will give you a results table with the area of the nuclei. You will notice there is only one measurement. This is because this method measures the mask or threshold as a single entity.</p>
+<p><img src="assets/part 6/Area 12 - Measurement Result Mask.JPG" alt=""></p>
+<p>If you have used a mask for your measurement, you may notice a rather large number. Compare here the measruements from a Mask and a threshold on the same image.</p>
+<p><img src="assets/part 6/Area 13 - Measurement Mask vs Threshold.JPG" alt=""></p>
+<p>Sometimes FIJI will measure a mask as expected perfectly fine. But often It will still measure the entire image, disregarding the selected/masked area. You can fix this with a simple additional step.</p>
+<p>Go to <strong>Edit -&gt; Selection -&gt; Create selection</strong>. (Masked area must be black on a white background here as the ROI selection will be for the black component of the image)</p>
+<p><img src="assets/part 6/Area 14 - Create Selection.jpg" alt=""></p>
+<p>ROIs will apprear around all of the masked nuclei.</p>
+<p><img src="assets/part 6/Area 15 - Selected Mask.JPG" alt=""></p>
+<p>Repeat the measurement (<strong>Analyze -&gt; Measure</strong>). You should have the correct value now. Compare this result to the previous 2 values.</p>
+<p><img src="assets/part 6/Area 16 - Selected Mask Result.JPG" alt=""></p>
+<h2 id="mean-intensity-measurements">Mean Intensity Measurements </h2>
+<p>To generate a basic intensity measurement we apply a similar method as the basic area measurement. However, for intesntiy measurements, even with the output parameters set to <strong>Limit to threshold</strong>, or using ROIs, if we try to measure a mask we will only get intensity readings on the values within the mask itself (0 and 255 as it is a black and white image). Therefore, when measuring intensity the threshold MUST be maintained, never converted to a mask or binary.</p>
+<p>To measure intensity, open the image <em>RGB_Blue.tif</em> and repeat your thresholding. Go to <strong>Image -&gt; Adjust Threshold</strong>.</p>
+<p><img src="assets/part 6/Intensity 1 - threshold menu.jpg" alt=""></p>
+<p>Find the threshold to best fit the data (I have again used Default at 65 and 255). But DO NOT press apply! Close the threshold options box using the cross at the top right.</p>
+<p><img src="assets/part 6/Intensity 2 - threshold options.jpg" alt=""></p>
+<p>This will give you an image with the stain selected by threshold, but not converted to a mask.</p>
+<p><img src="assets/part 6/Intensity 3 - thresholded image.jpg" alt=""></p>
+<p>With a threshold we can no longer make modifications in order to perfect our selection. What we see here is what we will measure.</p>
+<p>So we can now go straight to setting our measurement paramenters. Again go to <strong>Analyse -&gt; Set Measurements</strong>.</p>
+<p><img src="assets/part 6/Area 9 - Set Measurements Menu.jpg" alt=""></p>
+<p>This time we want to set <strong>Area, Min &amp; max gray value</strong> and <strong>Mean gray value</strong>.</p>
+<p>Again ensure the checkbox next to <strong>Limit to threshold</strong> is selected.</p>
+<p>Select <strong>OK</strong> to save the changes.</p>
+<p><img src="assets/part 6/Intensity 4 - set measurement options.jpg" alt=""></p>
+<p>Repeat the measurement process as before by going to to <strong>Analyze -&gt; Measure</strong> (or shortcut Ctrl+M).</p>
+<p><img src="assets/part 6/Intensity 5 - measure menu.jpg" alt=""></p>
+<p>This will give you a measurement for the intensity in the original image, limited to the area under the threshold you have set.</p>
+<p><img src="assets/part 6/Intensity 6 - measurement.jpg" alt=""></p>
+<h2 id="intensity-map-rainbow-rgb-lut">Intensity Map (Rainbow RGB LUT) </h2>
+<p>For a visual representation of the intensity, you can map the intensities across the image very simply using a LUT.</p>
+<p>Open the image <em>NeuralTubeRed.tif</em> and go to <strong>Image -&gt; Look up Tables</strong> and select the LUT <strong>Rainbow RGB</strong> from the bottom of the list (or select the Rainbow LUT from the LUT menu in the tool bar).</p>
+<p><img src="assets/part 6/RainbowLut 1 - menu.jpg" alt=""></p>
+<p>This will apply a multi-coloured LUT to your image, in shades of red, blue or green. The highest 33% of intensities are reds, the middle 33% are greens and the bottom 33% are blues. This gives the viewer the ability to easily see the range of intensities present in the image.</p>
+<p><img src="assets/part 6/RainbowLut 2 - LUT on.jpg" alt=""></p>
+<p>You can add a calibration bar for the intensities by going to <strong>Analyze -&gt; Tools -&gt; Calibration Bar</strong>.</p>
+<p><img src="assets/part 6/RainbowLut 3 - Calibration bar Menu.jpg" alt=""></p>
+<p>In the <strong>Calibration Bar</strong> window you can specify the position and configuration of the calibration bar. The <strong>Overlay</strong> tick box allows you to create the bar as an overlay of the original image, instead of burning it into the image permanently.</p>
+<p><img src="assets/part 6/RainbowLut 4 - Calibration bar options.jpg" alt=""></p>
+<p>Click <strong>OK</strong> to add the calibration bar to your image.</p>
+<p><img src="assets/part 6/RainbowLut 5 - Calibration bar added.jpg" alt=""></p>
+<h2 id="simple-counting">Simple Counting </h2>
+<p>Often we want to know how many cells or object we have in an image. For a low number of objects you can easily count manually using the multi-point tool.</p>
+<p>Open <em>RGB-Blue.tif</em> and select the multi-point tool from the FIJI tool bar (as demonstrated in FIJI Basics).</p>
+<p>If multiple points are showing in the tool icon (as below), you can simply click it on.</p>
+<p><img src="assets/part 6/Simple Count 1 - multipoint tool.JPG" alt=""></p>
+<p>If only a single point is visible on the icon, switch it to multi-point by right clikcing and selecting <strong>Multi-point Tool</strong> from the options.</p>
+<p><img src="assets/part 6/Simple Count 1b - multipoint tool selection.JPG" alt=""></p>
+<p>Once the tool is active (indented), double click on the icon again to open the <strong>Point Tool</strong> options window. Set up your points as you want them to appear on your image by selecting colour and size from the drop down menus. Ensure <strong>Label Points</strong> and <strong>Show All</strong> are selected. Leave the window open.</p>
+<p><img src="assets/part 6/Simple Count 2 - multipoint tool settings.JPG" alt=""></p>
+<p>Return to your image and click once on every object you want to count. A point will appear on the image for each click. As you click you will see a counter increasing at the bottom of the <strong>Points Tool</strong> window. Once you have clicked on all of your objects, the final number will be your object count. Each object will also be marked in the image as a check of whether you correctly counted the objects.</p>
+<p><img src="assets/part 6/Simple Count 3 - multipoint tool count.JPG" alt=""></p>
+<p>The window shows that we have 9 nuclei in this image. </p>
+<p><strong>Note:</strong> We always exclude partial nuclei/cells/objects at the edges of an image from analysis such as counts.</p>
+<h2 id="analyse-particles">Analyse Particles </h2>
+<p>For an image with a large number of objects manually clicking to count can be a laborious task. For these images you can use the <strong>Analyze Particles</strong> tool. This tool also enables you to measure other aspects of the objects (such as area) at the same time as counting.</p>
+<p>To use this tool, you first need to threshold your image as previously shown. Open the image <em>Nuclei-1.tif</em>.<strong> </strong>Apply a grey LUT if you desire. I find this makes thresholding easier.</p>
+<p><img src="assets/part 6/Analyze particles 1 - grey LUT.jpg" alt=""></p>
+<p>Select a threshold that fits your data then click <strong>Apply</strong> to create a mask (here, I used the Huang algorithm).</p>
+<p><img src="assets/part 6/Analyze particles 2 - Threshold menu.jpg" alt=""></p>
+<p><img src="assets/part 6/Analyze particles 3 - Threshold options.jpg" alt=""></p>
+<p>You will see several issues with this mask; gaps within the nuclei and small particles detected outside the nuclei.</p>
+<p><img src="assets/part 6/Analyze particles 4 - initial mask.jpg" alt=""></p>
+<p>For counting these small particles can be problematic as they will be counted as an object, when they are in fact a false positive. To clean up the mask a little, we will apply the <strong>Fill Holes</strong> and <strong>Despeckle</strong> tools to the mask. Find these under the <strong>Process </strong>menu.</p>
+<p><img src="assets/part 6/Analyze particles 5 - fill holes.jpg" alt=""></p>
+<p><img src="assets/part 6/Analyze particles 6 - despeckle.jpg" alt=""></p>
+<p>Another problem that will result in a false count with this mask is several areas where nuclei were touching, resulting in them being masked as a single object. To separate these we need to apply a <strong>Watershed</strong> binary filter to the mask. Select this from the <strong>Process -&gt; Binary</strong> menu as previously described to separate touching objects.</p>
+<p><img src="assets/part 6/Analyze particles 7 - watershed.jpg" alt=""></p>
+<p>This gives us a fairly neat mask for analysis. There are still a number of small objects that will be counted as false positives but we can exclude them during the analysis process.</p>
+<p><img src="assets/part 6/Analyze particles 8 - final mask.jpg" alt=""></p>
+<p>Before we do our analysis, check the measurements you need are set by going to <strong>Analyze -&gt; Set Measurements</strong>. Here we will only check <strong>Area.</strong></p>
+<p><img src="assets/part 6/Analyze particles 9 - set measurements menu.jpg" alt=""></p>
+<p><img src="assets/part 6/Analyze particles 10 - set measurements options.jpg" alt=""></p>
+<p>We can now count our objects using <strong>Analyze Particles </strong>tool. Find this under the <strong>Analyze</strong> menu.</p>
+<p><img src="assets/part 6/Analyze particles 11 - AP menu.jpg" alt=""></p>
+<p>In the options window, we can adjust the size to exclude smaller objects. This eliminates those false positive specks that remained in the mask. I have set the lower limit to 15 for this example. Leave the upper limit unchanged (infinity). Leave <strong>Circularity</strong> at the default values. Set <strong>Show:</strong> to &apos;Outlines&apos; and tick the boxes to <strong>Display Results, Summarize, Add to Manager </strong>and<strong> Exclude on Edges</strong> as shown below. Press <strong>OK</strong> to measure the objects.</p>
+<p><img src="assets/part 6/Analyze particles 12 - AP options.jpg" alt=""></p>
+<p>This set up will result in a number of new &quot;results&quot; windows. you will now have a results table displaying the selected measurements for each individual object detected (in this example, Area only). The Summary box will display the total count for you. An image of the outlines, numbered to match the results will be created, which you can save for future reference. We also have all objects added to the ROI manager which can be overlayed other images for measurements (ie intesity in another channel), or saved for future use.</p>
+<p><img src="assets/part 6/Analyze Particles 13 - Results.JPG" alt=""></p>
+<p>You can also see in the original image that the small outliers that we didn&apos;t want to count have been excluded from the analysis (no ROI outline) by adjusting the size. We would use the Outline map and the original image here to ensure we have measured only the objects we want, and adjust our optins and re-measure if needed.</p>
+<h2 id="overlay-masks">Redirect Measurements </h2>
+<p>Masks, thresholds or ROIs generated on one image can also be used to make measurements on another image. This allows you to measure the same area in different channels or images.</p>
+<p>One method for applying your selection to a different image during measurement is to use &apos;redirect&apos;.</p>
+<p>To demonstrate this we will use the images <em>RGB-blue.tif</em> and <em>RGB-green.tif</em>. We will generate a threshold of the nuclei (blue) image and use that to measure the intensity of the stain in the &quot;nucleus&quot; only on the green image. We will also measure the area under the threshold in both the original image and the green image to confrim it is measuring the same area in both.</p>
+<p>Open both images and generate a threshold for your nuclei using the methods previously described. In this instance leave it as a threshold only, don&apos;t generate a mask.</p>
+<p><img src="assets/part 6/Redirect 1 - threshold on nuclei menu.jpg" alt=""></p>
+<p><img src="assets/part 6/Redirect 2 - Threshold on nuclei settings.JPG" alt=""></p>
+<p>Ensure the thresholded nuclei image is active (click on the imge) then go to <strong>Analyze -&gt; Set Measurements</strong>.</p>
+<p><img src="assets/part 6/Redirect 3 - Set Measurements menu.JPG" alt=""></p>
+<p>In the <strong>Set Measurements</strong> window, select <strong>Area</strong> as the measurement criteria. Make sure you have <strong>Limit to Threshold</strong> ticked, then click on <strong>OK</strong> to set the paramenters.</p>
+<p><img src="assets/part 6/Redirect 4 - Set Measurements Option Area only.JPG" alt=""></p>
+<p>Once your parameters are set, go to <strong>Analyze -&gt; Measure</strong> to generate the measurement.</p>
+<p><img src="assets/part 6/Redirect 5 - Measure menu.JPG" alt=""></p>
+<p>We now have the area of the &quot;threshold&quot; as a control for ensuring we are measuring the same part on the green image.</p>
+<p><img src="assets/part 6/Redirect 6 - Area Blue image.JPG" alt=""></p>
+<p>To make sure this is the case, we want to generate a selection fo the thresholded area. To do this, go to <strong>Edit -&gt; Selection -&gt; Create Selection</strong>.</p>
+<p><img src="assets/part 6/Redirect 7 - Create Selection Menu.JPG" alt=""></p>
+<p>This will &apos;outline&apos; the thresholded area as an ROI in the nuclei image.</p>
+<p><img src="assets/part 6/Redirect 8 - Threshold with selection.JPG" alt=""></p>
+<p>We can now tell FIJI to measure any parameters we want in the green image, using this selection. To do this we open the <strong>Set Measurements</strong> settings again.</p>
+<p><img src="assets/part 6/Redirect 3 - Set Measurements menu.JPG" alt=""></p>
+<p>In <strong>Set Measurements</strong>, add <strong>Mean Grey Value</strong> to the measurement settings, then select <strong>RGB-Green.tif</strong> from the drop down menu under <strong>Redirect to:</strong>.</p>
+<p><img src="assets/part 6/Redirect 9 - Set Measurements Option redirect.JPG" alt=""></p>
+<p>Click <strong>OK</strong> to perform the measurements on the second image. You will now get measurement for the second image in the areas under the original mask.</p>
+<p><img src="assets/part 6/Redirect 10 - measurements on green.JPG" alt=""></p>
+<p>You can see from the comparisson with the blue image measurement that we have measured the exact same area in the green image. And we now have the mean intensity for the green image pixels (ie: your green stain) within that area.</p>
+<h2 id="masks-to-rois">Overlay ROIs </h2>
+<p>You can also overlay ROIs from the original image onto the second image using the ROI manager.</p>
+<p>Open your two images (here we use RGB-Blue and RGB-Green again) and draw the required ROIs on image 1 (RGB-Blue), adding each to the ROI Manager as you go (as shown in FIJI Basics). Measure these in image 1 if needed.</p>
+<p><img src="assets/part 6/Overlay from ROI 1 - ROIs in manager.JPG" alt=""></p>
+<p>To apply the ROIs to another image, select your second image (RGB-Green) and go to <strong>Image -&gt; Overlay -&gt; From ROI Manager</strong>.</p>
+<p><img src="assets/part 6/Overlay from ROI 2 - overlay menu.JPG" alt=""></p>
+<p>The ROIs generated from the mask will be applied to the second image and you can now set your measurements for the second image and measure the same area.</p>
+<p><img src="assets/part 6/Overlay from ROI 3 - ROIs in image 2.JPG" alt=""></p>
+<p><strong>Note:</strong> you can also activate teh second image by clicking on it, then select an individual ROI from manager to display and measure it individually in the second image.</p>
+<h2 id="rois-from-particles">ROIs from Particles</h2>
+<p>You can also generate ROIS to overlay to a second image using the <strong>Analyze Particles</strong> tool.</p>
+<p><img src="assets/part 6/ROIs from Particles 1 - menu with thresholded image.jpg" alt=""></p>
+<p>This time in the <strong>Analyze particles</strong> window, tick off every options box except <strong>Add to Manager</strong>. Select <strong>OK</strong>.</p>
+<p><img src="assets/part 6/ROIs from Particles 2 - options.jpg" alt=""></p>
+<p>The mask or threshold will be converted to ROIs in the ROI manager.</p>
+<p><img src="assets/part 6/ROIs from Particles 3 - ROIs.jpg" alt=""></p>
+<p>When using a mask, you can use filters to remove any unwanted particles before creating ROIs. When maintaining a threshold, you can clean up any unwanted ROIs by changing the particle size in Analyze Particles options as shown before or selecting them in the ROI manager and deleting.</p>
+<p>You can now make individual measurements using the ROI manager as normal.</p>
+<p><img src="assets/part 6/ROIs from Particles 4 - measurement.jpg" alt=""></p>
+<p><strong>Note:</strong> Remember that intensity measurements can&apos;t be made from a mask. To perform intensity measurements using this method, you should maintain a threshold before creating ROIs (as shown here) or you can overlay or redirect the ROIs created with a mask to a copy of the original image.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-5-image-alignment.html" class="navigation navigation-prev " aria-label="Previous page: PART 5: IMAGE ALIGNMENT">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-7-measuring-movement-in-live-cells.html" class="navigation navigation-next " aria-label="Next page: PART 7: MEASURING MOVEMENT IN LIVE CELLS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PART 6: SIMPLE IMAGE MEASUREMENTS","level":"1.7","depth":1,"next":{"title":"PART 7: MEASURING MOVEMENT IN LIVE CELLS","level":"1.8","depth":1,"path":"part-7-measuring-movement-in-live-cells.md","ref":"part-7-measuring-movement-in-live-cells.md","articles":[]},"previous":{"title":"PART 5: IMAGE ALIGNMENT","level":"1.6","depth":1,"path":"part-5-image-alignment.md","ref":"part-5-image-alignment.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Monash Micro Imaging","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Fiji Intermediate","gitbook":"*"},"file":{"path":"part-6-simple-image-measurements.md","mtime":"2018-04-07T02:21:02.348Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-07T02:25:25.814Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

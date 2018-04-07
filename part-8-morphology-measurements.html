@@ -1,0 +1,408 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PART 8: MORPHOLOGY MEASUREMENTS · Fiji Intermediate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Monash Micro Imaging">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-9-co-localsation-analysis.html" />
+    
+    
+    <link rel="prev" href="part-7-measuring-movement-in-live-cells.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Fiji Intermediate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    PART 1:INTRODUCTION TO FIJI INTERMEDIATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part-2-multiple-dimensions.html">
+            
+                <a href="part-2-multiple-dimensions.html">
+            
+                    
+                    PART 2: MULTIPLE DIMENSIONS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-3-masks-and-filters.html">
+            
+                <a href="part-3-masks-and-filters.html">
+            
+                    
+                    PART 3: MASKS AND FILTERS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="part-4-image-correction.html">
+            
+                <a href="part-4-image-correction.html">
+            
+                    
+                    PART 4: IMAGE CORRECTION
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="part-5-image-alignment.html">
+            
+                <a href="part-5-image-alignment.html">
+            
+                    
+                    PART 5: IMAGE ALIGNMENT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="part-6-simple-image-measurements.html">
+            
+                <a href="part-6-simple-image-measurements.html">
+            
+                    
+                    PART 6: SIMPLE IMAGE MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-7-measuring-movement-in-live-cells.html">
+            
+                <a href="part-7-measuring-movement-in-live-cells.html">
+            
+                    
+                    PART 7: MEASURING MOVEMENT IN LIVE CELLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="part-8-morphology-measurements.html">
+            
+                <a href="part-8-morphology-measurements.html">
+            
+                    
+                    PART 8: MORPHOLOGY MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="part-9-co-localsation-analysis.html">
+            
+                <a href="part-9-co-localsation-analysis.html">
+            
+                    
+                    PART 9: CO-LOCALSATION ANALYSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="acknowledgements.html">
+            
+                <a href="acknowledgements.html">
+            
+                    
+                    Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="use-and-distribution-of-workshop-notes.html">
+            
+                <a href="use-and-distribution-of-workshop-notes.html">
+            
+                    
+                    Use and Distribution of Workshop Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="demonstration-images.html">
+            
+                <a href="demonstration-images.html">
+            
+                    
+                    Demonstration Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >PART 8: MORPHOLOGY MEASUREMENTS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="morphology-changes">PART 8: MORPHOLOGY MEASUREMENTS </h2>
+<p>Some of the basic analysis tools we have already used can also be adapted to give us more detailed information about the data we are analysing. For example, we previously used the <strong>Analyse Particles</strong> tool to count nuclei. You can use the same tool for analysing the morphology of your cells.</p>
+<p>In this section we use the image <em>Morphology.tif</em> for demonstration.</p>
+<h2 id="morphology-changes">Morphology Changes</h2>
+<p>Open the demo image <em>Morphology.tif</em>. Duplicate it, then set a threshold and create a binary of the image. Here I have used the Huang algorithm set at 12 and 255. Following binary creation I have used the &apos;fill holes&apos;, &apos;despeckle&apos; and &apos;remove outliers&apos; filters to clean up the binary.</p>
+<p><img src="assets/part 8/Morphology 1 - duplicate and binarize.JPG" alt=""></p>
+<p>Under <strong>Analyze -&gt; Set Measurments</strong> select Area, Perimeter, Skewness and Kurtois and click <strong>OK.</strong></p>
+<p><img src="assets/part 8/Morphology 2 - set measurements options.JPG" alt=""></p>
+<p>Open the ROI Manager and check it is empty, then run <strong>Analyze Particles</strong> on the binary image. You will get one ROI that outlines the cell, the results window shows you the perimeter of the cell.</p>
+<p><img src="assets/part 8/Morphology 3 - Analyze particles ROI.JPG" alt=""></p>
+<p>Click on the original image to activate it and press <strong>Measure</strong> in the ROI Manager. You will get a second results line that gives you Skewness and Kurtosis of the cell.</p>
+<p><img src="assets/part 8/Morphology 4 - Original image ROI measurment.JPG" alt=""></p>
+<p>Skewness and Kurtosis provide information on the intensity distribution within the cell. <strong>Skewness</strong> is a measure of symmetry, or more precisely, the lack of symmetry. A distribution, or data set, is symmetric if it looks the same to the left and right of the centre point. <strong>Kurtosis</strong> is a measure of whether the data are heavy-tailed or light-tailed relative to a normal distribution.</p>
+<p>Now select the ROI in the ROI Manger and go to <strong>Edit -&gt; Selection -&gt; Convex Hull</strong>. This will draw a closed circumference around the ROI.</p>
+<p><img src="assets/part 8/Morphology 5 - convex hull menu.JPG" alt=""></p>
+<p>Go to <strong>Analyse -&gt; Measure</strong>, this will give you a third line in the results window with the perimeter of the convex hull.</p>
+<p><img src="assets/part 8/Morphology 6 - convex hull measurement.JPG" alt=""></p>
+<p>The ratio between convex hull perimeter and cell ROI perimeter is a measure of the sphericity or &#x2018;spikiness&#x2019; of the cell. If the ratio is close to 1 then the cell is almost spherical, the closer the ratio goes towards zero, the spikier the cell.</p>
+<p>If you have a time series of images, you can also look at morphology changes over time with this method.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-7-measuring-movement-in-live-cells.html" class="navigation navigation-prev " aria-label="Previous page: PART 7: MEASURING MOVEMENT IN LIVE CELLS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-9-co-localsation-analysis.html" class="navigation navigation-next " aria-label="Next page: PART 9: CO-LOCALSATION ANALYSIS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PART 8: MORPHOLOGY MEASUREMENTS","level":"1.9","depth":1,"next":{"title":"PART 9: CO-LOCALSATION ANALYSIS","level":"1.10","depth":1,"path":"part-9-co-localsation-analysis.md","ref":"part-9-co-localsation-analysis.md","articles":[]},"previous":{"title":"PART 7: MEASURING MOVEMENT IN LIVE CELLS","level":"1.8","depth":1,"path":"part-7-measuring-movement-in-live-cells.md","ref":"part-7-measuring-movement-in-live-cells.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Monash Micro Imaging","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Fiji Intermediate","gitbook":"*"},"file":{"path":"part-8-morphology-measurements.md","mtime":"2018-04-07T02:21:02.349Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-07T02:25:25.814Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

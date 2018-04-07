@@ -1,0 +1,510 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PART 3: MASKS AND FILTERS · Fiji Intermediate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Monash Micro Imaging">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-4-image-correction.html" />
+    
+    
+    <link rel="prev" href="part-2-multiple-dimensions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Fiji Intermediate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    PART 1:INTRODUCTION TO FIJI INTERMEDIATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part-2-multiple-dimensions.html">
+            
+                <a href="part-2-multiple-dimensions.html">
+            
+                    
+                    PART 2: MULTIPLE DIMENSIONS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="part-3-masks-and-filters.html">
+            
+                <a href="part-3-masks-and-filters.html">
+            
+                    
+                    PART 3: MASKS AND FILTERS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="part-4-image-correction.html">
+            
+                <a href="part-4-image-correction.html">
+            
+                    
+                    PART 4: IMAGE CORRECTION
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="part-5-image-alignment.html">
+            
+                <a href="part-5-image-alignment.html">
+            
+                    
+                    PART 5: IMAGE ALIGNMENT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="part-6-simple-image-measurements.html">
+            
+                <a href="part-6-simple-image-measurements.html">
+            
+                    
+                    PART 6: SIMPLE IMAGE MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-7-measuring-movement-in-live-cells.html">
+            
+                <a href="part-7-measuring-movement-in-live-cells.html">
+            
+                    
+                    PART 7: MEASURING MOVEMENT IN LIVE CELLS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="part-8-morphology-measurements.html">
+            
+                <a href="part-8-morphology-measurements.html">
+            
+                    
+                    PART 8: MORPHOLOGY MEASUREMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="part-9-co-localsation-analysis.html">
+            
+                <a href="part-9-co-localsation-analysis.html">
+            
+                    
+                    PART 9: CO-LOCALSATION ANALYSIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="acknowledgements.html">
+            
+                <a href="acknowledgements.html">
+            
+                    
+                    Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="use-and-distribution-of-workshop-notes.html">
+            
+                <a href="use-and-distribution-of-workshop-notes.html">
+            
+                    
+                    Use and Distribution of Workshop Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="demonstration-images.html">
+            
+                <a href="demonstration-images.html">
+            
+                    
+                    Demonstration Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >PART 3: MASKS AND FILTERS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="part-8-masks-and-filters">PART 3: MASKS AND FILTERS </h1>
+<p>Creating thresholds and masks and applying filters forms the basis for a number of analysis methods. This section outlines the various options for masks and filters and how to apply them to your images prior to analysis.</p>
+<p>The image <em>Nuclei-1.tif</em> and the image set &#x2018;<em>RGBstackProjection, RGB-blue, RGB-green</em> and <em>RGB-red</em>&#x2019; are used for demonstration purposes in this section.</p>
+<h2 id="threshold-image">Threshold Image </h2>
+<p>For a number of basic measurements an image first needs to have a threshold applied to it.</p>
+<p>To apply a threshold, select your image and go to <strong>Image -&gt; Adjust -&gt; Threshold</strong> (or shortcut Ctrl+Shift+T).</p>
+<p><img src="assets/part 3/Threshold 1.JPG" alt=""></p>
+<p>A red overlay will be placed on the parts of the image that are selected by the threshold and a window will open where you can adjust the threshold on the image. In the window that opens, ensure the box beside <strong>Dark background</strong> is checked for fluorescence images.</p>
+<p><img src="assets/part 3/Threshold 2.JPG" alt=""></p>
+<p>The drop down box on the left (the one that says &apos;Default&apos; in the image above) has 16 different auto threshold algorithms to choose from. Choose the threshold that looks liek the best fit for your data then further adjust by moving the sliders above. The top slider sets the bottom range of the threshold and the bottom slider adjusts the top range of the threshold. The red box on the histogram shows which parts of the histogram are being thresholded.</p>
+<p><img src="assets/part 3/Threshold 3.JPG" alt=""></p>
+<p><img src="assets/part 3/Threshold 4.JPG" alt=""></p>
+<p>Rather than manually adjust, you can also select your algorithm and use the <strong>Auto</strong> button to allow the program to adjust the threshold levels for you.</p>
+<p>Reset will remove any overlayed threshold and allow you to begin again.</p>
+<p>When you are happy with the selection (ie: the red covers the parts of the image you want selected well, without any additional background), close the threshold box to keep is as a threshold only (A in the image below), or click <strong>Apply</strong> (B in the image below) then close the threshold box to convert it to a mask. (<strong>Note:</strong> there will be more details on masks and binaries in the next sub-section).</p>
+<p><img src="assets/part 3/Threshold 5.jpg" alt=""></p>
+<p>You can also automatically test the range of threshold algorithms on your image without scrolling through the dropdown list one at a time.</p>
+<p>To use the auto-test for thresholds, go to <strong>Image -&gt; Adjust -&gt; Auto Threshold</strong>.</p>
+<p><img src="assets/part 3/Auto Threshold 1.jpg" alt=""></p>
+<p>In the dialog box that opens up set the <strong>Method</strong> to <strong>Try All</strong>, make sure the <strong>White objects on black background</strong> (for fluorescence images) and <strong>Show threshold values in log window</strong> boxes are ticked. Press <strong>OK</strong>.</p>
+<p><img src="assets/part 3/Auto Threshold 2.jpg" alt=""></p>
+<p>A montage will be generated showing what each auto threshold algorithm would produce on the image. The list in the log that was created will show the order of the algorithms used in the montage.</p>
+<p><img src="assets/part 3/Auto Threshold 3.jpg" alt=""></p>
+<p>From this montage you can decide which algorthim may suit your data the best and apply it using the steps above.</p>
+<h2 id="creating-a-mask">Creating a Mask </h2>
+<p>If you need to convert your threshold to a mask, or binary, there are several options you can use. As shown above, if you select <strong>Apply</strong> in the threshold window it will convert the threshold to a mask.</p>
+<p>You can also go to <strong>Process -&gt; Binary -&gt; Convert to Mask</strong>.</p>
+<p><img src="assets/part 3/Convert to mask.jpg" alt=""></p>
+<p>To generate a binary go to <strong>Process -&gt; Binary -&gt; Make Binary</strong>.</p>
+<p><img src="assets/part 3/Make binary.jpg" alt=""></p>
+<p>For this option, a window will open with binary options, select your options and click <strong>OK</strong> to generate the binary image.</p>
+<p><img src="assets/part 3/Make Binary Options.JPG" alt=""></p>
+<p>Generally masks and binaries will appear as shown in the images below. However, depending on your settings (both the general settings in FIJI, and those selected from the binary options above), the background and foreground colours can somtimes be reversed in the mask and binary. Macs will often produce reversed background and foreground colours also.</p>
+<h4 id="original-image">Original Image:</h4>
+<p><img src="assets/part 3/Original image.JPG" alt=""></p>
+<h4 id="mask">Mask:</h4>
+<p><img src="assets/part 3/Binary.JPG" alt=""></p>
+<h4 id="binary">Binary:</h4>
+<p><img src="assets/part 3/Mask.JPG" alt=""></p>
+<h2 id="making-adjustments-to-masks-and-binaries">Making Adjustments to Masks and Binaries </h2>
+<p>Sometimes adjustments need to be made to binaries/masks before analysis to ensure it is accurately representing the data. There are a number of tools available to help you get the best fit to your data. All of these tools can be found under <strong>Process -&gt; Binary</strong>.</p>
+<p><img src="assets/part 3/Binary Menu.jpg" alt=""></p>
+<p>Small gaps left in the mask or binary after thresholding can easily be corrected for by using the <strong>Close</strong> tool.</p>
+<h4 id=""><img src="assets/part 3/closed binary.jpg" alt=""></h4>
+<p>Similar to this is <strong>Fill Holes</strong>.</p>
+<p><img src="assets/part 3/filled binary.jpg" alt=""></p>
+<p>Sometimes you will need to add or remove a small layer from the edges of the mask/binary. This could be useful for things like membrane measurements or morphology analysis.</p>
+<p>To add or remove from the edges of a mask or binary you can use the <strong>Dilate</strong> or <strong>Erode</strong> tools. <strong>Dilate</strong> will add a thin layer (1 pixel) around the edge of the existing mask/binary. <strong>Erode</strong> will remove a thin layer (1 pixel) from around the edge of the mask/binary.</p>
+<p><img src="assets/part 3/erode and dilate comparisson.jpg" alt=""></p>
+<p>Sometimes separate objects in your image will be touching. When you create a mask/binary of these they will appear as a single object. This can be a problem for some types of analysis, such as counting. But you can use the <strong>Watershed</strong> tool to detect and separate these objects so they can be counted as individual objects again.</p>
+<p><img src="assets/part 3/Watershed comparisson.jpg" alt=""></p>
+<p><strong>Note: </strong>It is important to remember that all of these adjustments will always work on the &quot;black&quot; park of the image so keep this in mind if your colours are reversed.</p>
+<h2 id="clear-inside-outside">Clear Inside/Outside </h2>
+<p>Clear inside and outside can also be useful for adjusting your masks or binaries before making measurements. Sometimes there can be small blemishes in your image that effect your measurements. Or you may want to focus your measurement on a single area of the image. You can crop the image to remove items before analysis, or you can use the clear functions.</p>
+<p><strong>Note:</strong> We strongly advise against removing objects from images before analysis and publishing of results. <strong>Removal of any image information that can alter the outcome can be considered image manipulation.</strong> Use these functions with care and caution and always on a duplicated image so that the original remains unaltered.</p>
+<p>To use the clear functions you first need to draw an ROI around the area you wish to clear, or keep.</p>
+<p><img src="assets/part 3/Image with ROI.JPG" alt=""></p>
+<p><strong>Note: </strong>In this example we are using cells for emphasis, but clear functions are usually applied to binaries/masks only to remove blemishes or mistakes from thresholding prior to analysis and we do not recommend removing cells from images in this manner.</p>
+<p>Once you have your ROI, go to <strong>Edit -&gt; Clear</strong> to clear the inside of the ROI.</p>
+<p><img src="assets/part 3/Clear inside menu.jpg" alt=""></p>
+<p><img src="assets/part 3/ImageClear Inside.JPG" alt=""></p>
+<p>Or use <strong>Edit -&gt; Clear Outside</strong>, to clear the rest of the image outside the ROI.</p>
+<p><img src="assets/part 3/Clear outside menu.jpg" alt=""></p>
+<p><img src="assets/part 3/ImageClear Outside.JPG" alt=""></p>
+<h2 id="image-calculator">Image Calculator </h2>
+<p>Image calculator is another way to select for specific areas where you want to apply your analysis. Image calculator performs arithmetic operations between two images. These can be your original images or stacks, an image/stack and a mask or two masks.</p>
+<p>The <strong>Image Calculator</strong> can be found under <strong>Process -&gt; Image Calculator</strong>.</p>
+<p><img src="assets/part 3/Image Calculator menu.jpg" alt=""></p>
+<p>In the resulting window you can select image 1 and image 2 from the drop down menus and choose your operation from the list in the middle. Check the box next to <strong>Create new window</strong> to generate the calculation as a new image, otherwise it will override image 1.</p>
+<p><img src="assets/part 3/Image Calculator options.jpg" alt=""></p>
+<p>In the image calculator <strong>Add</strong> creates a new image with the pixels from image 1 added to the pixels from image 2. This is demonstrated below, combining two images into a single image for measurements.</p>
+<p><img src="assets/part 3/Image Calculator - add.jpg" alt=""></p>
+<p><strong>Subtract</strong> will remove the pixels in image 2 from image 1. This is demonstrated below with two masks of the same image. The mask in image 2 has been eroded and will be subtracted from the original to leave only the edge of the nuclei for analysis.</p>
+<p><img src="assets/part 3/Image Calculator - Subtract.jpg" alt=""></p>
+<p>You can also use a mask to subtract an area of an image prior to analysis. For example we use the mask of the nucleus here to subtract pixels from the green channel so only cytoplasmic signal remains for analysis.</p>
+<p><img src="assets/part 3/Image Calculator - Subtract2.jpg" alt=""></p>
+<p>Image calculators can be useful in a number of different analysis techniques. Although not all examples can be shown here, they are worth taking some time to explore as a part of your image analysis.</p>
+<h2 id="find-edges-and-find-maxima">Find Edges and Find Maxima </h2>
+<p>The <strong>Find Edges</strong> and <strong>Find Maxima</strong> tools can help you segment your images. Both of these tools can be found under the <strong>Process</strong> menu.</p>
+<p><img src="assets/part 3/Menu.jpg" alt=""></p>
+<p>To segment the edges of your image, select the image and then select <strong>Find Edges</strong>. FIJI will &#x2018;outline&#x2019; the edges of the signal in your image.</p>
+<p><img src="assets/part 3/Edges Mask.JPG" alt=""></p>
+<p>You can then threshold this image to select edges of the signal only.</p>
+<p><img src="assets/part 3/Edges Threshold.JPG" alt=""></p>
+<p>Once you are happy with the threshold, click <strong>Apply</strong> or create a mask or binary as previously shown.</p>
+<p><img src="assets/part 3/Find Edges Result.JPG" alt=""></p>
+<p><strong>Find Maxima</strong> is particularly helpful for segmenting images of dense cell populations or objects.</p>
+<p>Select your image and the go to <strong>Find Maxima</strong>.</p>
+<p>In the options window, select the box next to <strong>Preview point selection</strong> to see the default settings. These default settings will create a dense selection. Ensure <strong>Exclude edge maxima</strong> is selected.</p>
+<p><img src="assets/part 3/Mind Maxima Options.JPG" alt=""></p>
+<p>Increase the <strong>Noise tolerance</strong> to reduce the point selection range on the image. For segmentation, 1 point per cell is ideal. Ensure that <strong>Preview point selection</strong> is still ticked on, then adjust the Noise tolerance to best fit your data. For segmentation, select <strong>Segmented Particles</strong> from the drop down list under <strong>Output type</strong>.</p>
+<p><img src="assets/part 3/find Maxima on Nuclei 1.JPG" alt=""></p>
+<p>When you are happy with your selection click <strong>OK</strong> to generate a segmented image mask.</p>
+<p><img src="assets/part 3/Find Maxima - segemented image.JPG" alt=""></p>
+<p>This mask can be used in combination with cell stains to segment and measure individual cells.</p>
+<h2 id="image-filters">Image Filters </h2>
+<p>Filters can be used to &#x201C;smooth&#x201D; your images before analysis. These are another helpful tool for removing blemishes or ensuring that your mask fits the data before analysis.</p>
+<p>As with a lot of functions used to aid analysis, filters should be used with care and caution so as to not manipulate the outcome of the data. Filters should only be applied to allow the best fit to the image and not to force the image to fit a preconceived idea. Filters should never be used to alter or enhance images for publication purposes and should be applied prior to analysis ONLY to ensure accurate selection of data and NEVER to remove or enhance any feature that will alter the analysis result.</p>
+<p>You can find some filters directly under the <strong>Process</strong> menu. Others are found under <strong>Process -&gt; Noise</strong> or <strong>Process -&gt; Filters</strong>.</p>
+<p><img src="assets/part 3/Filters menu.jpg" alt=""></p>
+<p>The different filters are demonstrated below with before and after images</p>
+<h3 id="smooth">Smooth:</h3>
+<p><img src="assets/part 3/smooth comparisson image.jpg" alt=""></p>
+<h3 id="sharpen">Sharpen:</h3>
+<p><img src="assets/part 3/sharpen comparisson image.jpg" alt=""></p>
+<h3 id="despeckle">Despeckle:</h3>
+<p><img src="assets/part 3/despeckle comparisson image.jpg" alt=""></p>
+<h3 id="despeckle-mask">Despeckle (mask):</h3>
+<p><img src="assets/part 3/despeckle mask comparisson image.jpg" alt=""></p>
+<h3 id="remove-outliers">Remove Outliers:</h3>
+<p>In this filter, you need to specify the outlier radius in pixels, and threshold. Select the checkbox next to <strong>Preview</strong> to see the changes before you apply them to the image. Click <strong>OK</strong> when you are happy with your changes.</p>
+<p><img src="assets/part 3/remove outliers options.JPG" alt=""></p>
+<p><img src="assets/part 3/remove outliers mask comparisson image.jpg" alt=""></p>
+<h3 id="median">Median:</h3>
+<p>Again, in this filter, you need to specify the radius in pixels. Select the checkbox next to <strong>Preview</strong> to see the changes before you apply them to the image. Click <strong>OK</strong> when you are happy with your changes.</p>
+<p><img src="assets/part 3/median options.JPG" alt=""></p>
+<p><img src="assets/part 3/median comparisson image.jpg" alt=""></p>
+<h3 id="gaussian-blur">Gaussian Blur:</h3>
+<p>This filter uses convolution to produce a smoothing effect. Here you again, need to specify the radius. Select the checkbox next to <strong>Preview</strong> to see the changes before you apply them and click <strong>OK</strong> when you want to apply changes to the image.</p>
+<p><img src="assets/part 3/gausian blur options.JPG" alt=""></p>
+<p><img src="assets/part 3/gausian comparisson image.jpg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-2-multiple-dimensions.html" class="navigation navigation-prev " aria-label="Previous page: PART 2: MULTIPLE DIMENSIONS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-4-image-correction.html" class="navigation navigation-next " aria-label="Next page: PART 4: IMAGE CORRECTION">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PART 3: MASKS AND FILTERS","level":"1.4","depth":1,"next":{"title":"PART 4: IMAGE CORRECTION","level":"1.5","depth":1,"path":"part-4-image-correction.md","ref":"part-4-image-correction.md","articles":[]},"previous":{"title":"PART 2: MULTIPLE DIMENSIONS","level":"1.3","depth":1,"path":"part-2-multiple-dimensions.md","ref":"part-2-multiple-dimensions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Monash Micro Imaging","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Fiji Intermediate","gitbook":"*"},"file":{"path":"part-3-masks-and-filters.md","mtime":"2018-04-07T02:21:02.348Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-07T02:25:25.814Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
