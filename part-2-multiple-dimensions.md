@@ -66,7 +66,7 @@ Each of these projections can be saved as tiff images for use later.
 
 ## Reslice Z {#reslice-z}
 
-The orthogonal projection only lets you see one slice at a time and it has the overlay lines in the way. For this reason it can be useful to generate a new stack of orthogonal views instead. This is easily achieved by reslicing the stack along a different axis.
+The orthogonal projection only lets you see one slice at a time. For this reason it can be useful to generate a new stack of orthogonal views instead. This is easily achieved by reslicing the stack along a different axis.
 
 To generate an orthogonal stack go to **Image -&gt; Stacks -&gt; Reslice.**
 
